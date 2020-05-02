@@ -17,6 +17,7 @@ menu, nav, section, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline; /* "baseline" El elemento está alineado con la línea base del padre */
+	/* box-sizing: content-box; */
 }
 
 html {
@@ -55,7 +56,7 @@ a {
 }
 
 
-/* HEADER /////////////////////////////////////////////////*/
+/* HEADERR */
 
 .Header {
     display: flex;
@@ -80,7 +81,7 @@ a {
 }
 
 .Header__menu-a:hover {
-	color: #0f86f7;
+	color: #78fee9;
 	transition: 0.3s ease;
 }
 
@@ -90,17 +91,27 @@ a {
 
 .Header__open-submenu:hover .Header__submenu {
 	height: 140px;
-	transition: 0.3s ease;
+	/* border-top: 1px solid #78fee9; */
+	border-bottom: 1px solid #78fee9;
+	/* display: block; */
+	/* transition: 0.3s ease; */
 }
 
 .Header__submenu {
+	/* display: none; */
+	border-left: 1px solid #78fee9;
+	border-right: 1px solid #78fee9;
+	transition: 0.3s ease;
 	height: 0;
 	overflow: hidden;
 	position: absolute;
-	background-color: #060e23;
+	background-color: #091c3b;
 	border-radius: 3px;
 	top: 1.2rem;
 	left: -1.5rem;
+	box-sizing: border-box;
+
+	
 }
 
 .Header__submenu-li {
@@ -109,8 +120,8 @@ a {
 }
 
 .Header__submenu-a:hover {
-	color: #0f86f7;
-	transition: 0.3s ease;
+	color: #78fee9;
+	/* transition: 0.3s ease; */
 }
 
 /* quita comportamiento del link */
@@ -167,13 +178,14 @@ a {
 }
 
 .Slides__header h2 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 2.5rem;
 }
 
 .Slides__header h2 span {
 	color: #78fee9;
-	font-style: oblique;
+	/* font-style: oblique; */
+	/* font-weight: 500; */
 	margin-left: 1rem;
 	font-size: 2rem;
 }
@@ -247,10 +259,12 @@ a {
 
 .Slides__body h2 {
 	color: #78fee9;
-	font-weight: 300;
+	font-weight: 400;
+	font-size: 2rem;
 }
 
 .Slides__body p {
+	/* font-size: 1rem; */
 	font-weight: 300;
 }
 
@@ -547,51 +561,65 @@ article > h2{
 
 .Aside__tabs ul {
     overflow: hidden;
-    background-color: #6fb6fa;
+    background-color: #091c3b;
+    /* background-color: #6fb6fa; */
+	border: 1px solid #0f86f7;
 }
 
 /* Float the list items side by side */
-.Aside__tabs li {display: inline-block;}
+.Aside__tabs > ul li {
+	display: inline-block;
+	border-left: 1px solid #0f86f7;
+	width: 33%;
+	
+}
 
 /* Style the links inside the list items */
 .Aside__tabs li a {
+	padding: .5rem 0;
     display: inline-block;
-    color: black;
+    color: #0f86f7;
     text-align: center;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+	font-size: 17px;
+	width: 100%;
+	/* border: 1px solid #0f86f7; */
 }
 
 /* Change background color of links on hover */
-.Aside__tabs li a:hover {background-color: #3f9ef9;}
+.Aside__tabs li a:hover {
+	background-color: #0f86f7;
+	color: #060e23;
+}
 
 /* Create an active/current tablink class */
 .Aside__tabs li a:focus, .active {
-	background-color: #0b65b9;
-	color: #f2f2f2 !important;
+	background-color: #0f86f7;
+	color: #060e23 !important;
 }
 
 /* Style the tab content */
 .Aside__tabcontent {
 	/* display: none; */
     padding: 6px 12px;
-    border: 1px solid #ccc;
+	/* border: 1px solid #ccc; */
+	background-color: #091c3b;
     /* border-top: none; */
 }
 
 .Aside__tabcontent a{
 	color: black;
 }
-.Aside__tabcontent a:hover{
+/* .Aside__tabcontent a:hover{
 	color: blue;
 	text-decoration: underline;
-}
+} */
 
 
 .Aside__tabcontent ul, .Aside__tabcontent h2 {
-	background-color: white;
+	/* background-color: white; */
 	border: 0;
 }
 
@@ -702,3 +730,29 @@ article > h2{
 	  color: #091c3b; /* background SLIDES (claro)*/
 
   }
+
+
+/* COLORS */
+.green {
+color: #78fee9;
+}
+
+.blue {
+color: #0f86f7;
+font-weight: ;
+}
+
+/* WEIGHTS */
+
+.w100 {
+	font-weight: 100;
+}
+.w300 {
+	font-weight: 300;
+}
+.w400 {
+	font-weight: 400;
+}
+.w500 {
+	font-weight: 500;
+}

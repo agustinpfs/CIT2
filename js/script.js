@@ -36,6 +36,9 @@ function showSlides(n) { //entra (1)(2)
   
   
   // TABS
+
+document.getElementById("defaultOpen").click();
+
   
   function openItem(evt, cityName) {
     // Declare all variables
