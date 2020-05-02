@@ -1,3 +1,9 @@
+/* 
+HEADERR 
+MAINN
+ASIDEE
+*/
+
 /* RESET  - resetea los estilos por defecto del navegador */
 
 html, body, div, span, iframe,
@@ -17,6 +23,7 @@ html {
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	color: whitesmoke;
+	background-color: #091c3b;
 
 }
 
@@ -54,7 +61,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #091c3b;
+    /* background-color: #091c3b; */
     /* background-color: #060e23; */
     padding: .5rem 1rem;
 	max-width: 100vw;
@@ -111,6 +118,8 @@ a {
 		pointer-events: none;
 		cursor: default;
 } */
+
+/* MAIN */
 
 .MainIndex {
 	width: 70%;
@@ -301,7 +310,7 @@ article > h2{
 	padding-top: 6rem;
 	padding-bottom: 6rem;
 	/* background-color: #060e23; */
-	background-color: #091c3b;
+	/* background-color: #091c3b; */
 }
 
 .Description article{
@@ -497,9 +506,6 @@ article > h2{
 
 
 
-
-
-
 .Articulos--blog
 .Articulos__title {
 	border-bottom: 4px solid #78fee9;
@@ -528,6 +534,73 @@ article > h2{
 }
 
 
+/* ASIDEE */
+
+.Aside {
+	/* background-color: #091c3b; */
+	width: 29.5%;
+	display: inline-block;
+}
+
+
+/* TABSS */
+
+.Aside__tabs ul {
+    overflow: hidden;
+    background-color: #6fb6fa;
+}
+
+/* Float the list items side by side */
+.Aside__tabs li {display: inline-block;}
+
+/* Style the links inside the list items */
+.Aside__tabs li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+.Aside__tabs li a:hover {background-color: #3f9ef9;}
+
+/* Create an active/current tablink class */
+.Aside__tabs li a:focus, .active {
+	background-color: #0b65b9;
+	color: #f2f2f2 !important;
+}
+
+/* Style the tab content */
+.Aside__tabcontent {
+	/* display: none; */
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    /* border-top: none; */
+}
+
+.Aside__tabcontent a{
+	color: black;
+}
+.Aside__tabcontent a:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+
+.Aside__tabcontent ul, .Aside__tabcontent h2 {
+	background-color: white;
+	border: 0;
+}
+
+.Aside__tabcontent li {
+	display: block;
+	/* clear: both; */
+	margin: .5rem;
+	
+}
 
 
 
@@ -626,6 +699,6 @@ article > h2{
 	  color: #060e23; /* background header */
 	  color: #0f86f7;
 	  color: #78fee9;
-	  color: #091c3b; /* background SLIDES */
+	  color: #091c3b; /* background SLIDES (claro)*/
 
   }

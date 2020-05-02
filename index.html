@@ -222,13 +222,114 @@
             </article>
             </div>
         </section>    
-
-        <section>blog</section>
     </main>
-    <aside>
-        <section>tabs</section>
-        <section>instagram</section>
-        <section>acordion</section>
+    <aside class="Aside">
+        <section class="Aside__tabs">
+            <ul>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openItem(event, 'tab1')"
+                        id="defaultOpen">Abierto</a>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openItem(event, 'tab2')">Próximo</a>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openItem(event, 'tab3')">Futuros</a>
+            </ul>
+
+            <div id="tab1" class="Aside__tabcontent">
+                <a href="curso-html-css-js.html">
+                    <h2 class="">
+                        HTML
+                        <span class="icon-html5"></span> 
+                        CSS
+                        <span class="icon-css3"></span>
+                        JavaScript
+                        <span class="icon-javascript"></span>
+                    </h2>
+
+                    <ul>
+                        <li>Además:</li>
+                        <li>&#10003; Git-Github</li>
+                        <li>&#10003; Gestión de proyectos</li>
+                        <li>&#10003; Despliegue</li>
+                        <li>&#10003; Analítica web</li>
+                    </ul>
+                </a>
+            </div>
+            <div id="tab2" class="Aside__tabcontent">
+                <a href="http://">
+                    <h2 class="">
+                        Webpack
+                        <span class="icon-webpack"></span> 
+                        Sass
+                        <span class="icon-sass"></span>
+                        Handlebars
+                        <span class="icon-hbs"></span>
+                    </h2>
+
+                    <ul>
+                        <li>&#10003; Sistema de bundling</li>
+                        <li>&#10003; Automatización de procesos</li>
+                        <li>&#10003; Preprocesadores CSS</li>
+                        <li>&#10003; Motores de plantillas</li>
+                    </ul>
+                </a>
+
+            </div>
+
+            <div id="tab3" class="Aside__tabcontent">
+                <!-- <a href="http://"> -->
+                    <!-- <h2 class="">
+                        NodeJS
+                        <span class="icon-node-dot-js"></span> 
+                        Express
+                        <span class="icon-express"></span>
+                        MongoDB
+                        <span class="icon-mongodb"></span>
+                    </h2> -->
+
+                    <ul>
+                        <li>&#8226; NodeJS, Express, MongoDB</li>
+                        <li>&#8226; Progressive web app</li>
+                        <li>&#8226; React</li>
+                        <li>&#8226; React Native</li>
+                        <li>&#8226; VueJS</li>
+                        <li>&#8226; Electron</li>
+                    </ul>
+                <!-- </a> -->
+            </div>
+        </section>
+        <section class="Aside-twitter">
+            <a class="twitter-timeline" data-tweet-limit=3
+                href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets
+                by TwitterDev</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        <section class="Aside__accordion">
+            <h2>Equipo</h2>
+            <button class="Aside__accordion-button">@twittername1</button>
+            <div class="panel">
+                <img src="img/perfil1.jpeg" alt="" width="150" height="200">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
+                    consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, debitis.</p>
+            </div>
+
+            <button class="Aside__accordion-button">@twittername2</button>
+            <div class="panel">
+                <img src="img/perfil2.png" alt="" width="150" height="200">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consequatur, eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, veniam.</p>
+            </div>
+
+            <button class="Aside__accordion-button">@twittername3</button>
+            <div class="panel">
+                <img src="img/perfil3.jpeg" alt="" width="150" height="200">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptates, quas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsum.</p>
+            </div>
+        </section>
     </aside>
     <footer>
         <section>CursosIT</section>
