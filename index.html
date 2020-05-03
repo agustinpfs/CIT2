@@ -234,12 +234,12 @@
     <aside class="Aside">
         <section class="Aside__tabs">
             <ul>
-                <li><a href="javascript:void(0)" class="tablinks" onclick="openItem(event, 'tab1')" id="defaultOpen">Abierto</a>
-                <li><a href="javascript:void(0)" class="tablinks" onclick="openItem(event, 'tab2')">Próximo</a>
-                <li><a href="javascript:void(0)" class="tablinks" onclick="openItem(event, 'tab3')">Futuros</a>
+                <li><a class="Aside__tab" onclick="showContent(event, 'contenido-tab1')" id="defaultOpen">Abierto</a>
+                <li><a class="Aside__tab" onclick="showContent(event, 'contenido-tab2')">Próximo</a>
+                <li><a class="Aside__tab" onclick="showContent(event, 'contenido-tab3')">Futuros</a>
             </ul>
 
-            <div id="tab1" class="Aside__tabcontent">
+            <div id="contenido-tab1" class="Aside__tabContent">
                 <h2 class="w400">
                     HTML<span class="icon-html5"></span>
                     CSS<span class="icon-css3"></span>
@@ -254,7 +254,7 @@
                     <li><span class="green">&#10003;</span> Analítica web</li>
                 </ul>
             </div>
-            <div id="tab2" class="Aside__tabcontent">
+            <div id="contenido-tab2" class="Aside__tabContent">
                     <h2 class="w400">
                         Webpack<span class="icon-webpack"></span>
                         Sass<span class="icon-sass"></span>
@@ -270,7 +270,7 @@
 
             </div>
 
-            <div id="tab3" class="Aside__tabcontent">
+            <div id="contenido-tab3" class="Aside__tabContent">
                 <!-- <a href="http://"> -->
                 <!-- <h2 class="">
                         NodeJS

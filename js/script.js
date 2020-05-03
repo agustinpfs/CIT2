@@ -40,25 +40,28 @@ function showSlides(n) { //entra (1)(2)
 document.getElementById("defaultOpen").click();
 
   
-  function openItem(evt, cityName) {
+  function showContent(evento, contenidoDeUnTab) {
+    console.log(evento + "event che");
+    console.log(contenidoDeUnTab + " CcontenidoDeUnTab che");
+    
     // Declare all variables
-    var i, tabcontent, tablinks;
+    var i, todosLosContenidos, tab_button;
   
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("Aside__tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    // Get all elements with class="todosLosContenidos" and hide them
+    todosLosContenidos = document.getElementsByClassName("Aside__tabContent");
+    for (i = 0; i < todosLosContenidos.length; i++) {
+        todosLosContenidos[i].style.display = "none";
     }    
   
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    // Get all elements with class="Aside__tab" and remove the class "active"
+    tab_button = document.getElementsByClassName("Aside__tab");
+    for (i = 0; i < tab_button.length; i++) {
+      tab_button[i].className = tab_button[i].className.replace(" active", "");
     }    
   
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.target.className += " active";
+    document.getElementById(contenidoDeUnTab).style.display = "block";
+    evento.target.className += " active";
   
   // event.target identifica el elemento en el que se ha producido el evento(red).  
   

@@ -562,19 +562,17 @@ article > h2{
 .Aside__tabs ul {
     overflow: hidden;
     background-color: #091c3b;
-    /* background-color: #6fb6fa; */
 	border: 1px solid #0f86f7;
+	cursor: pointer;
 }
 
-/* Float the list items side by side */
 .Aside__tabs > ul li {
 	display: inline-block;
 	border-left: 1px solid #0f86f7;
-	width: 33%;
-	
+	width: 33%;	
 }
 
-/* Style the links inside the list items */
+/* Style the links  the list items */
 .Aside__tabs li a {
 	padding: .5rem 0;
     display: inline-block;
@@ -601,29 +599,30 @@ article > h2{
 }
 
 /* Style the tab content */
-.Aside__tabcontent {
+.Aside__tabContent {
 	/* display: none; */
     padding: 6px 12px;
 	/* border: 1px solid #ccc; */
 	background-color: #091c3b;
-    /* border-top: none; */
+	/* border-top: none; */
+	height: 200px;
 }
 
-.Aside__tabcontent a{
+.Aside__tabContent a{
 	color: black;
 }
-/* .Aside__tabcontent a:hover{
+/* .Aside__tabContent a:hover{
 	color: blue;
 	text-decoration: underline;
 } */
 
 
-.Aside__tabcontent ul, .Aside__tabcontent h2 {
+.Aside__tabContent ul, .Aside__tabContent h2 {
 	/* background-color: white; */
 	border: 0;
 }
 
-.Aside__tabcontent li {
+.Aside__tabContent li {
 	display: block;
 	/* clear: both; */
 	margin: .5rem;
