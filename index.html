@@ -232,14 +232,14 @@
         </section>
     </main>
     <aside class="Aside">
-        <section class="Aside__tabs">
-            <ul>
-                <li><a class="Aside__tab" onclick="showContent(event, 'contenido-tab1')" id="defaultOpen">Abierto</a>
-                <li><a class="Aside__tab" onclick="showContent(event, 'contenido-tab2')">Próximo</a>
-                <li><a class="Aside__tab" onclick="showContent(event, 'contenido-tab3')">Futuros</a>
+        <section class="Tabs">
+            <ul class="Tabs__header">
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab1')" id="defaultActive">Abierto</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab2')">Próximo</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab3')">Futuros</li>
             </ul>
 
-            <div id="contenido-tab1" class="Aside__tabContent">
+            <div id="contenidoTab1" class="Tabs__tab-content">
                 <h2 class="w400">
                     HTML<span class="icon-html5"></span>
                     CSS<span class="icon-css3"></span>
@@ -253,8 +253,9 @@
                     <li><span class="green">&#10003;</span> Despliegue</li>
                     <li><span class="green">&#10003;</span> Analítica web</li>
                 </ul>
+                <a href="" class="Tabs__button button button--blue">VER CURSO</a>
             </div>
-            <div id="contenido-tab2" class="Aside__tabContent">
+            <div id="contenidoTab2" class="Tabs__tab-content">
                     <h2 class="w400">
                         Webpack<span class="icon-webpack"></span>
                         Sass<span class="icon-sass"></span>
@@ -270,7 +271,7 @@
 
             </div>
 
-            <div id="contenido-tab3" class="Aside__tabContent">
+            <div id="contenidoTab3" class="Tabs__tab-content">
                 <!-- <a href="http://"> -->
                 <!-- <h2 class="">
                         NodeJS
@@ -298,10 +299,10 @@
                 by TwitterDev</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </section>
-        <section class="Aside__accordion">
+        <section class="Acordeon">
             <h2>Equipo</h2>
-            <button class="Aside__accordion-button">@twittername1</button>
-            <div class="panel">
+            <button id="activado" class="Acordeon-button">@twittername1</button>
+            <div class="contenido">
                 <img src="img/perfil1.jpeg" alt="" width="150" height="200">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -309,8 +310,8 @@
                     consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, debitis.</p>
             </div>
 
-            <button class="Aside__accordion-button">@twittername2</button>
-            <div class="panel">
+            <button class="Acordeon-button">@twittername2</button>
+            <div class="contenido">
                 <img src="img/perfil2.png" alt="" width="150" height="200">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -318,8 +319,8 @@
                     Consequatur, eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, veniam.</p>
             </div>
 
-            <button class="Aside__accordion-button">@twittername3</button>
-            <div class="panel">
+            <button class="Acordeon-button">@twittername3</button>
+            <div class="contenido">
                 <img src="img/perfil3.jpeg" alt="" width="150" height="200">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -328,16 +329,23 @@
             </div>
         </section>
     </aside>
-    <footer>
-        <section>CursosIT</section>
-        <nav>
+    <footer class="Footer">
+        <section class="Footer-copy">
+            <span>&copy; CursosIT 2020</span>
+        </section>
+        <nav class="Footer-nav">
             <ul>
-                <li>home</li>
-                <li>cursos</li>
-                <li>contacto</li>
+                <li class="opencontact2"><a href="#">contacto</a></li>
+                <li><a href="">cursos</a></li>
+                <li><a href="">blog</a></li>
             </ul>
         </nav>
-        <section>social</section>
+        <section class="Footer-social">
+            <span class="icon-facebook"></span>
+            <span class="icon-twitter"></span>
+            <span class="icon-github"></span>
+            <span class="icon-instagram"></span>
+        </section>
     </footer>
     <script src="js/script.js"></script>
 

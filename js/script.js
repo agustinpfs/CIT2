@@ -35,37 +35,53 @@ function showSlides(n) { //entra (1)(2)
   
   
   
-  // TABS
+// TABS
 
-document.getElementById("defaultOpen").click();
+document.getElementById("defaultActive").click();
 
-  
   function showContent(evento, contenidoDeUnTab) {
-    console.log(evento + "event che");
-    console.log(contenidoDeUnTab + " CcontenidoDeUnTab che");
-    
-    // Declare all variables
+
     var i, todosLosContenidos, tab_button;
   
-    // Get all elements with class="todosLosContenidos" and hide them
-    todosLosContenidos = document.getElementsByClassName("Aside__tabContent");
+    todosLosContenidos = document.getElementsByClassName("Tabs__tab-content");
     for (i = 0; i < todosLosContenidos.length; i++) {
         todosLosContenidos[i].style.display = "none";
     }    
   
-    // Get all elements with class="Aside__tab" and remove the class "active"
-    tab_button = document.getElementsByClassName("Aside__tab");
+    tab_button = document.getElementsByClassName("Tabs__tab");
     for (i = 0; i < tab_button.length; i++) {
       tab_button[i].className = tab_button[i].className.replace(" active", "");
     }    
   
-    // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(contenidoDeUnTab).style.display = "block";
     evento.target.className += " active";
   
-  // event.target identifica el elemento en el que se ha producido el evento(red).  
-  
+  // event.target identifica el elemento en el que se ha producido el evento.  
   
   }
   
-  
+// ACCORDION
+
+
+
+let acordeonButtons = document.getElementsByClassName("Acordeon-button");
+let i;
+
+for (i = 0; i < acordeonButtons.length; i++) {
+  acordeonButtons[i].onclick = function() {
+    this.classList.toggle("activo");
+    let contenido = this.nextElementSibling;
+    if (contenido.style.maxHeight){
+      // console.log(" hay max height");
+      // console.log(maxHeight + " max");
+      
+      contenido.style.maxHeight = null;
+    } else {
+      // console.log(" no hay max height");
+      contenido.style.maxHeight = contenido.scrollHeight + "px";
+    } 
+  }
+}
+//scrollHeight es una medida de la altura del contenido de un elemento,
+// incluido el contenido no visible en la pantalla debido al desbordamiento
+document.getElementById("activado").click();
