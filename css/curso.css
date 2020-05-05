@@ -1,24 +1,131 @@
 /* PÁGINA DEL CURSO DE HTML //////////////////////////////*/
 
-.MainCourses {
+.Curso {
 	display: flex;
+	flex-wrap: wrap;
 	background-color: whitesmoke;
 	color: #333;
+	padding: 1rem;
 }
 
-.MainCourses__info, .MainCourses__video-Mpago {
+.Info {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	width: 45%;
+}
+
+.Info h1{
+	/* border-bottom: 2px solid #0f86f7; */
+	margin-bottom: 1rem;
+	/* padding-bottom: .3rem; */
+	/* width: 48vw; */
+	color: #1584d5;
+	/* text-align: center; */
+}
+
+/* .Info__general {
+	font-size: 1rem;
+} */
+
+.Info__general li {
+	margin-bottom: .5rem;
+}
+.Info__box li {
+	margin-bottom: .5rem;
+	margin-top: .5rem;
+}
+
+.Info__general {
+	font-size: 1.1rem;
+}
+
+.Info__box {
+	width: max-content;
+	font-size: 1.2rem;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #e6e6e6;
+	border-radius: 10px;
+	padding: .5rem 8rem;
+	margin-top: 2rem;
+	/* border: 1px solid #0f86f7; */
+	color: #1584d5;
+	/* color: #1584d5; */
+	font-weight: 500;
+	box-shadow: 0 8px 6px -6px grey;
+
+	
+}
+
+
+
+.Acordeon-page {
+    /* background-color: #fff; */
+    background-color: #060e23;
+	/* color: #0f86f7; */
+	color: #78fee9;
+	border: 1px solid #78fee9;
+    /* color: #00bdff; */
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    /* border: 1px solid #00bdff; */
+    /* border-top: 0; */
+    /* border-left: 0; */
+    /* border-right: 0; */
+    /* border-bottom: 1px solid #f2f2f2; */
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.Acordeon-page.act, .Acordeon-page:hover {
+    /* background-color: #e8f4f9; */
+	/* color: #3b94d9; */
+	color: #0f86f7;
+	border: 1px solid #0f86f7;
+
+	
+}
+
+.Acordeon-page:after {
+    content: '\002B';
+    color: #00bdff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.Acordeon-page.act:after {
+    content: "\2212";
+}
+
+.contenid {
+    padding: 0 18px;
+    /* background-color: white; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.Info__box > ul li {
+
+}
+
+.bullet {
+	font-size: 1.2rem;
+}
+
+.Video {
+	width: 45%;
+}
+
+.Curso__info, .Curso__video-Mpago {
 	margin: 1rem;
 }
 
-.MainCourses__description h1{
-	/* border-bottom: 2px solid #0f86f7; */
-	margin-bottom: 2rem;
-	padding-bottom: .3rem;
-	width: 48vw;
-	color: #1584d5;
-}
 
-.MainCourses__description h2 {
+.Curso__description h2 {
 	/* background-color: #99d6ff; */
 	text-align: center;
 	color: #333;
@@ -32,16 +139,16 @@
 	/* font-weight: bold; */
 }
 
-.MainCourses__description p, .MainCourses__description ul {
+.Curso__description p, .Curso__description ul {
 	padding: .5rem 1rem;
 	margin-bottom: .5rem;
 }
 
-.MainCourses__description li {
+.Curso__description li {
 	margin-bottom: .3rem;
 }
 
-.MainCourses__details h3 {
+.Curso__details h3 {
 	text-align: center;
 	background-color: #f90f17;
 	color: white;
@@ -51,7 +158,7 @@
 
 }
 
-.MainCourses__video {
+.Curso__video {
 	position:relative;
 	padding-bottom:56.25%;
 	padding-top:30px;
@@ -60,14 +167,14 @@
 	width: 45vw;
 }
 
-.MainCourses__video iframe {
+.Curso__video iframe {
 	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
 	height:100%;
 }
-/* .MainCourses__video iframe, .MainCourses__video object, .MainCourses__video embed {
+/* .Curso__video iframe, .Curso__video object, .Curso__video embed {
 	position:absolute;
 	top:0;
 	left:0;
@@ -75,24 +182,24 @@
 	height:100%;
 } */
 
-/* MAINCOURSES__PROGRAMA */
+/* Curso__PROGRAMA */
 
-.MainCourses__programa h4{
+.Curso__programa h4{
 	background-color: #0f86f7;
 	color: white;
 	margin-top: 1rem;
 }
-.MainCourses__programa strong{
+.Curso__programa strong{
 	display: block;
 	border-bottom: 1px solid #0f86f7;
 }
-.MainCourses__programa li{
+.Curso__programa li{
 	border-bottom: 1px solid grey;
 	margin-top: .5rem;
 }
 
 
 /* PAGO ////////////////////////////////*/
-.MainCourses__Mpago input, .MainCourses__Mpago label {
+.Curso__Mpago input, .Curso__Mpago label {
 	display: inline;
 }

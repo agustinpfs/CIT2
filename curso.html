@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Cursos IT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/curso.css">
 </head>
@@ -16,7 +17,7 @@
         </figure>
         <nav class="Header__nav">
             <ul class="Header__menu">
-                <li class="Header__menu-li"><a href="" class="Header__menu-a">HOME</a></li>
+                <li class="Header__menu-li"><a href="index.html" class="Header__menu-a">HOME</a></li>
                 <li class="Header__menu-li Header__open-submenu">
                     <a href="" class="Header__menu-a">CURSOS</a>
                     <ul class="Header__submenu">
@@ -30,50 +31,84 @@
             </ul>
         </nav>
     </header>
-    <main class="MainCourses">
-        <section class="MainCourses__info">
-            <article class="MainCourses__description">
-                <h1>Curso Práctico de Desarrollo Web con Html Css y Javascript 
-                    <span class="icon-html5"></span>
-                    <span class="icon-css3"></span>
-                    <span class="icon-javascript"></span>
-                </h1> 
-                <h2>Objetivo del curso</h2>
-                <p class="MainCourses__objetivo"> Adquirir la habilidad de crear un sitio web interactivo desde cero en un
-                    ambiente
-                    de desarrollo moderno.</p>
-                    <h2>A quién va dirijido</h2>
-                    <p> A todo aquel que quiera aprender o reforzar sus conocimientos sobre el
-                    desarrollo de
-                    un sitio web.</p>
-                    <h2>Qué vamos a aprender</h2>
-                    <ul>
-                        <li> <span class="icon-html5"></span>
-                            Html: Estructura, etiquetas, semántica.</li>
-                        <li> <span class="icon-css3"></span>
-                            CSS: Maquetación, estilos gráficos, diseño adaptable.</li>
-                    
-                        <li><span class="icon-javascript"></span> Javascript: Interactividad y efectos.</li>
-                    </ul>
-                    <h2>Extras:</h2>
-                    <ul>
-                        <li>&#10003; <strong>Google Analytics:</strong> Analítica web.</li>
-                        <li>&#10003; <strong>Mercado pago:</strong> Cobros en el sitio web.</li>
-                        <li>&#10003; <strong>Git / GitHub:</strong> Control de versiones. Publicación en Internet sin costo.</li>
-                        <li>&#10003; <strong>Otros:</strong> Sistema de comentarios y formulario de contacto.</li>
-                        <li>&#10003; <strong>Bonus:</strong> Contrato de hosting y dominio personalizado.</li>
-                    </ul>
-            </article>
-            <article class="MainCourses__details">
-                <h3>100% online CLASES EN VIVO</h3>
-                <h3>GRUPO MÁXIMO DE 10 ALUMNOS</h3>
-                <h3>Duración 2 meses - TOTAL 20HS</h3>
-                <h3>Comienza 6 de mayo</h3>
-            </article>
-            <article class="MainCourses__programa">
-                <h3>Programa<span>8 clases</span><span>20 hs</span></h3>
-                <h4>1º clase</h4>
-                <ul>
+    <main class="Curso">
+        <section class="Info">
+            <h1>Curso Práctico de Desarrollo Web con Html Css y Javascript 
+                <span class="icon-html5"></span>
+                <span class="icon-css3"></span>
+                <span class="icon-javascript"></span>
+            </h1> 
+            <ul class="Info__general">
+                <li>&#10003; Html: Estructura, etiquetas, semántica.</li>
+                <li>&#10003; CSS: Maquetación, estilos gráficos, diseño adaptable.</li>
+                <li>&#10003; Google Analytics: Analítica web.</li>
+                <li>&#10003; Mercado pago: Cobros en el sitio web.</li>
+                    <li>&#10003; Git / GitHub: Control de versiones. Publicación en Internet.</li>
+                    <li>&#10003; Sistema de comentarios y formulario de contacto.</li>
+                    <li>&#10003; Dominio personalizado.</li>
+                </ul>
+                <ul class="Info__box">
+                    <li><span class="bullet">&#8226; </span> 100% online CLASES EN VIVO</li>
+                    <li><span class="bullet">&#8226; </span> GRUPO MÁXIMO DE 10 ALUMNOS</li>
+                    <li><span class="bullet">&#8226; </span> Duración 2 meses - TOTAL 20HS</li>
+                    <li><span class="bullet">&#8226; </span> Comienza 6 de mayo</li>
+                </ul>
+            </section>
+            <section class="Video">
+                <article class="Curso__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ckqOukGKK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+                <article class="Curso__Mpago">
+                    <h3>Precio: $1800</h3>
+                    <h3 class="Moo" >Precio: $990</h3>
+                    <h3 class="Moo2" >Precio: $1440</h3>
+                    <h3 class="Moo3" >Precio: $3330</h3>
+                    <h4>Descuentos. Escoja los que aplique</h4>
+                    <form>
+                        <input class="Curso__checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="x">
+                        <label for="vehicle1">Estudiante 15%</label><br>
+                        <input class="Curso__checkbox" type="checkbox" id="vehicle2" name="vehicle2" value="x">
+                        <label for="vehicle2">UNNOBA 15%</label><br>
+                        <input class="Curso__checkbox" type="checkbox" id="vehicle3" name="vehicle3" value="x">
+                        <label for="vehicle3">Antes del 30/4 15%</label>
+                        <input class="Curso__checkbox" type="button" value="Aplicar descuentos" onclick="foo();">
+                      </form>
+                     <!-- <script>
+                         const Modal = document.getElementsByClassName("Moo")[0];
+                         const Modal2 = document.getElementsByClassName("Moo2")[0];
+                         const Modal3 = document.getElementsByClassName("Moo3")[0];
+        
+                         function foo() {                     
+                            var checkedValue = [];
+                            var inputElements = document.getElementsByClassName('Curso__checkbox');
+                            for (var i = 0; inputElements[i]; ++i) {
+                                if (inputElements[i].checked) {
+                                    checkedValue.push(inputElements[i].value)
+                                    // break;
+                                }
+                            }
+                            if (checkedValue.length == 1) {
+                                Modal.style.display = "none";
+                                
+                            }
+                            else if(checkedValue.length == 2) {
+                                Modal2.style.display = "none";
+                            }
+                            else if(checkedValue.length == 3) {
+                                Modal3.style.display = "none";
+                            }
+                        }
+                        // function foo() {                     
+                        //     Modal.style.display = "none";
+                        // }
+                    </script> -->
+                </article>
+            </section>
+            <section>
+                <article class="Curso__programa">
+                    <h3>Programa<span>8 clases</span><span>20 hs</span></h3>
+                <h4 id="activ" class="Acordeon-page">1º clase</h4>
+                <ul class="contenid">
                     <li><strong>Introducción</strong></li>
                     <li>&#45; git/github</li>
                     <li>&#45; Slack</li>
@@ -81,8 +116,8 @@
                     <li>&#45; Wireframes</li>
                     <li>&#45; Ambiente de desarrollo</li>
                 </ul>
-                <h4>2º clase</h4>
-                <ul>
+                <h4 class="Acordeon-page">2º clase</h4>
+                <ul class="contenid">
                     <li><strong>Html</strong></li>
                     <li>&#45; Estructura</li>
                     <li>&#45; Semántica</li>
@@ -90,8 +125,8 @@
                     <li>&#45; Atributos</li>
                     <li>&#45; Estructura Html del proyecto</li>
                 </ul>
-                <h4>3º clase</h4>
-                <ul>
+                <h4 class="Acordeon-page">3º clase</h4>
+                <ul class="contenid">
                     <li><strong>Css</strong></li>
                     <li>&#45; Sintaxis</li>
                     <li>&#45; Selectores</li>
@@ -101,8 +136,8 @@
                     <li>&#45; Flexbox</li>
                     <li>&#45; Fuentes-Íconos</li>
                 </ul>
-                <h4>4º clase</h4>
-                <ul>
+                <h4 class="Acordeon-page">4º clase</h4>
+                <ul class="contenid">
                     <li><strong>Javascript</strong></li>
                     <li>&#45; Tipos de Datos</li>
                     <li>&#45; Loops</li>
@@ -111,56 +146,6 @@
                 </ul>
             </article>
 
-        </section>
-        <section class="MainCourses__video-Mpago">
-            <article class="MainCourses__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2ckqOukGKK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
-            <article class="MainCourses__Mpago">
-                <h3>Precio: $1800</h3>
-                <h3 class="Moo" >Precio: $990</h3>
-                <h3 class="Moo2" >Precio: $1440</h3>
-                <h3 class="Moo3" >Precio: $3330</h3>
-                <h4>Descuentos. Escoja los que aplique</h4>
-                <form>
-                    <input class="MainCourses__checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="x">
-                    <label for="vehicle1">Estudiante 15%</label><br>
-                    <input class="MainCourses__checkbox" type="checkbox" id="vehicle2" name="vehicle2" value="x">
-                    <label for="vehicle2">UNNOBA 15%</label><br>
-                    <input class="MainCourses__checkbox" type="checkbox" id="vehicle3" name="vehicle3" value="x">
-                    <label for="vehicle3">Antes del 30/4 15%</label>
-                    <input class="MainCourses__checkbox" type="button" value="Aplicar descuentos" onclick="foo();">
-                  </form>
-                 <script>
-                     const Modal = document.getElementsByClassName("Moo")[0];
-                     const Modal2 = document.getElementsByClassName("Moo2")[0];
-                     const Modal3 = document.getElementsByClassName("Moo3")[0];
-
-                     function foo() {                     
-                        var checkedValue = [];
-                        var inputElements = document.getElementsByClassName('MainCourses__checkbox');
-                        for (var i = 0; inputElements[i]; ++i) {
-                            if (inputElements[i].checked) {
-                                checkedValue.push(inputElements[i].value)
-                                // break;
-                            }
-                        }
-                        if (checkedValue.length == 1) {
-                            Modal.style.display = "none";
-                            
-                        }
-                        else if(checkedValue.length == 2) {
-                            Modal2.style.display = "none";
-                        }
-                        else if(checkedValue.length == 3) {
-                            Modal3.style.display = "none";
-                        }
-                    }
-                    // function foo() {                     
-                    //     Modal.style.display = "none";
-                    // }
-                </script>
-            </article>
         </section>
         
     </main>
@@ -194,7 +179,7 @@
             <span class="Modal-close">&times;</span>    
         </div>    
     </div>
-    <script src="script.js"></script>
+    <script src="js/page.js"></script>
 
 </body>
 

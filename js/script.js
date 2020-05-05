@@ -1,5 +1,3 @@
-
-
 // ACCORDION
 
 
@@ -25,6 +23,13 @@ for (i = 0; i < acordeonButtons.length; i++) {
 //scrollHeight es una medida de la altura del contenido de un elemento,
 // incluido el contenido no visible en la pantalla debido al desbordamiento
 document.getElementById("activado").click();
+
+
+
+  
+
+
+
 
 // SLIDER
 
