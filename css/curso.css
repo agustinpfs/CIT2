@@ -5,16 +5,19 @@
 	flex-wrap: wrap;
 	background-color: whitesmoke;
 	color: #333;
-	padding: 1rem;
+	padding-top: 1rem;
+	justify-content: space-around;
+	/* height: 1000px; */
+	/* align-content: space-around; */
 }
 
 .Info {
-	padding-left: 3rem;
-	padding-right: 3rem;
+	/* padding-left: 3rem; */
+	/* padding-right: 3rem; */
 	width: 45%;
 }
 
-.Info h1{
+.Info h1 {
 	/* border-bottom: 2px solid #0f86f7; */
 	margin-bottom: 1rem;
 	/* padding-bottom: .3rem; */
@@ -30,6 +33,7 @@
 .Info__general li {
 	margin-bottom: .5rem;
 }
+
 .Info__box li {
 	margin-bottom: .5rem;
 	margin-top: .5rem;
@@ -53,64 +57,82 @@
 	/* color: #1584d5; */
 	font-weight: 500;
 	box-shadow: 0 8px 6px -6px grey;
-
-	
 }
 
+.Programa {
+	width: 45%;
+	margin-top: 4rem;
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+}
 
+.Programa h3 {
+	color: #1584d5;
+	font-size: 1.5rem;
+	margin-bottom: 1.2rem;
+}
 
-.Acordeon-page {
-    /* background-color: #fff; */
-    background-color: #060e23;
+.Programa__button {
+	/* background-color: #fff; */
+	background-color: #ccc;
 	/* color: #0f86f7; */
-	color: #78fee9;
-	border: 1px solid #78fee9;
-    /* color: #00bdff; */
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    /* border: 1px solid #00bdff; */
-    /* border-top: 0; */
-    /* border-left: 0; */
-    /* border-right: 0; */
-    /* border-bottom: 1px solid #f2f2f2; */
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+	color: #666;
+	/* border: 1px solid #78fee9; */
+	/* color: #00bdff; */
+	cursor: pointer;
+	padding: .3rem .5rem;
+	width: 90%;
+	/* font-size: 2rem; */
+	/* border: 1px solid #00bdff; */
+	/* border-top: 0; */
+	/* border-left: 0; */
+	/* border-right: 0; */
+	/* border-bottom: 1px solid #f2f2f2; */
+	/* text-align: left; */
+	outline: none;
+	font-size: 1.2rem;
+	transition: 0.4s;
 }
 
-.Acordeon-page.act, .Acordeon-page:hover {
-    /* background-color: #e8f4f9; */
+.Programa__button.activado, .Programa__button:hover {
+	background-color: #999;
+	color: #333;
 	/* color: #3b94d9; */
-	color: #0f86f7;
-	border: 1px solid #0f86f7;
-
+	/* color: #0f86f7; */
+	/* border: 1px solid #0f86f7; */
 	
 }
 
-.Acordeon-page:after {
-    content: '\002B';
-    color: #00bdff;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+.Programa__button:after {
+	content: '\002B';
+	color: #333;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
 }
 
-.Acordeon-page.act:after {
-    content: "\2212";
+.Programa__button.activado:after {
+	content: "\2212";
 }
 
-.contenid {
-    padding: 0 18px;
-    /* background-color: white; */
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+.Programa__contenido {
+	/* padding: 0 18px; */
+	/* background-color: white; */
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	width: 90%;
+	margin-left: .5rem;
+	margin-bottom: 1rem;
+	z-index: 5;
 }
-.Info__box > ul li {
 
+.Programa__contenido li {
+	border-bottom: 1px solid grey;
+	margin-top: .5rem;
 }
+
+.Info__box>ul li {}
 
 .bullet {
 	font-size: 1.2rem;
@@ -123,7 +145,6 @@
 .Curso__info, .Curso__video-Mpago {
 	margin: 1rem;
 }
-
 
 .Curso__description h2 {
 	/* background-color: #99d6ff; */
@@ -155,25 +176,25 @@
 	margin-bottom: 1rem;
 	/* border: 1px solid yellow; */
 	width: 40vw;
-
 }
 
 .Curso__video {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
 	width: 45vw;
 }
 
 .Curso__video iframe {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
+
 /* .Curso__video iframe, .Curso__video object, .Curso__video embed {
 	position:absolute;
 	top:0;
@@ -184,22 +205,28 @@
 
 /* Curso__PROGRAMA */
 
-.Curso__programa h4{
+.Curso__programa h4 {
 	background-color: #0f86f7;
 	color: white;
 	margin-top: 1rem;
 }
-.Curso__programa strong{
+
+.Curso__programa strong {
 	display: block;
 	border-bottom: 1px solid #0f86f7;
 }
-.Curso__programa li{
+
+.Curso__programa li {
 	border-bottom: 1px solid grey;
 	margin-top: .5rem;
 }
 
+.Curso__Mpago {
+	width: 45%;
+}
 
 /* PAGO ////////////////////////////////*/
+
 .Curso__Mpago input, .Curso__Mpago label {
 	display: inline;
 }
