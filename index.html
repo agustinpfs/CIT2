@@ -25,7 +25,7 @@
                         <li class="Header__submenu-li"><a class="Header__submenu-a" href="">TODOS</a></li>
                     </ul>
                 </li>
-                <li class="Header__menu-li"><a href="" class="Header__menu-a">CONTACTO</a></li>
+                <li class="Header__menu-li opencontact"><a href="#" class="Header__menu-a">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -67,7 +67,7 @@
                         </article>
                     </div>
                     <div class="Slides__footer">
-                        <a href="">VER CURSO</a>
+                        <a href="curso.html">VER CURSO</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         </article>
                     </div>
                     <div class="Slides__footer">
-                        <a href="">VER CURSO</a>
+                        <a href="curso.html">VER CURSO</a>
                     </div>
                 </div>
             </div>
@@ -102,12 +102,12 @@
             <!-- DESCRIPCIÓN PRINCIPAL-->
             <article>
                 <h2>Objetivo</h2>
-                <h3>del aprendizaje</h3>
+                <h3>del curso</h3>
                 <p>
-                    Proveer al alumno los conocimientos,
+                    Conocimiento,
                     práctica y herramientas necesarias
-                    para la creación y publicación de sitios web
-
+                    para la creación y publicación de 
+                    sitios web
                 </p>
             </article>
         </section>
@@ -253,7 +253,7 @@
                     <li><span class="green">&#10003;</span> Despliegue</li>
                     <li><span class="green">&#10003;</span> Analítica web</li>
                 </ul>
-                <a href="" class="Tabs__button button button--blue">VER CURSO</a>
+                <a href="curso.html" class="Tabs__button button button--blue">VER CURSO</a>
             </div>
             <div id="contenidoTab2" class="Tabs__tab-content">
                     <h2 class="w400">
@@ -335,11 +335,11 @@
         </section>
         <nav class="Footer-nav">
             <ul>
-                <li class="opencontact2"><a href="#">contacto</a></li>
-                <li><a href="">cursos</a></li>
-                <li><a href="">blog</a></li>
+                <li class="opencontact2"><a href="javascript:void(0)">contacto</a></li>
+                <li><a href="#">cursos</a></li>
+                <li><a href="#">blog</a></li>
             </ul>
-        </nav>
+        </nav> 
         <section class="Footer-social">
             <span class="icon-facebook"></span>
             <span class="icon-twitter"></span>
@@ -347,6 +347,20 @@
             <span class="icon-instagram"></span>
         </section>
     </footer>
+
+    <div class="Modal">    
+        <!-- Modal content -->
+        <div class="Modal-content">    
+            <form class="contact_form" action="" method="post" name="contact_form">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu email" required>
+                <textarea placeholder="Tu mensaje" required></textarea>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+            </form>
+            <span class="Modal-close">&times;</span>    
+        </div>
+    
+    </div>
     <script src="js/script.js"></script>
 
 </body>

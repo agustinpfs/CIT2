@@ -1,3 +1,31 @@
+
+
+// ACCORDION
+
+
+
+let acordeonButtons = document.getElementsByClassName("Acordeon-button");
+let i;
+
+for (i = 0; i < acordeonButtons.length; i++) {
+  acordeonButtons[i].onclick = function() {
+    this.classList.toggle("activo");
+    let contenido = this.nextElementSibling;
+    if (contenido.style.maxHeight){
+      // console.log(" hay max height");
+      // console.log(maxHeight + " max");
+      
+      contenido.style.maxHeight = null;
+    } else {
+      // console.log(" no hay max height");
+      contenido.style.maxHeight = contenido.scrollHeight + "px";
+    } 
+  }
+}
+//scrollHeight es una medida de la altura del contenido de un elemento,
+// incluido el contenido no visible en la pantalla debido al desbordamiento
+document.getElementById("activado").click();
+
 // SLIDER
 
 var slideIndex = 1; //arranca(1)
@@ -60,28 +88,33 @@ document.getElementById("defaultActive").click();
   
   }
   
-// ACCORDION
+// MODAL
 
 
+let Modal = document.getElementsByClassName("Modal")[0];
 
-let acordeonButtons = document.getElementsByClassName("Acordeon-button");
-let i;
+let btn = document.getElementsByClassName("opencontact")[0];
 
-for (i = 0; i < acordeonButtons.length; i++) {
-  acordeonButtons[i].onclick = function() {
-    this.classList.toggle("activo");
-    let contenido = this.nextElementSibling;
-    if (contenido.style.maxHeight){
-      // console.log(" hay max height");
-      // console.log(maxHeight + " max");
-      
-      contenido.style.maxHeight = null;
-    } else {
-      // console.log(" no hay max height");
-      contenido.style.maxHeight = contenido.scrollHeight + "px";
-    } 
-  }
+let btn2 = document.getElementsByClassName("opencontact2")[0];
+
+let span = document.getElementsByClassName("Modal-close")[0];
+
+btn.onclick = function() {
+  console.log("onclick!!!!!!!!");
+    Modal.style.display = "block";
+    
 }
-//scrollHeight es una medida de la altura del contenido de un elemento,
-// incluido el contenido no visible en la pantalla debido al desbordamiento
-document.getElementById("activado").click();
+btn2.onclick = function() {
+    Modal.style.display = "block";
+}
+
+span.onclick = function() {
+    Modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == Modal) {
+        Modal.style.display = "none";
+    }
+}
+

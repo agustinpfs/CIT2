@@ -198,7 +198,7 @@ a {
 
 .Slides__body h3 {
 	font-size: 4rem;
-	font-weight: 100;
+	font-weight: 300;
 	color: #0f86f7;
 }
 
@@ -708,6 +708,135 @@ div.contenido {
 }
 
 
+
+/* MODAL ////////////////////////////////////////////*/
+
+.Modal {
+	display: none; 
+	/* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(9,28,59,0.6); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: .7s;
+    animation-name: fadeIn;
+    animation-duration: .7s
+}
+
+/* Modal Content */
+.Modal-content {
+	border: 1px solid #78fee9;
+	/* border: 1px solid #0f86f7; */
+    position: fixed;
+    left: 0;
+	right:0;
+    /* opacity: .9; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 80%;
+    /* background-color: rgba(254,254,254,0.9); */
+	background-color: black;
+	/* background-color: #091c3b; */
+
+	/* color: #0f86f7; */
+    width: 50%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.Modal-close {
+	color: #78fee9;
+	position: absolute;
+	bottom: 0;
+	right: 1rem;
+    /* float: right; */
+    font-size: 3rem;
+    /* font-weight: bold; */
+    /* margin-top: -3rem; */
+	/* margin-right: 1rem; */
+	/* background-color: #0f86f7; */
+}
+
+.Modal-close:hover,
+.Modal-close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.Modal-body {padding: 2px 16px;}
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {opacity: 0} 
+    to { opacity: 1}
+}
+
+@keyframes slideIn {
+    from { opacity: 0}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+.Modal input, .Modal textarea {
+	display: block;
+	padding: .2rem .5rem;
+	width: 80%;
+	margin: .5rem auto;
+	font-size: 1.1rem;
+	border:  1px solid #78fee9;
+	/* font-style	: italic; */
+	/* font-weight: 300; */
+	color: whitesmoke;
+	background-color: #060e23;
+	font-weight: 400;
+	/* background-color: #f2f2f2; */
+}
+
+
+
+.Modal form {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.Modal textarea {
+	height: 40vh;
+
+}
+
+.button--form {
+	background-color: black;
+	margin-top: 1.5rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+
+
 /* BUTTONS */
 
 .button {
@@ -833,55 +962,36 @@ div.contenido {
 
   
   
-  /* COLORS */
-  .green {
-	  color: #78fee9;
+/* COLORS */
+.green {
+	color: #78fee9;
+}
+
+.blue {
+	color: #0f86f7;
+	font-weight: ;
 	}
 	
-	.blue {
-		color: #0f86f7;
-		font-weight: ;
-	}
-	
-	/* WEIGHTS */
-	
-	.w100 {
-		font-weight: 100;
-	}
-	.w300 {
-		font-weight: 300;
-	}
-	.w400 {
-		font-weight: 400;
-	}
-	.w500 {
-		font-weight: 500;
-	}
+/* WEIGHTS */
+
+.w100 {
+	font-weight: 100;
+}
+.w300 {
+	font-weight: 300;
+}
+.w400 {
+	font-weight: 400;
+}
+.w500 {
+	font-weight: 500;
+}
 	
 	
 	
 	
 	
 	
-	/* .testeo{
-		position: absolute;
-		bottom: 2.7rem;
-		right: .5rem;
-		cursor: pointer;
-		
-		font-weight: 500;
-		border-radius: 3px;
-		border: 2px solid #0f86f7;
-		color: whitesmoke;
-		margin-left: 1rem;
-		padding: .5rem;
-		transition: 0.3s ease;
-	}
-	
-	.testeo:hover{
-		background-color: #0f86f7;
-		color: 	black;
-	} */
 
 .colores {
 		color: #060e23; /* background header */
