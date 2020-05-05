@@ -6,14 +6,13 @@
 	background-color: whitesmoke;
 	color: #333;
 	padding-top: 1rem;
+	padding-bottom: 1rem;
 	justify-content: space-around;
 	/* height: 1000px; */
 	/* align-content: space-around; */
 }
 
 .Info {
-	/* padding-left: 3rem; */
-	/* padding-right: 3rem; */
 	width: 45%;
 }
 
@@ -30,18 +29,15 @@
 	font-size: 1rem;
 } */
 
+.Info__general {
+	font-size: 1.1rem;
+}
+
 .Info__general li {
 	margin-bottom: .5rem;
 }
 
-.Info__box li {
-	margin-bottom: .5rem;
-	margin-top: .5rem;
-}
 
-.Info__general {
-	font-size: 1.1rem;
-}
 
 .Info__box {
 	width: max-content;
@@ -57,6 +53,11 @@
 	/* color: #1584d5; */
 	font-weight: 500;
 	box-shadow: 0 8px 6px -6px grey;
+}
+
+.Info__box li {
+	margin-bottom: .5rem;
+	margin-top: .5rem;
 }
 
 .Programa {
@@ -123,8 +124,8 @@
 	transition: max-height 0.2s ease-out;
 	width: 90%;
 	margin-left: .5rem;
-	margin-bottom: 1rem;
-	z-index: 5;
+	padding-bottom: .2rem;
+	/* z-index: 5; */
 }
 
 .Programa__contenido li {
@@ -142,9 +143,9 @@
 	width: 45%;
 }
 
-.Curso__info, .Curso__video-Mpago {
+/* .Curso__info, .Curso__video-Mpago {
 	margin: 1rem;
-}
+} */
 
 .Curso__description h2 {
 	/* background-color: #99d6ff; */
