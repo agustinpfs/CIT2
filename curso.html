@@ -103,20 +103,44 @@
             </ul>
 
         </section>
-        <article class="Curso__Mpago">
-            <h3>Precio: $1800</h3>
-            <h3 class="Moo">Precio: $990</h3>
-            <h3 class="Moo2">Precio: $1440</h3>
-            <h3 class="Moo3">Precio: $3330</h3>
+        <article class="Pago">
+            <h3 id="precios">Precio: $1800</h3>
+            <!-- <h3 class="desc1">Precio: $990</h3> -->
+            <!-- <h3 class="desc2">Precio: $1440</h3> -->
+            <!-- <h3 class="desc3">Precio: $3330</h3> -->
+            <div id="test" class='Pago__boton1 bot'>
+                <a mp-mode="dftl"
+                    href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=66480696-215434ca-a665-4ba9-af32-1d17323dbf79"
+                    name="MP-payButton">Pagar</a>
+            </div>
+            <div id="test1" class='Pago__boton2 bot'>
+                <a mp-mode="dftl"
+                    href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=66480696-215434ca-a665-4ba9-af32-1d17323dbf79"
+                    name="MP-payButton">Pagar2</a>
+            </div>
+            <div id="test2" class='Pago__boton3 bot'>
+                <a mp-mode="dftl"
+                    href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=66480696-215434ca-a665-4ba9-af32-1d17323dbf79"
+                    name="MP-payButton">Pagar3</a>
+            </div>
+            <div id="test3" class='Pago__boton4 bot'>
+                <a mp-mode="dftl"
+                    href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=66480696-215434ca-a665-4ba9-af32-1d17323dbf79"
+                    name="MP-payButton">Pagar4</a>
+            </div>
+            <script type="text/javascript">
+                (function () { function $MPC_load() { window.$MPC_loaded !== true && (function () { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js"; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); window.$MPC_loaded = true; })(); } window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null; })();
+            </script>
+
             <h4>Descuentos. Escoja los que aplique</h4>
             <form>
-                <input class="Curso__checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="x">
+                <input class="pagoCheckbox" type="checkbox" id="vehicle1" name="vehicle1" value="x">
                 <label for="vehicle1">Estudiante 15%</label><br>
-                <input class="Curso__checkbox" type="checkbox" id="vehicle2" name="vehicle2" value="x">
+                <input class="pagoCheckbox" type="checkbox" id="vehicle2" name="vehicle2" value="x">
                 <label for="vehicle2">UNNOBA 15%</label><br>
-                <input class="Curso__checkbox" type="checkbox" id="vehicle3" name="vehicle3" value="x">
+                <input class="pagoCheckbox" type="checkbox" id="vehicle3" name="vehicle3" value="x">
                 <label for="vehicle3">Antes del 30/4 15%</label>
-                <input class="Curso__checkbox" type="button" value="Aplicar descuentos" onclick="foo();">
+                <input id="testt" class="pagoCheckbox" type="button" value="Aplicar descuentos" onclick="foo();">
             </form>
             <!-- <script>
                      const Modal = document.getElementsByClassName("Moo")[0];
@@ -179,7 +203,7 @@
             <span class="Modal-close">&times;</span>
         </div>
     </div>
-    <script src="js/page.js"></script>
+    <script src="js/curso.js"></script>
 
 </body>
 
