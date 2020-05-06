@@ -106,7 +106,9 @@
 	border-bottom: 1px solid grey;
 	margin-top: .5rem;
 }
+
 /* responsive */
+
 .Curso__video {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -128,6 +130,140 @@
 	width: 45%;
 }
 
+.Pago__box {
+	width: max-content;
+	/* font-size: 1.2rem; */
+	margin-left: auto;
+	margin-right: auto;
+	/* background-color: #e6e6e6; */
+	/* border-radius: 10px; */
+	/* padding: .5rem 8rem; */
+	/* margin-top: 2rem; */
+	/* color: #1584d5; */
+	/* font-weight: 500; */
+	/* box-shadow: 0 8px 6px -6px grey; */
+}
+
+.Pago__box {
+	color: #666;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 5px;
+}
+
+.Pago__box h3 {
+	text-align: center;
+	font-size: 2.5rem;
+	/* color: #666 */
+}
+
+.Pago__box del {
+	font-size: 1.5rem;
+}
+
+.Pago__box h4 {
+	text-align: center;
+	background-color: #1584d5;
+	color: whitesmoke;
+	padding: 3px 5px;
+}
+
+.Pago__boton {
+	margin-top: 1rem;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Pago__boton a {
+	text-align: center;
+	display: block;
+	color: whitesmoke;
+	/* width: 90%; */
+	background-color: #ec5252;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+}
+
+.Pago__boton a:hover {
+	background-color: #992337;
+	cursor: pointer;
+}
+
+/* CHECKBOX */
+
+.Pago__descuentos h5 {
+	margin-top: 1.5rem;
+	padding-top: .2rem;
+	border-top: 1px solid #1584d5;
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	color: #1584d5;
+	background-color: whitesmoke;
+}
+
+.Pago_boxcheck {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: .5rem;
+	cursor: pointer;
+	font-size: 1rem;
+
+}
+
+.Pago_boxcheck input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.Pago__checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-color: #eee;
+	border: 1px solid #1584d5;
+	border-radius: 3px;
+}
+
+.Pago_boxcheck:hover input~.Pago__checkmark {
+	background-color: #ccc;
+}
+
+.Pago_boxcheck input:checked~.Pago__checkmark {
+	background-color: #2196F3;
+}
+
+.Pago__checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+
+.Pago_boxcheck input:checked~.Pago__checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.Pago_boxcheck .Pago__checkmark:after {
+	left: 5px;
+	/* top: 5px; */
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
 /* .Pago__boton1,
 .Pago__boton2,
 .Pago__boton3,
@@ -135,7 +271,26 @@
 	display: none;
 } */
 
+
+.Pago__boton-desc {
+	margin-top: .7rem;
+	font-size: 1rem;
+	background-color: #999;
+	padding: .5rem 1rem;
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+}
+
+.Pago__boton-desc:hover {
+	color: whitesmoke;
+}
+
+.Pago__precio {
+	margin-left: .5rem;
+	font-size: 1.2rem;
+}
+
 .newClassName {
 	display: block;
 }
-

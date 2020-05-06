@@ -33,7 +33,9 @@ console.log("hola");
 
 
 
-const Precio = document.getElementById("precios")
+// const Precio = document.getElementById("precios");
+// const Precio = document.querySelectorAll(".precios");
+const Precio = document.getElementsByClassName("precios")
 // const D1  =document.getElementsByClassName("desc1")[0];
 // const D2 = document.getElementsByClassName("desc2")[0];
 // const D3 = document.getElementsByClassName("desc3")[0];
@@ -73,25 +75,34 @@ function foo() {
     if (count == 1) {
     // if (checkedValue.length == 1) {
         // D1.style.display = "none";
-        Precio.innerHTML = "Precio: $1200"
+        
+  for (var i = 0; i < Precio.length; i++) {
+    Precio[i].innerHTML = "$1200"
+  }
         document.getElementById("test").style.display = "block";
         
     }
     else if (count == 2) {
     // else if (checkedValue.length == 2) {
         // D2.style.display = "none";
-        Precio.innerHTML = "Precio: $800"
+        // Precio.innerHTML = "$800"
+        for (var i = 0; i < Precio.length; i++) {
+            Precio[i].innerHTML = "$800"
+          }
         // document.getElementById("test1").classList.toggle("newClassName");
         document.getElementById("test1").style.display = "block";
     }
     else if (count == 3) {
     // else if (checkedValue.length == 3) {
         // D3.style.display = "none";
-        Precio.innerHTML = "Precio: $300"
-        document.getElementById("test2").style.display = "block";
+        for (var i = 0; i < Precio.length; i++) {
+            Precio[i].innerHTML = "$300"
+          }        
+          document.getElementById("test2").style.display = "block";
     }else {
-        Precio.innerHTML = "Precio: $1800"
-        document.getElementById("test3").style.display = "block";
+        for (var i = 0; i < Precio.length; i++) {
+            Precio[i].innerHTML = "$2700"
+          }        document.getElementById("test3").style.display = "block";
     }
 }
                     // function foo() {
