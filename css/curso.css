@@ -8,11 +8,22 @@
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	justify-content: space-around;
+	/* align-content: flex-start; */
+	align-items: flex-start;
 }
 
-.Info {
+.Curso__colum-1 {
 	width: 45%;
 }
+.Curso__colum-2 {
+	width: 45%;
+}
+
+
+
+/* .Info {
+	width: 45%;
+} */
 
 .Info h1 {
 	margin-bottom: 1rem;
@@ -28,17 +39,24 @@
 }
 
 .Info__box {
-	width: max-content;
+	/* width: max-content; */
+	width: 100%;
 	font-size: 1.2rem;
-	margin-left: auto;
-	margin-right: auto;
+	
 	background-color: #e6e6e6;
 	border-radius: 10px;
-	padding: .5rem 8rem;
+	padding: .5rem 0;
 	margin-top: 2rem;
 	color: #1584d5;
 	font-weight: 500;
 	box-shadow: 0 8px 6px -6px grey;
+	/* box-sizing: border-box; */
+}
+
+.Info__box ul {
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .Info__box li {
@@ -51,11 +69,11 @@
 }
 
 .Video {
-	width: 45%;
+	margin-bottom: 3rem;
 }
 
 .Programa {
-	width: 45%;
+	/* width: 45%; */
 	margin-top: 4rem;
 }
 
@@ -115,7 +133,7 @@
 	padding-top: 30px;
 	height: 0;
 	overflow: hidden;
-	width: 45vw;
+	/* width: 45vw; */
 }
 
 .Curso__video iframe {
