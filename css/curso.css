@@ -19,7 +19,15 @@
 	width: 45%;
 }
 
-
+@media (max-width: 800px) {
+	.Curso__colum-1 {
+		width: 95%;
+		margin-bottom: 3rem;
+	}
+	.Curso__colum-2 {
+		width: 95%;
+	}
+}	
 
 /* .Info {
 	width: 45%;
@@ -74,7 +82,10 @@
 
 .Programa {
 	/* width: 45%; */
+	width: 90%;
 	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .Programa h3 {
@@ -88,7 +99,7 @@
 	color: #666;
 	cursor: pointer;
 	padding: .3rem .5rem;
-	width: 90%;
+	/* width: 90%; */
 	outline: none;
 	font-size: 1.2rem;
 	transition: 0.4s;
@@ -115,7 +126,7 @@
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	width: 90%;
+	/* width: 90%; */
 	margin-left: .5rem;
 	padding-bottom: .2rem;
 }
@@ -145,14 +156,11 @@
 }
 
 .Pago {
-	width: 45%;
+	width: 100%;
 }
 
 .Pago__box {
-	width: max-content;
 	/* font-size: 1.2rem; */
-	margin-left: auto;
-	margin-right: auto;
 	/* background-color: #e6e6e6; */
 	/* border-radius: 10px; */
 	/* padding: .5rem 8rem; */
@@ -163,7 +171,10 @@
 }
 
 .Pago__box {
+	width: 80%;
 	color: #666;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: white;
 	padding: 1rem;
 	border-radius: 5px;

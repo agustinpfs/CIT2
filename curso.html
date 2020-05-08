@@ -16,8 +16,17 @@
             <img src="images/logo.png" alt="logo cursosIT">
         </figure>
         <nav class="Header__nav">
+            <label for="menu" class="Header__button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input type="checkbox" class="Header__check" id="menu">
+
             <ul class="Header__menu">
-                <li class="Header__menu-li"><a href="index.html" class="Header__menu-a">HOME</a></li>
+                <li class="Header__menu-li">
+                    <a href="index.html" class="Header__menu-a">HOME</a>
+                </li>
                 <li class="Header__menu-li Header__open-submenu">
                     <a href="" class="Header__menu-a">CURSOS</a>
                     <ul class="Header__submenu">
@@ -26,6 +35,9 @@
                         <li class="Header__submenu-li"><a class="Header__submenu-a" href="">NODEJS</a></li>
                         <li class="Header__submenu-li"><a class="Header__submenu-a" href="">TODOS</a></li>
                     </ul>
+                </li>
+                <li class="Header__menu-li">
+                    <a href="blog.html" class="Header__menu-a">BLOG</a>
                 </li>
                 <li class="Header__menu-li opencontact"><a href="#" class="Header__menu-a">CONTACTO</a></li>
             </ul>
@@ -175,11 +187,11 @@
         </section>
         <nav class="Footer-nav">
             <ul>
-                <li class="opencontact2"><a href="#">contacto</a></li>
-                <li><a href="">cursos</a></li>
-                <li><a href="">blog</a></li>
+                <li class="opencontact2"><a href="javascript:void(0)">contacto</a></li>
+                <li><a href="curso.html">cursos</a></li>
+                <li><a href="blog.html">blog</a></li>
             </ul>
-        </nav>
+        </nav> 
         <section class="Footer-social">
             <span class="icon-facebook"></span>
             <span class="icon-twitter"></span>
@@ -187,19 +199,21 @@
             <span class="icon-instagram"></span>
         </section>
     </footer>
-    <div class="Modal">
+    <div class="Modal">    
         <!-- Modal content -->
-        <div class="Modal-content">
+        <div class="Modal-content">    
             <form class="contact_form" action="" method="post" name="contact_form">
                 <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu Email" required>
+                <input type="email" placeholder="Tu email" required>
                 <textarea placeholder="Tu mensaje" required></textarea>
-                <button type="submit" id="contact-submit">Enviar</button>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
-            <span class="Modal-close">&times;</span>
+            <span class="Modal-close">&times;</span>    
         </div>
+    
     </div>
     <script src="js/curso.js"></script>
+
 
 </body>
 
