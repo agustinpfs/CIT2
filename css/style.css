@@ -718,6 +718,12 @@ a {
 	color: #121212;
 }
 
+.Articulos--blog .Articulos__texto p{
+	font-size: 1rem;
+	color: whitesmoke;
+	font-weight: 300;
+}
+
 @media (max-width: 1180px) {
 	.Articulos__texto {
 		font-size: .8rem;
