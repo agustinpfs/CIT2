@@ -1,3 +1,29 @@
+// TABS
+
+// document.getElementById("defaultActiveBlog").click();
+document.getElementById("defaultActive").click();
+
+function showContent(evento, contenidoDeUnTab) {
+  
+  var i, todosLosContenidos, tab_button;
+  
+  todosLosContenidos = document.getElementsByClassName("Tabs__tab-content");
+  for (i = 0; i < todosLosContenidos.length; i++) {
+    todosLosContenidos[i].style.display = "none";
+  }    
+  
+  tab_button = document.getElementsByClassName("Tabs__tab");
+  for (i = 0; i < tab_button.length; i++) {
+    tab_button[i].className = tab_button[i].className.replace(" active", "");
+  }    
+  
+  document.getElementById(contenidoDeUnTab).style.display = "block";
+  evento.target.className += " active";
+  
+  // event.target identifica el elemento en el que se ha producido el evento.  
+  
+}
+
 // ACCORDION
 
 
@@ -68,31 +94,8 @@ function showSlides(n) { //entra (1)(2)
   
   
   
-// TABS
 
-document.getElementById("defaultActive").click();
 
-  function showContent(evento, contenidoDeUnTab) {
-
-    var i, todosLosContenidos, tab_button;
-  
-    todosLosContenidos = document.getElementsByClassName("Tabs__tab-content");
-    for (i = 0; i < todosLosContenidos.length; i++) {
-        todosLosContenidos[i].style.display = "none";
-    }    
-  
-    tab_button = document.getElementsByClassName("Tabs__tab");
-    for (i = 0; i < tab_button.length; i++) {
-      tab_button[i].className = tab_button[i].className.replace(" active", "");
-    }    
-  
-    document.getElementById(contenidoDeUnTab).style.display = "block";
-    evento.target.className += " active";
-  
-  // event.target identifica el elemento en el que se ha producido el evento.  
-  
-  }
-  
 // MODAL
 
 

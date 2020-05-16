@@ -12,7 +12,7 @@ blockquote, em, img, small, strike,
 strong, sub, sup, center, ul, li, 
 fieldset, form, label, article, aside, 
 figure, figcaption, footer, header, 
-menu, nav, section, audio, video {
+menu, nav, section, audio, video, main {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -28,6 +28,7 @@ html {
 	font-family: 'Roboto', sans-serif;
 	color: whitesmoke;
 	background-color: #091c3b;
+	scroll-behavior: smooth;
 }
 
 figcaption {
