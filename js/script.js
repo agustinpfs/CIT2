@@ -1,3 +1,34 @@
+// MODAL
+
+
+let Modal = document.getElementsByClassName("Modal")[0];
+
+let btn = document.getElementsByClassName("opencontact")[0];
+
+let btn2 = document.getElementsByClassName("opencontact2")[0];
+
+let span = document.getElementsByClassName("Modal-close")[0];
+
+btn.onclick = function() {
+  console.log("onclick!!!!!!!!");
+    Modal.style.display = "block";
+    
+}
+btn2.onclick = function() {
+    Modal.style.display = "block";
+}
+
+span.onclick = function() {
+    Modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == Modal) {
+        Modal.style.display = "none";
+    }
+}
+
+
 // TABS
 
 // document.getElementById("defaultActiveBlog").click();
@@ -95,34 +126,4 @@ function showSlides(n) { //entra (1)(2)
   
   
 
-
-// MODAL
-
-
-let Modal = document.getElementsByClassName("Modal")[0];
-
-let btn = document.getElementsByClassName("opencontact")[0];
-
-let btn2 = document.getElementsByClassName("opencontact2")[0];
-
-let span = document.getElementsByClassName("Modal-close")[0];
-
-btn.onclick = function() {
-  console.log("onclick!!!!!!!!");
-    Modal.style.display = "block";
-    
-}
-btn2.onclick = function() {
-    Modal.style.display = "block";
-}
-
-span.onclick = function() {
-    Modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == Modal) {
-        Modal.style.display = "none";
-    }
-}
 
