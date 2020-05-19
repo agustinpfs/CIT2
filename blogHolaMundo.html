@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial. Hola Mundo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        article {
+            width: 800px;
+        }
+
+        /* span{
+            margin-left: auto;
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="Header">
+        <figure class="Header__figure">
+            <img src="images/logo.png" alt="logo cursosIT">
+        </figure>
+        <nav class="Header__nav">
+            <label for="menu" class="Header__button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input type="checkbox" class="Header__check" id="menu">
+
+            <ul class="Header__menu">
+                <li class="Header__menu-li">
+                    <a href="index.html" class="Header__menu-a">HOME</a>
+                </li>
+                <li class="Header__menu-li Header__open-submenu">
+                    <a href="" class="Header__menu-a no-link">CURSOS</a>
+                    <ul class="Header__submenu">
+                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="curso.html">HTML,CSS,JS</a>
+                        </li>
+                        <li class="Header__submenu-li title">
+                            <a class="Header__submenu-a no-link" href="">WEBPACK</a>
+                            <span class="titletext">PROXIMAMENTE</span>
+                        </li>
+                        <li class="Header__submenu-li title">
+                            <a class="Header__submenu-a no-link" href="">NODEJS</a>
+                            <span class="titletext">PROXIMAMENTE</span>
+                        </li>
+                        <li class="Header__submenu-li"><a class="Header__submenu-a"
+                                href="index.html#scrollLink1">TODOS</a></li>
+                    </ul>
+                </li>
+                <li class="Header__menu-li">
+                    <a href="index.html#section1" class="Header__menu-a">BLOG</a>
+                </li>
+                <li class="Header__menu-li opencontact"><a href="#" class="Header__menu-a">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="MainBlog">
+        <article class="Post">
+            <div class="Post__header">
+                <h1>Hola mundo con HTML, CSS y Javascript.</h1>
+                <div class="Post__data">
+                    <time>15/5/20</time>
+                    <span>por <i>agustinpfs</i></span>
+                </div>
+            </div>
+            <div class="Post__body">
+                <h2>Creá una página web con HTML, CSS y Javascript <br>colgada en internet en 5 minutos.</h2>
+                <br>
+                <h4>Entorno de desarrollo: Visual Studio Code , Git y Github</h4>
+                <br>
+                <a href="">Ver página funcionando</a>
+                <br>
+                <a href="">Repositorio</a>
+                <br>
+                <br>
+                <h4>Requisitos:</h4>
+                <ul>
+                    <li>Tener instalado <a href="">Visual Studio Code</a> y <a href="">Git</a> (elegir opciones por
+                        defecto).</li>
+                    <li>Abrir una cuenta en <a href="">Github.</a></li>
+                </ul>
+
+
+
+                <br>
+                <!-- <figure>
+                    <img src="img/hola-mundo-blog.gif" alt="">
+                </figure> -->
+                <h4>1- Ingresa a tu cuenta de Github, crea un repositorio e inicializa con README</h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/holamundoCrearRepo.png" alt="">
+                </figure>
+                <h4>2- Creá una carpeta “hola-mundo” en algún directorio de tu compu.</h4>
+                <!-- <figure>
+                    <img src="img/slack2blog.png" alt="">
+                </figure> -->
+                <br>
+                <br>
+                <h4>3- Dirígete a la carpeta “hola-mundo” que creaste.<br>
+                    Botón derecho y elige(si estás en windows) Git Bash Here o Git Bash aquí.<br>
+                </h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/open-bash.png" alt="">
+                </figure>
+                <h4>Si estás en Mac New Terminal ó nueva Terminal.</h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/open-terminal.png" alt="">
+                </figure>
+                <h4>4- Con la terminal abierta, configuraremos las credenciales para conectar con Github
+                    Escribí lo siguiente reemplazando “github_username” por tu nombre de usuario:<br>
+                    git config ––global user.name “github_username” SIN COMILLAS!!
+                </h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/conf-username.PNG" alt="">
+                </figure>
+                <h4>Luego el email SIN COMILLAS</h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/conf-email.PNG" alt="">
+                </figure>
+                <h4>5- Volvemos a Github para copiar la dirección HTTPS del repositorio para clonarlo</h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/clone.png" alt="">
+                </figure>
+                <h4>6- Ahora en la terminal o Git Bash escribí:
+                </h4>
+                <code>git clone https://github.com/Cursos-IT/HolaMundo.github.io.git</code>
+                <br>
+                <br>
+                <h4>7- Abrí Visual Studio Code y “Open folder” y elegí la carpeta “hola-mundo”</h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/open-folder.png" alt="">
+                </figure>
+                <h4>8- Crear archivo index.html y primera estructura.</h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/create-index5.gif" alt="">
+                </figure>
+                <h4>9- Agregamos elementos a la página.<br>
+                    Añadimos la etiqueta main con todo su contenido dentro de la etiqueta body.
+                </h4>
+                <br>
+                <br>
+                <script src="https://gist.github.com/agustinpfs/a50fb09cd1cdc7af4c5bb29e89c58e70.js"></script>
+                <h4>10- Guardamos el documento.<br>
+                    Botón derecho sobre la carpeta del proyecto y “Open in Terminal”
+                </h4>
+                <h4>11- En el desplegable de la terminal elejir Shell “bash”</h4>
+                <figure>
+                    <img width="95%" height="95%" src="img/blog/hola-mundo/elejir-bash.png" alt="">
+                </figure>
+                <h4>12- Hacemos un commit. Un commit es un punto en nuestro historial del proyecto que nos permitirá regresar cuando lo deseemos.<br>
+                    En la terminal escribimos los siguientes comandos: </h4><br>
+                    <code>git add .</code>
+                    <br>
+                    <code>git commit -m “agrego elementos en el body del html”</code>
+               
+                <br>
+                <br>
+                <h4>13- Creamos estilos css.<br>
+                    Pondremos un fondo de pantalla. Centraremos y le daremos color al  contenido.
+                </h4>
+                <p>Dentro de la etiqueta head agregamos las etiquetas style:</p>
+                <code>&lt;style&gt;&lt;/style&gt;</code>
+                
+                <h3>Ahora pondremos una imagen para el fondo de pantalla.</h3>
+                <h4>14- Dentro de las etiquetas "style" agregaremos las siguientes propiedades al body de nuestro HTML</h4>
+                <script src="https://gist.github.com/agustinpfs/04aaa25c3e195e6447a1a8e8273dee2f.js"></script>
+                <h4>15- Busquemos una imagen en Google y copiemos la dirección de la imagen</h4>
+                <figure>
+                    <img src="img/blog/hola-mundo/image-address.png" alt="">
+                </figure>
+                <h4>Pegamos la dirección dentro de url en background. Centramos el contenido a través de la etiqueta main  y le damos color verde al encabezado “Hola Mundo!”</h4>
+                <script src="https://gist.github.com/agustinpfs/89d464c8deb3d4907dc1d15146c0b64d.js"></script>
+                <h4>Hasta ahora el codigo es el siguiente</h4>
+                    <script src="https://gist.github.com/agustinpfs/420c2ebc9ffa350c8e024ae69cce7a52.js"></script>
+                <h4>16- Hacemos otro commit:</h4>
+                <code>git add .</code>
+                <br>
+                <code>git commit -m “agrego estilos css”</code>
+                <h3>Ahora crearemos nuestro código javascript</h3>
+                <h4>17- Debajo de la etiqueta main insertamos las etiquetas script con nuestro javascript</h4>
+                <script src="https://gist.github.com/agustinpfs/fad471bd23e3bbb40de5550d0f9ab26b.js"></script>
+                <h4><code>función(cambiaColor)</code> es la función que invocan los botones declarados en el body de la página.</h4>
+                <h4>La variable "color" (entre paréntesis) <code>cambiaColor(color)</code> recibe el valor que está entre los paréntesis del llamado a la función en los botones. Es decir “rojo” en el 1º botón y “amarillo” en el segundo </h4>
+                <h4>La función contiene una condicional "if else" que significa:<br>
+                    si(if) color es igual a ‘rojo’, toma el elemento con id llamado título y agrega el estilo css color = “rojo”. Este estilo sobreescribirá el color verde anteriormente declarado.
+                    </h4>
+                    <h4>Y si por la variable color entra “amarillo” se ejecutará la sentencia dentro del else(si no) que agregará el estilo css color = “amarillo”, sobreescribiendo el color verde.</h4>
+                    <h4>El código final es el siguiente:</h4>
+                    <script src="https://gist.github.com/agustinpfs/bf5f3635dc507d15c65b2ae4ab51d3bb.js"></script>
+                    <h4>18- Hacemos otro commit:</h4>
+                    <code>git add .</code>
+                    <br>
+                    <code>git commit -m “agrego javascript”</code>
+                    <h4>Ahora actualizamos el repositorio en Github con el siguiente comando:</h4>
+                    <code>git push origin master</code>
+                    <h4>19- Ahora nos dirigimos al repositorio en Github.
+                        nos dirigimos a la pestaña “Settings” 
+                        </h4>
+
+                        <figure>
+                            <img src="img/blog/hola-mundo/settings-github.png" alt="">
+                        </figure>
+                        
+                        <h4>Bajamos  hasta el apartado "GitHub Pages". Abrimos el deslegable que dice None y elegimos "master branch"</h4>
+                        
+                        <figure>
+                            <img src="img/blog/hola-mundo/pages-github.png" alt="">
+                        </figure>
+                        <h4>Entonces se nos muestra la url donde está publicado nuestro sitio web:</h4>
+                            <figure>
+                                <img src="img/blog/hola-mundo/link-pages.png" alt="">
+                            </figure>
+                        <h4>Puede tardar unos minutos Hasta que aparezca la página publicada!</h4>
+            </div>
+        </article>
+    </main>
+    <aside class="Aside">
+        <section class="Tabs">
+            <ul class="Tabs__header">
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab1')" id="defaultActive">Abierto</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab2')">Próximo</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab3')">Futuros</li>
+            </ul>
+
+            <div id="contenidoTab1" class="Tabs__tab-content">
+                <h2 class="w400">
+                    HTML<span class="icon-html5"></span>
+                    CSS<span class="icon-css3"></span>
+                    JavaScript<span class="icon-javascript"></span>
+                </h2>
+
+                <ul>
+                    <li class="green">Además:</li>
+                    <li><span class="green">&#10003;</span> Git-Github</li>
+                    <li><span class="green">&#10003;</span> Gestión de proyectos</li>
+                    <li><span class="green">&#10003;</span> Despliegue</li>
+                    <li><span class="green">&#10003;</span> Analítica web</li>
+                </ul>
+                <a href="curso.html" class="Tabs__button button button--blue">VER CURSO</a>
+            </div>
+            <div id="contenidoTab2" class="Tabs__tab-content">
+                <h2 class="w400">
+                    Webpack<span class="icon-webpack"></span>
+                    Sass<span class="icon-sass"></span>
+                    Handlebars<span class="icon-hbs"></span>
+                </h2>
+
+                <ul>
+                    <li><span class="green">&#10003;</span> Sistema de bundling</li>
+                    <li><span class="green">&#10003;</span> Automatización de procesos</li>
+                    <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
+                    <li><span class="green">&#10003;</span> Motores de plantillas</li>
+                </ul>
+
+            </div>
+
+            <div id="contenidoTab3" class="Tabs__tab-content">
+                <!-- <a href="http://"> -->
+                <!-- <h2 class="">
+                        NodeJS
+                        <span class="icon-node-dot-js"></span> 
+                        Express
+                        <span class="icon-express"></span>
+                        MongoDB
+                        <span class="icon-mongodb"></span>
+                    </h2> -->
+
+                <ul>
+                    <li><span class="green">&#8226;</span> NodeJS, Express, MongoDB</li>
+                    <li><span class="green">&#8226;</span> Progressive web app</li>
+                    <li><span class="green">&#8226;</span> React</li>
+                    <li><span class="green">&#8226;</span> React Native</li>
+                    <li><span class="green">&#8226;</span> VueJS</li>
+                    <li><span class="green">&#8226;</span> Electron</li>
+                </ul>
+                <!-- </a> -->
+            </div>
+        </section>
+        <section class="Aside-twitter">
+            <a class="twitter-timeline" data-tweet-limit=3
+                href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets
+                by TwitterDev</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        <section class="Acordeon">
+            <h2>Equipo</h2>
+            <button id="activado" class="Acordeon-button">@twittername1</button>
+            <div class="contenido">
+                <img src="img/perfil1.jpeg" alt="" width="150" height="200">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
+                    consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, debitis.</p>
+            </div>
+
+            <button class="Acordeon-button">@twittername2</button>
+            <div class="contenido">
+                <img src="img/perfil2.png" alt="" width="150" height="200">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consequatur, eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, veniam.</p>
+            </div>
+
+            <button class="Acordeon-button">@twittername3</button>
+            <div class="contenido">
+                <img src="img/perfil3.jpeg" alt="" width="150" height="200">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptates, quas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsum.</p>
+            </div>
+        </section>
+    </aside>
+    <footer class="Footer">
+        <section class="Footer-copy">
+            <span>&copy; CursosIT 2020</span>
+        </section>
+        <nav class="Footer-nav">
+            <ul>
+                <li class="opencontact2"><a href="javascript:void(0)">contacto</a></li>
+                <li><a href="index.html#scrollLink1">cursos</a></li>
+                <li><a href="index.html#section1">blog</a></li>
+            </ul>
+        </nav>
+        <section class="Footer-social">
+            <span class="icon-facebook"></span>
+            <span class="icon-twitter"></span>
+            <span class="icon-github"></span>
+            <span class="icon-instagram"></span>
+        </section>
+    </footer>
+
+    <div class="Modal">
+        <!-- Modal content -->
+        <div class="Modal-content">
+            <form class="contact_form" action="" method="post" name="contact_form">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu email" required>
+                <textarea placeholder="Tu mensaje" required></textarea>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+            </form>
+            <span class="Modal-close">&times;</span>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
