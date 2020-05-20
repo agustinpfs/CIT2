@@ -402,10 +402,12 @@
     <div class="Modal">
         <!-- Modal content -->
         <div class="Modal-content">
-            <form class="contact_form" action="" method="post" name="contact_form">
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu email" required>
-                <textarea placeholder="Tu mensaje" required></textarea>
+            <form class="contact_form" action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7" method="post" name="contact_form">
+                <input type='hidden' name='redirect_to' value='https://github.com/agustinpfs'/>
+
+                <input name="nombre" type="text" placeholder="Tu nombre" required>
+                <input name="email" type="email" placeholder="Tu email" required>
+                <textarea name="msje" placeholder="Tu mensaje" required></textarea>
                 <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
             <span class="Modal-close">&times;</span>
