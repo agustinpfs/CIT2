@@ -6,7 +6,10 @@
     color: #333;
     padding: 2rem;
     height: max-content;
+}
 
+.Post a {
+    text-decoration: underline;
 }
 
 .Post__header h1{
@@ -29,17 +32,49 @@
 
 
 .Post__body figure {
-    margin-bottom: 1rem;
+    /* margin-bottom: 3rem; */
     margin-top: 1.5rem;
 }
 
-.Post__body h3{
-    margin-top: 3rem;
+.Post__body p{
+    margin-bottom: .5rem;
+}
+
+.Post--slack
+.Post__body p{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    /* margin-bottom: 1rem; */
+}
+
+/* .Post--vsc */
+.Post__body div{
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.Post--vsc
+.Post__body p {
+    margin-bottom: .2rem;
+}
+
+.nota{
+    font-size: small;
 }
 
 code {
     background-color: #e6e6e6;
     border: 1px solid brown;
     padding: .05rem .1rem;
-    border-radius: 2px;
+    border-radius: 3px;
+    font-size: 95%;
+    color: grey;
+    font-weight: 200;
+}
+
+.gist-file, .gist-data, .gist-meta, .file-box, .file, .data, .gist {
+    margin-left: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
 }

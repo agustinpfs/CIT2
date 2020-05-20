@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Qué es Slack?</title>
+    <title>VSCode Shortcuts</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blog.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-
-    <style>
-        article{
-            width: 800px;
-        }
-        /* span{
-            margin-left: auto;
-            display: block;
-        } */
-    
-    </style>
 </head>
+
 <body>
     <header class="Header">
         <figure class="Header__figure">
@@ -32,7 +22,6 @@
                 <div></div>
             </label>
             <input type="checkbox" class="Header__check" id="menu">
-
             <ul class="Header__menu">
                 <li class="Header__menu-li">
                     <a href="index.html" class="Header__menu-a">HOME</a>
@@ -40,7 +29,8 @@
                 <li class="Header__menu-li Header__open-submenu">
                     <a href="" class="Header__menu-a no-link">CURSOS</a>
                     <ul class="Header__submenu">
-                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="curso.html">HTML,CSS,JS</a></li>
+                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="curso.html">HTML,CSS,JS</a>
+                        </li>
                         <li class="Header__submenu-li title">
                             <a class="Header__submenu-a no-link" href="">WEBPACK</a>
                             <span class="titletext">PROXIMAMENTE</span>
@@ -49,7 +39,8 @@
                             <a class="Header__submenu-a no-link" href="">NODEJS</a>
                             <span class="titletext">PROXIMAMENTE</span>
                         </li>
-                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="index.html#scrollLink1">TODOS</a></li>
+                        <li class="Header__submenu-li"><a class="Header__submenu-a"
+                                href="index.html#scrollLink1">TODOS</a></li>
                     </ul>
                 </li>
                 <li class="Header__menu-li">
@@ -60,7 +51,7 @@
         </nav>
     </header>
     <main class="MainBlog">
-        <article class="Post">
+        <article class="Post Post--vsc">
             <div class="Post__header">
                 <h1>Visual Studio Code. 22 atajos y utilidades para simplificarte la vida.</h1>
                 <div class="Post__data">
@@ -72,243 +63,221 @@
                 <figure>
                     <img src="img/vscode-logo.png" alt="">
                 </figure>
-                
-                    <h3><h3>1) Creación estructura Html:</h3></h3>
+                <h3>1- Creación estructura Html:</h3>
+                <div>
                     <code>!</code> <code>Enter</code> <span>ó</span> <code>html:5</code> <code>Enter</code>
-                
-                <figure>
-                    <img src="img/htmlStructure.gif" alt="">
-                </figure>
-                 
-                    <h3>2) Crear etiqueta con clase</h3>
+                    <figure>
+                        <img src="img/htmlStructure.gif" alt="">
+                    </figure>
+                </div>
+                <h3>2- Crear etiqueta con el nombre de la clase:</h3>
+                <div>
                     <code>etiqueta.nombreclase</code> <code>Enter</code>
-                
-                <figure>
-                    <img src="img/classtag.gif" alt="">
-                </figure>
-                
-                    <h3>3) Duplicar línea o bloque.</h3>
-                    Colocar cursor sobre la línea a duplicar o seleccionar el bloque de código a duplicar.
-                    
-                    <code>alt</code> <code>shift</code>   <code>flecha arriba ó abajo</code>
-                
-                <figure>
-                    <img src="img/duplicate.gif" alt="">
-                </figure>
-                <h3>4) Mover línea o bloque</h3>
-                    Colocar cursor sobre la línea a mover o seleccionar el bloque de código a mover.
-                    
+                    <figure>
+                        <img src="img/classtag.gif" alt="">
+                    </figure>
+                </div>
+                <h3>3- Duplicar línea o bloque.</h3>
+                <div>
+                    <p> Colocar cursor sobre la línea a duplicar o
+                        seleccionar el bloque de código a duplicar.</p>
+                    <code>alt</code> <code>shift</code> <code>flecha arriba ó abajo</code>
+                    <figure>
+                        <img src="img/duplicate.gif" alt="">
+                    </figure>
+                </div>
+                <h3>4- Mover línea o bloque</h3>
+                <div>
+                    <p>Colocar cursor sobre la línea a mover o seleccionar el bloque de código a mover.</p>
                     <code>alt</code> <code>flecha arriba ó abajo</code>
-                    
-                <figure>
-                    <img src="img/mover.gif" alt="">
-                </figure>
-                <h3>5) Múltiple cursor</h3>
-
-                    <code>alt</code>  <code>click</code>
-                
-                <figure>
-                    <img src="img/mult-cursor.gif" alt="">
-                </figure>
-                <h3>6) Múltiple cursor en columna</h3>
-
-                    Windows:
-                    <code>ctrl</code>  <code>Alt</code>   <code>flecha arriba o abajo</code>
-                    
-                    OSX:
-                    <code>cmd</code>  <code>Alt</code>   <code>flecha arriba o abajo</code>
-
-                
-                <figure>
-                    <img style="height: 350px; min-width: 680px;" src="img/mult-curs-colum.gif" alt="">
-                </figure>
-                <h3>7) Seleccionar línea entera</h3>
-
-                    Windows:
-                    ctrl L(minúscula)
-                    
-                    OSX:
-                    cmd L(minúscula)
-                    
-                
-                <figure>
-                    <img src="img/select-line-vscode.png" alt="">
-                </figure>
-                <h3>8) Deseleccionar</h3>
-                    Cuando seleccionamos varias líneas con cmd L es posible que nos pasemos. 
-                    Para deseleccionar:
-                    <code>Shift</code>  <code>flecha arriba</code>
-                    
-                
-              
-                <h3>9) Buscar repeticiones de una selección </h3>
-                    <code>cmd</code>  <code>d</code>
-                
-                <figure>
-                    <img style="width: 90%; height: 90%;" src="img/cmd-d.gif" alt="">
-                </figure>
-                <h3>10) Copiar ó cortar línea entera	</h3>
-                    Sólo basta con colocar el cursor en cualquier parte de la línea
-                    
-                    Windows:
-                    <code>ctrl</code>   <code>c</code>
-                    
-                    <code>ctrl</code>   <code>x</code>
-                    
-                    OSX:
-                    <code>cmd</code>  <code>c</code> 
-                    
-                    <code>cmd</code>  <code>x</code>
-                    
-
-                
-            
-                <h3>11) expandir o contraer selección</h3>
-                    Windows:
+                    <figure>
+                        <img src="img/mover.gif" alt="">
+                    </figure>
+                </div>
+                <h3>5- Múltiple cursor</h3>
+                <div>
+                    <code>alt</code> <code>click</code>
+                    <figure>
+                        <img src="img/mult-cursor.gif" alt="">
+                    </figure>
+                </div>
+                <h3>6- Múltiple cursor en columna</h3>
+                <div>
+                    <p>Windows:</p>
+                    <code>ctrl</code> <code>Alt</code> <code>flecha arriba o abajo</code>
+                    <br>
+                    <br>
+                    <p>macOS:</p>
+                    <code>cmd</code> <code>Alt</code> <code>flecha arriba o abajo</code>
+                    <figure>
+                        <img style="height: 350px; min-width: 680px;" src="img/mult-curs-colum.gif" alt="">
+                    </figure>
+                </div>
+                <h3>7- Seleccionar línea entera</h3>
+                <div>
+                    <p>Windows:</p>
+                    <code>ctrl</code> <code>L</code>(minúscula)
+                    <br>
+                    <br>
+                    <p>macOS:</p>
+                    <code>cmd</code> <code>L</code>(minúscula)
+                    <figure>
+                        <img src="img/select-line-vscode.png" alt="">
+                    </figure>
+                </div>
+                <h3>8- Deseleccionar</h3>
+                <div>
+                    <p>Cuando seleccionamos varias líneas con cmd L es posible que nos pasemos.</p>
+                    <p> Para deseleccionar:
+                    </p> <code>Shift</code> <code>flecha arriba</code>
+                </div>
+                <h3>9- Buscar repeticiones de una selección </h3>
+                <div>
+                    <code>cmd</code> <code>d</code>
+                    <figure>
+                        <img style="width: 90%; height: 90%;" src="img/cmd-d.gif" alt="">
+                    </figure>
+                </div>
+                <h3>10- Copiar o cortar línea entera </h3>
+                <div>
+                    <p>Sólo basta con colocar el cursor en cualquier parte de la línea</p>
+                    <p>Windows:</p>
+                    <code>ctrl</code> <code>c</code>
+                    <code>ctrl</code> <code>x</code>
+                    <br>
+                    <br>
+                    <p>macOS:</p>
+                    <code>cmd</code> <code>c</code>
+                    <code>cmd</code> <code>x</code>
+                </div>
+                <h3>11- expandir o contraer selección</h3>
+                <div>
+                    <p>Windows:</p>
                     <code>Alt</code> <code>shift</code> <code>flecha derecha ó izquierda</code>
-                    
-                    OSX:
-                    <code>ctrl</code>  <code>shift</code>  <code>flecha derecha ó izquierda</code>
-                    
-
-                
-                <figure>
-                    <img src="img/expand-select.gif" alt="">
-                </figure>
-                <h3>12) Expandir entre etiquetas</h3>
-                    Abrir command Palette:
-                    
-                    osx
-                    <code>cmd</code> <code>shift</code> <code>p</code>
-                    
-                    win
+                    <br>
+                    <br>
+                    <p>macOS:</p>
+                    <code>ctrl</code> <code>shift</code> <code>flecha derecha ó izquierda</code>
+                    <figure>
+                        <img src="img/expand-select.gif" alt="">
+                    </figure>
+                </div>
+                <h3>12- Expandir entre etiquetas</h3>
+                <div>
+                    <p>Abrir command Palette:</p>
+                    <p>Windows</p>
                     <code>ctrl</code> <code>shift</code> <code>p</code>
-                    
-                    y buscar “balance” y seleccionar:
-                    
-                    Emmet: Balance(outward)
-                    
-                    Este comando por lo general no viene con un atajo de teclado preestablecido pero puedes crear uno ->  crear o modificar atajos de teclado
-                    
-                
-                <figure>
-                    <img src="img/expand-tags.gif" alt="">
-
-                </figure>
-                <h3>13) Comentarios</h3>
-                    Comentar línea: Ubicar el cursor en cualquier parte de la línea
-                    
-                    win:
+                    <br>
+                    <br>
+                    <p>macOS</p>
+                    <code>cmd</code> <code>shift</code> <code>p</code>
+                    <br>
+                    <br>
+                    <p>Buscar “balance” y seleccionar:</p>
+                    <p>Emmet: Balance(outward)</p>
+                    <p>Este comando por lo general no viene con un atajo de
+                        teclado preestablecido pero puedes crear uno.</p>
+                    <p><a href="#pers-atajos">Crear o modificar atajos de teclado</a></p>
+                    <figure>
+                        <img src="img/expand-tags.gif" alt="">
+                    </figure>
+                </div>
+                <h3>13- Comentarios</h3>
+                <div>
+                    <h4>Comentar línea. Ubicar el cursor en cualquier parte de la línea y:</h4>
+                    <p>Windows:</p>
                     <code>ctrl</code> <code>}</code>
-                    osx:
-                    <code>cmd</code>  <code>shift</code>  <code>7</code>  (cmd /)
-                    
-                    Comentar bloque: Seleccionar bloque
-                    win:
+                    <br>
+                    <br>
+                    <p>macOS:</p>
+                    <code>cmd</code> <code>shift</code> <code>7</code> (cmd /)
+                    <br>
+                    <br>
+                    <h4>Comentar bloque. Seleccionar bloque y:</h4>
+                    <p>Windows:</p>
                     <code>shift</code> <code>alt</code> <code>a</code>
-                    
-                    osx
-                    <code>cmd</code>  <code>shift</code>  <code>A</code>
-                    
-                
-               
-                <h3>14) Formatear documento o selección.</h3>
-                    Este commando acomoda las incorrectas identaciones que tengamos en el código.
-                    Abrir command Palette y buscar: Format 
-                    Vemos que aparece Format Document y Format Selection.
-                    
-                
-              
-                <h3>15) Agregar link css en el head del documento HTML</h3>
-
-                    <code>link:css</code>    <code>Enter</code>
-                    
-                    
-                
-              
-                16) Agregar meta viewport (responsive) en el head del documento HTML
-
-                    <code>meta:vp</code>     <code>Enter</code>
-                
-              
-                17) Contraer Código
-
-                    win
+                    <br>
+                    <br>
+                    <p>macOS</p>
+                    <code>cmd</code> <code>shift</code> <code>A</code>
+                </div>
+                <h3>14- Formatear documento o selección.</h3>
+                <div>
+                    <p>Este commando acomoda las incorrectas identaciones que tengamos en el código.</p>
+                    <p>Abrir command Palette y buscar: Format</p>
+                    <p>Vemos que aparece Format Document y Format Selection.</p>
+                </div>
+                <h3>15- Agregar link css en el head del documento HTML</h3>
+                <div>
+                    <code>link:css</code> <code>Enter</code></div>
+                <h3>16- Agregar meta viewport (responsive) en el head del documento HTML</h3>
+                <div>
+                    <code>meta:vp</code> <code>Enter</code></div>
+                <h3>17- Contraer y descontraer Código</h3>
+                <div>
+                    <h4>Contraer</h4>
+                    <p>Windows</p>
                     <code>Ctrl</code> <code>K</code> <code>Ctrl</code> <code>[</code>
-                    
-                    osx
-                    <code>cmd</code>   <code>k</code>    <code>cmd</code>   <code>0</code> (cero)
-                    
-                
-               
-                18) Descontraer Código
-
-                    win:
-                    <code>Ctrl</code> <code>K</code> <code>Ctrl</code> <code>]</code> 
-                    
-                    osx
+                    <br>
+                    <br>
+                    <p>macOS</p>
+                    <code>cmd</code> <code>k</code> <code>cmd</code> <code>0</code> (cero)
+                </div>
+                <div>
+                    <h4>Descontraer</h4>
+                    <p>Windows:</p>
+                    <code>Ctrl</code> <code>K</code> <code>Ctrl</code> <code>]</code>
+                    <br>
+                    <br>
+                    <p>macOS</p>
                     <code>cmd</code> <code>k</code> <code>cmd</code> <code>j</code>
-
-                
-
-                19) Esconder panel lateral
-                    win:
+                </div>
+                <h3>18- Esconder panel lateral</h3>
+                <div>
+                    <p>Windows:</p>
                     <code>ctrl</code> <code>b</code>
-                    
-                    osx
-                    <code>cmd</code>     <code>b</code>    
-                    
-                
-                20) Agregar Lorem ipsum.
-                    Para crear texto de relleno escribimos 
-                    <code>lorem</code>   <code>Enter</code>
-                    
-                    Esto agrega 20 palabras. Si queremos personalizar la cantidad de palabras a lorem de agregamos el número de palabras
-                    
-                    <code>lorem5</code>   <code>Enter</code>
-                    
-                
-                Extensiones
-
-                    Emmet
-                    Ya viene instalado, muchos atajos corresponden a esta extensión
-                    
-                    css formatter 
-                    Permite formatear css
-                    
-                    tag inserter
-                    Permite insertar etiquetas de apertura y cierre sobre una selección
-                    
-                    open in browser
-                    Abre nuestro Código html en el navegador
-                    
-                    
-                    
-                    
-                    
-                    Personalizar atajos.
-                    
-                    Preferencias(engranaje ángulo inf izq) – keyboard Shortcuts
-                    Buscar el comando, seleccionarlo y Enter.
-                    
-                    Presionar las teclas del atajo nuevo o editado
-                    
-                    
-                    
-                    Ten a mano estos enlaces
-                    
-            
-                    
-                
-               
-                <br>                
+                    <br>
+                    <br>
+                    <p>macOS</p>
+                    <code>cmd</code> <code>b</code>
+                </div>
+                <h3>19- Agregar Lorem ipsum.</h3>
+                <div>
+                    <p>Para crear texto de relleno escribimos</p>
+                    <code>lorem</code> <code>Enter</code>
+                    <br>
+                    <br>
+                    <p>Esto agrega 20 palabras. Si queremos personalizar la cantidad de palabras a lorem de
+                        agregamos el
+                        número de palabras</p>
+                    <code>lorem5</code> <code>Enter</code>
+                </div>
+                <h3>Extensiones</h3>
+                <div>
+                    <h4>css formatter</h4>
+                    <p>Permite formatear css</p>
+                    <h4>tag inserter</h4>
+                    <p>Permite insertar etiquetas de apertura y cierre sobre una selección</p>
+                    <h4>open in browser</h4>
+                    <p>Abre nuestro Código html en el navegador</p>
+                </div>
+                <h3 id="pers-atajos">Personalizar atajos.</h3>
+                <div>
+                    <p>Preferencias(engranaje ángulo inf izq) – keyboard Shortcuts
+                        Buscar el comando, seleccionarlo y Enter.</p>
+                    <p> Presionar las teclas del atajo nuevo o el atajo a editar </p>
+                </div>
+                <h3>Más atajos</h3>
+                <br>
                 <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">Emmet</a>
-                <br>                
-                <br>                
-                <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">Visual Studio Code mac</a>
-                <br>                
-                <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Visual Studio Code Windows</a>
-                <br>                
+                <span class="nota">Emmet es una extensión que ya viene instalada y muchos atajos corresponden a esta extensión.</span class="nota">
+                <br>
+                <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">Visual Studio Code
+                    macOS</a>
+                <br>
+                <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Visual Studio Code
+                    Windows</a>
+                <br>
             </div>
         </article>
     </main>
@@ -319,14 +288,12 @@
                 <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab2')">Próximo</li>
                 <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab3')">Futuros</li>
             </ul>
-
             <div id="contenidoTab1" class="Tabs__tab-content">
                 <h2 class="w400">
                     HTML<span class="icon-html5"></span>
                     CSS<span class="icon-css3"></span>
                     JavaScript<span class="icon-javascript"></span>
                 </h2>
-
                 <ul>
                     <li class="green">Además:</li>
                     <li><span class="green">&#10003;</span> Git-Github</li>
@@ -337,21 +304,18 @@
                 <a href="curso.html" class="Tabs__button button button--blue">VER CURSO</a>
             </div>
             <div id="contenidoTab2" class="Tabs__tab-content">
-                    <h2 class="w400">
-                        Webpack<span class="icon-webpack"></span>
-                        Sass<span class="icon-sass"></span>
-                        Handlebars<span class="icon-hbs"></span>
-                    </h2>
-
-                    <ul>
-                        <li><span class="green">&#10003;</span> Sistema de bundling</li>
-                        <li><span class="green">&#10003;</span> Automatización de procesos</li>
-                        <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
-                        <li><span class="green">&#10003;</span> Motores de plantillas</li>
-                    </ul>
-
+                <h2 class="w400">
+                    Webpack<span class="icon-webpack"></span>
+                    Sass<span class="icon-sass"></span>
+                    Handlebars<span class="icon-hbs"></span>
+                </h2>
+                <ul>
+                    <li><span class="green">&#10003;</span> Sistema de bundling</li>
+                    <li><span class="green">&#10003;</span> Automatización de procesos</li>
+                    <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
+                    <li><span class="green">&#10003;</span> Motores de plantillas</li>
+                </ul>
             </div>
-
             <div id="contenidoTab3" class="Tabs__tab-content">
                 <!-- <a href="http://"> -->
                 <!-- <h2 class="">
@@ -362,7 +326,6 @@
                         MongoDB
                         <span class="icon-mongodb"></span>
                     </h2> -->
-
                 <ul>
                     <li><span class="green">&#8226;</span> NodeJS, Express, MongoDB</li>
                     <li><span class="green">&#8226;</span> Progressive web app</li>
@@ -390,7 +353,6 @@
                     aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
                     consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, debitis.</p>
             </div>
-
             <button class="Acordeon-button">@twittername2</button>
             <div class="contenido">
                 <img src="img/perfil2.png" alt="" width="150" height="200">
@@ -399,7 +361,6 @@
                     aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Consequatur, eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, veniam.</p>
             </div>
-
             <button class="Acordeon-button">@twittername3</button>
             <div class="contenido">
                 <img src="img/perfil3.jpeg" alt="" width="150" height="200">
@@ -420,7 +381,7 @@
                 <li><a href="index.html#scrollLink1">cursos</a></li>
                 <li><a href="index.html#section1">blog</a></li>
             </ul>
-        </nav> 
+        </nav>
         <section class="Footer-social">
             <span class="icon-facebook"></span>
             <span class="icon-twitter"></span>
@@ -428,22 +389,19 @@
             <span class="icon-instagram"></span>
         </section>
     </footer>
-
-    <div class="Modal">    
+    <div class="Modal">
         <!-- Modal content -->
-        <div class="Modal-content">    
+        <div class="Modal-content">
             <form class="contact_form" action="" method="post" name="contact_form">
                 <input type="text" placeholder="Tu nombre" required>
                 <input type="email" placeholder="Tu email" required>
                 <textarea placeholder="Tu mensaje" required></textarea>
                 <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
-            <span class="Modal-close">&times;</span>    
+            <span class="Modal-close">&times;</span>
         </div>
-    
     </div>
     <script src="js/script.js"></script>
-
-
 </body>
+
 </html>
