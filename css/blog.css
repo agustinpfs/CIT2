@@ -8,6 +8,18 @@
     height: max-content;
 }
 
+.MainBlog img{
+    max-width: 100%; 
+    height: auto;    
+}
+
+@media (max-width: 800px) {
+	.MainBlog {
+		width: 100%;
+		display: block;
+    }
+}
+
 .Post a {
     text-decoration: underline;
 }
@@ -73,8 +85,11 @@ code {
     font-weight: 200;
 }
 
-.gist-file, .gist-data, .gist-meta, .file-box, .file, .data, .gist {
+/* .gist-file, .gist-data, .gist-meta, .file-box, .file, .data, .gist {
     margin-left: 0rem !important;
     margin-bottom: 0rem !important;
     margin-top: 0rem !important;
-}
+} */
+
+
+
