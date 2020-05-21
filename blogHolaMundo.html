@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167239185-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167239185-1');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial. Hola Mundo</title>
@@ -10,7 +20,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 
-   
+
 </head>
 
 <body>
@@ -150,7 +160,7 @@
                     <p>Añadimos la etiqueta main con todo su contenido dentro de la etiqueta body.</p>
 
                 </div>
-              
+
                 <script src="https://gist.github.com/agustinpfs/a50fb09cd1cdc7af4c5bb29e89c58e70.js"></script>
                 <h4>10- Guardamos el documento - botón derecho sobre la carpeta del proyecto y “Open in Terminal”
                 </h4>
@@ -254,10 +264,10 @@
                     <figure>
                         <img src="img/blog/hola-mundo/settings-github.png" alt="">
                     </figure>
-<br>
-                <p>Bajamos hasta el apartado "GitHub Pages". Abrimos el deslegable que dice None y elegimos "master
-                    branch"
-                </p>
+                    <br>
+                    <p>Bajamos hasta el apartado "GitHub Pages". Abrimos el deslegable que dice None y elegimos "master
+                        branch"
+                    </p>
 
                     <figure>
                         <img src="img/blog/hola-mundo/pages-github.png" alt="">
@@ -278,16 +288,16 @@
                 <br>
                 <div id="disqus_thread"></div>
                 <script>
-    
+
                     /**
                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    
+
                     var disqus_config = function () {
                         this.page.url = "https://agustinpfs.github.io/CIT2/blogHolaMundo.html";  // Replace PAGE_URL with your page's canonical URL variable
                         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                     };
-    
+
                     (function () { // DON'T EDIT BELOW THIS LINE
                         var d = document, s = d.createElement('script');
                         s.src = 'https://cursos-it.disqus.com/embed.js';
@@ -295,10 +305,11 @@
                         (d.head || d.body).appendChild(s);
                     })();
                 </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        powered
                         by Disqus.</a></noscript>
-    
-    
+
+
         </article>
     </main>
     <aside class="Aside">
@@ -421,8 +432,10 @@
     <div class="Modal">
         <!-- Modal content -->
         <div class="Modal-content">
-            <form class="contact_form" action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7" method="post" name="contact_form">
-                <input type='hidden' name='redirect_to' value='https://github.com/agustinpfs'/>
+            <form class="contact_form"
+                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                method="post" name="contact_form">
+                <input type='hidden' name='redirect_to' value='https://github.com/agustinpfs' />
 
                 <input name="nombre" type="text" placeholder="Tu nombre" required>
                 <input name="email" type="email" placeholder="Tu email" required>

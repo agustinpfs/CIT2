@@ -2,6 +2,16 @@
 <html lang="es">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167239185-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167239185-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CursosIT</title>
@@ -29,7 +39,8 @@
                 <li class="Header__menu-li Header__open-submenu">
                     <a href="" class="Header__menu-a no-link">CURSOS</a>
                     <ul class="Header__submenu">
-                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="curso.html">HTML,CSS,JS</a></li>
+                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="curso.html">HTML,CSS,JS</a>
+                        </li>
                         <li class="Header__submenu-li title">
                             <a class="Header__submenu-a no-link" href="">WEBPACK</a>
                             <span class="titletext">PROXIMAMENTE</span>
@@ -53,7 +64,7 @@
             <div class="Slide__js">
                 <div class="Slides__slide Slides--1">
                     <div class="Slides__header">
-                        <h2>PRÓXIMO CURSO</h2> 
+                        <h2>PRÓXIMO CURSO</h2>
                         <p>DESARROLLO WEB CON</p>
                     </div>
                     <div class="Slides__body">
@@ -126,7 +137,7 @@
                 <p>
                     Conocimiento,
                     práctica y herramientas necesarias
-                    para la creación y publicación de 
+                    para la creación y publicación de
                     sitios web
                 </p>
             </article>
@@ -151,7 +162,7 @@
                 <p>Permanente en redes y aulas virtuales</p>
             </article>
             <a href="curso.html" class="button button--inf button--blue">VER CURSO</a>
-            
+
         </section>
 
         <section id="scrollLink1" class="Articulos">
@@ -216,7 +227,8 @@
                             <br>
                             <!-- <p>Slack es una herramienta de comunicación en equipo que trabaja con un 
                                 simple sistema de canales según el tema de conversación.</p> -->
-                            <p>Descubre para que sirve Slack y los beneficios de trabajar en equipo con esta herramienta</p>
+                            <p>Descubre para que sirve Slack y los beneficios de trabajar en equipo con esta herramienta
+                            </p>
                             <a href="blogSlack.html" class="Articulos__button">ENTRAR</a>
                         </div>
                     </div>
@@ -286,18 +298,18 @@
                 <a href="curso.html" class="Tabs__button button button--blue">VER CURSO</a>
             </div>
             <div id="contenidoTab2" class="Tabs__tab-content">
-                    <h2 class="w400">
-                        Webpack<span class="icon-webpack"></span>
-                        Sass<span class="icon-sass"></span>
-                        Handlebars<span class="icon-hbs"></span>
-                    </h2>
+                <h2 class="w400">
+                    Webpack<span class="icon-webpack"></span>
+                    Sass<span class="icon-sass"></span>
+                    Handlebars<span class="icon-hbs"></span>
+                </h2>
 
-                    <ul>
-                        <li><span class="green">&#10003;</span> Sistema de bundling</li>
-                        <li><span class="green">&#10003;</span> Automatización de procesos</li>
-                        <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
-                        <li><span class="green">&#10003;</span> Motores de plantillas</li>
-                    </ul>
+                <ul>
+                    <li><span class="green">&#10003;</span> Sistema de bundling</li>
+                    <li><span class="green">&#10003;</span> Automatización de procesos</li>
+                    <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
+                    <li><span class="green">&#10003;</span> Motores de plantillas</li>
+                </ul>
 
             </div>
 
@@ -369,7 +381,7 @@
                 <li><a href="#scrollLink1">cursos</a></li>
                 <li><a href="#section1">blog</a></li>
             </ul>
-        </nav> 
+        </nav>
         <section class="Footer-social">
             <span class="icon-facebook"></span>
             <span class="icon-twitter"></span>
@@ -378,21 +390,23 @@
         </section>
     </footer>
 
-    <div class="Modal">    
+    <div class="Modal">
         <!-- Modal content -->
-        <div class="Modal-content">    
-            <form class="contact_form" action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7" method="post" name="contact_form">
-                <input type='hidden' name='redirect_to' value='https://github.com/agustinpfs'/>
+        <div class="Modal-content">
+            <form class="contact_form"
+                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                method="post" name="contact_form">
+                <input type='hidden' name='redirect_to' value='https://github.com/agustinpfs' />
 
                 <input name="nombre" type="text" placeholder="Tu nombre" required>
                 <input name="email" type="email" placeholder="Tu email" required>
                 <textarea name="msje" placeholder="Tu mensaje" required></textarea>
                 <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
-            
-            <span class="Modal-close">&times;</span>    
+
+            <span class="Modal-close">&times;</span>
         </div>
-    
+
     </div>
     <script src="js/script.js"></script>
 
