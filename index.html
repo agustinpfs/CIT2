@@ -126,8 +126,16 @@
                     </div>
                 </div>
             </div>
-            <a class="Slides__prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="Slides__next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="Slides__prev" onclick="plusSlides(-1); gtag('event', 'click', {
+                'event_category' : 'slider',
+                'event_label' : 'left'
+                });">&#10094;
+            </a>
+            <a class="Slides__next" onclick="plusSlides(1); gtag('event', 'click', {
+                'event_category' : 'slider',
+                'event_label' : 'right'
+                });">&#10095;
+            </a>
         </section>
         <section class="Description">
             <!-- DESCRIPCIÓN PRINCIPAL-->

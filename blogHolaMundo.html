@@ -69,7 +69,7 @@
             <div class="Post__header">
                 <h1>Hola mundo con HTML, CSS y Javascript.</h1>
                 <div class="Post__data">
-                    <time>15/5/20</time>
+                    <time>25/5/20</time>
                     <span>por <i>agustinpfs</i></span>
                 </div>
             </div>
@@ -97,11 +97,11 @@
                         <img src="img/blog/hola-mundo/holamundoCrearRepo.png" alt="">
                     </figure>
                 </div>
-                <h4>2- Creá una carpeta “hola-mundo” en algún directorio de tu compu.</h4>
+                <h4>2- Creá una carpeta "hola-mundo" en algún directorio de tu compu.</h4>
                 <div>
 
                 </div>
-                <h4>3- Dirígete a la carpeta “hola-mundo” que creaste.<br>
+                <h4>3- Dirígete a la carpeta "hola-mundo" que creaste.<br>
                     Botón derecho y elige(si estás en windows) Git Bash Here o Git Bash aquí.<br>
                 </h4>
                 <div>
@@ -115,17 +115,19 @@
                         <img src="img/blog/hola-mundo/open-terminal.png" alt="">
                     </figure>
                 </div>
-                <h4>4- Con la terminal abierta, configuraremos las credenciales para conectar con Github.<br>
+                <h4>4- Configuraremos tu nombre de usuario y email en Git para asociar tus confirmaciones a una identidad.
                 </h4>
                 <div>
-                    <p> Escribí lo siguiente reemplazando “github_username” por tu nombre de usuario:<br>
-                        <code>git config ––global user.name “github_username”</code> SIN COMILLAS!!</p>
+                    <p> Con la terminal abierta escribí lo siguiente reemplazando "nombre_usuario" por tu nombre de usuario</p>
+                        <code>git config --global user.name "nombre_usuario"</code>
+
                     <figure>
                         <img src="img/blog/hola-mundo/conf-username.PNG" alt="">
                     </figure>
                 </div>
-                <hp>Luego el email SIN COMILLAS</hp>
                 <div>
+                    <p>Luego el email</p>
+                    <code>git config --global user.email "tu dirección de email"</code> 
                     <figure>
                         <img src="img/blog/hola-mundo/conf-email.PNG" alt="">
                     </figure>
@@ -136,14 +138,14 @@
                         <img src="img/blog/hola-mundo/clone.png" alt="">
                     </figure>
                 </div>
-                <h4>6- Ahora en la terminal o Git Bash escribí:
+                <h4>6- Ahora en la terminal o Git Bash escribí "git clone" y pegá la dirección que acabás de copiar:
                 </h4>
                 <div>
                     <code>git clone https://github.com/Cursos-IT/HolaMundo.github.io.git</code>
                     <br>
                     <br>
                 </div>
-                <h4>7- Abrí Visual Studio Code - “Open folder” y elegí la carpeta “hola-mundo”</h4>
+                <h4>7- Abrí Visual Studio Code - "Open folder" y elegí la carpeta "hola-mundo"</h4>
                 <div>
                     <figure>
                         <img src="img/blog/hola-mundo/open-folder.png" alt="">
@@ -162,14 +164,14 @@
                 </div>
 
                 <script src="https://gist.github.com/agustinpfs/a50fb09cd1cdc7af4c5bb29e89c58e70.js"></script>
-                <h4>10- Guardamos el documento - botón derecho sobre la carpeta del proyecto y “Open in Terminal”
+                <h4>10- Guardamos el documento - botón derecho sobre la carpeta del proyecto y "Open in Terminal"
                 </h4>
                 <div>
                     <figure>
                         <img src="img/blog/hola-mundo/openInTerminalVSC.png" alt="">
                     </figure>
                 </div>
-                <h4>11- En el desplegable de la terminal elejir Shell “bash”</h4>
+                <h4>11- En el desplegable de la terminal elejir Shell "bash"</h4>
                 <div>
                     <figure>
                         <img width="95%" height="95%" src="img/blog/hola-mundo/elejir-bash.png" alt="">
@@ -182,7 +184,7 @@
                 <p>En la terminal escribimos los siguientes comandos: </p>
                 <code>git add .</code>
                 <br>
-                <code>git commit -m “agrego elementos en el body del html”</code>
+                <code>git commit -m "agrego elementos en el body del html"</code>
 
                 <div>
 
@@ -209,7 +211,7 @@
                     <br>
                     <p>Pegamos la dirección dentro de url en background. Centramos el contenido a través de la etiqueta
                         main y
-                        le damos color verde al encabezado “Hola Mundo!”</p>
+                        le damos color verde al encabezado "Hola Mundo!"</p>
                     <script src="https://gist.github.com/agustinpfs/89d464c8deb3d4907dc1d15146c0b64d.js"></script>
                 </div>
                 <h4>Hasta ahora el codigo es el siguiente</h4>
@@ -220,7 +222,7 @@
                 <div>
                     <code>git add .</code>
                     <br>
-                    <code>git commit -m “agrego estilos css”</code>
+                    <code>git commit -m "agrego estilos css"</code>
                 </div>
                 <h4>17- Ahora crearemos nuestro código javascript</h4>
                 <div>
@@ -232,16 +234,16 @@
                         página.</p>
                     <p>La variable "color" (entre paréntesis) <code>cambiaColor(color)</code> recibe el valor que está
                         entre
-                        los paréntesis del llamado a la función en los botones. Es decir “rojo” en el 1º botón y
-                        “amarillo” en
+                        los paréntesis del llamado a la función en los botones. Es decir "rojo" en el 1º botón y
+                        "amarillo" en
                         el segundo </p>
                     <p>La función contiene una condicional "if else" que significa:<br>
                         si(if) color es igual a ‘rojo’, toma el elemento con id llamado título y agrega el estilo css
                         color =
-                        “rojo”. Este estilo sobreescribirá el color verde anteriormente declarado.
+                        "rojo". Este estilo sobreescribirá el color verde anteriormente declarado.
                     </p>
-                    <p>Y si por la variable color entra “amarillo” se ejecutará la sentencia dentro del else(si no) que
-                        agregará el estilo css color = “amarillo”, sobreescribiendo el color verde.</p>
+                    <p>Y si por la variable color entra "amarillo" se ejecutará la sentencia dentro del else(si no) que
+                        agregará el estilo css color = "amarillo", sobreescribiendo el color verde.</p>
                 </div>
                 <h4>El código final es el siguiente:</h4>
                 <div>
@@ -251,13 +253,13 @@
                 <div>
                     <code>git add .</code>
                     <br>
-                    <code>git commit -m “agrego javascript”</code>
+                    <code>git commit -m "agrego javascript"</code>
                 </div>
                 <h4>Ahora actualizamos el repositorio en Github con el siguiente comando:</h4>
                 <div>
                     <code>git push origin master</code>
                 </div>
-                <h4>19- Ahora en el repositorio en Github, nos dirigimos a la pestaña “Settings”.
+                <h4>19- Ahora en el repositorio en Github, nos dirigimos a la pestaña "Settings".
                 </h4>
                 <div>
 
