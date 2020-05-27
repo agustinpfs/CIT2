@@ -409,7 +409,10 @@
                 <input name="nombre" type="text" placeholder="Tu nombre" required>
                 <input name="email" type="email" placeholder="Tu email" required>
                 <textarea name="msje" placeholder="Tu mensaje" required></textarea>
-                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+                <button 
+                data-sitekey="reCAPTCHA_site_key" 
+                data-callback='onSubmit' 
+                data-action='submit'class="g-recaptcha button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
 
             <span class="Modal-close">&times;</span>
@@ -417,6 +420,10 @@
 
     </div>
     <script src="js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script src="js/captcha.js"></script>
+
 
 </body>
 
