@@ -11,6 +11,7 @@
 
         gtag('config', 'UA-167239185-1');
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -409,10 +410,8 @@
                 <input name="nombre" type="text" placeholder="Tu nombre" required>
                 <input name="email" type="email" placeholder="Tu email" required>
                 <textarea name="msje" placeholder="Tu mensaje" required></textarea>
-                <button 
-                data-sitekey="reCAPTCHA_site_key" 
-                data-callback='onSubmit' 
-                data-action='submit'class="g-recaptcha button button--form" type="submit" id="contact-submit">Enviar</button>
+                <div class="g-recaptcha" data-sitekey="6LfE2vwUAAAAAAO_xQdh3Pn17vXsV2fY8QWjT_Kj" data-theme="dark"></div>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
 
             <span class="Modal-close">&times;</span>
