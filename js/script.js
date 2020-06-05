@@ -36,7 +36,7 @@ document.getElementById("defaultActive").click();
 
 function showContent(evento, contenidoDeUnTab) {
   
-  var i, todosLosContenidos, tab_button;
+  let i, todosLosContenidos, tab_button;
   
   todosLosContenidos = document.getElementsByClassName("Tabs__tab-content");
   for (i = 0; i < todosLosContenidos.length; i++) {
@@ -90,11 +90,14 @@ document.getElementById("activado").click();
 
 // SLIDER
 
-var slideIndex = 1; //arranca(1)
-showSlides(slideIndex); //arranca(1)
+let slideNum = 1; //arranca(1)
+console.log(slideNum, "slideNum");
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(slideNum); //arranca(1)
+
+function passSlides(n) {
+  let slideSum = slideNum += n
+  showSlides(slideSum); // 1+1
 }    
 
 
@@ -102,25 +105,24 @@ function plusSlides(n) {
 function showSlides(n) { //entra (1)(2)
   console.log(n + " n")
   
-  var i;
-  var slides = document.getElementsByClassName("Slide__js"); //retorna array de los divs que tengan esta clase
-  //   var dots = document.getElementsByClassName("dot");  
+  let slides = document.getElementsByClassName("Slide__js"); //retorna array de los divs que tengan esta clase
+  //   let dots = document.getElementsByClassName("dot");  
   
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  if (n > slides.length) {slideNum = 1}    
+  if (n < 1) {slideNum = slides.length}
+  for (let i = 0; i < slides.length; i++) {
     console.log(i + " i")  
     
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";  //oculta todos los slides
   }        
   //   for (i = 0; i < dots.length; i++) {
     //       dots[i].className = dots[i].className.replace(" active", "");    
     //   }
-    console.log(slideIndex + " slideIndex")
+    console.log(slideNum + " slideNum")
     
-    slides[slideIndex-1].style.display = "block"; 
-    console.log(slideIndex-1 + " tiene que ser cero!!") 
-    // dots[slideIndex-1].className += " active";
+    slides[slideNum-1].style.display = "block"; 
+    console.log(slideNum-1 + " tiene que ser cero!!") 
+    // dots[slideNum-1].className += " active";
   }    
   
   
