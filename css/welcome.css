@@ -1,0 +1,16 @@
+main {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color: unset;
+}
+
+p {
+    margin-top: 2rem;
+}
