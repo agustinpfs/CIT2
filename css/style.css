@@ -1,5 +1,6 @@
 /* HEADER */
 /* MAINN */
+/* FEATURES */
 /* ASIDEE */
 /* FOOTER */
 /* DESCRIPTION */
@@ -625,11 +626,12 @@ a {
 	.Features {
 		flex-direction: column;
 		align-items: center;
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		padding-bottom: 3rem;
-		padding-top: 3rem;
+		/* width: 90%; */
+		/* margin-left: auto; */
+		/* margin-right: auto; */
+		padding: 3rem;
+		/* padding-bottom: 3rem; */
+		/* padding-top: 3rem; */
 	}
 
 	.Features__article {
@@ -1000,9 +1002,9 @@ div.contenido {
 	margin-right: 1rem;
 }
 
-.Footer-social a:visited {
+/* .Footer-social a:visited {
 	color: white
-}
+} */
 
 
 
@@ -1289,6 +1291,7 @@ div.contenido {
 
 .icon-github:before {
 	content: "\e906";
+	color: white;
 }
 
 .icon-instagram:before {
