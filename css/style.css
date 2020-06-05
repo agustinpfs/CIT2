@@ -1,5 +1,6 @@
 /* HEADER */
-/* MAINN */
+/* MAIN */
+/* SLIDER */
 /* FEATURES */
 /* ASIDEE */
 /* FOOTER */
@@ -252,7 +253,7 @@ a {
 	}
 }
 
-/* SLIDER ////////////////////////////////////////*/
+/* SLIDER */
 
 .Slides {
 	position: relative;
@@ -306,6 +307,7 @@ a {
 .Slides__header {
 	display: flex;
 	align-items: flex-end;
+	margin-top: .5rem;
 }
 
 .Slides__header h2 {
@@ -398,7 +400,7 @@ a {
 		font-size: 3rem;
 	}
 }
-/* Slide 2 /////////////////////////////////*/
+/* Slider 2 */
 
 /* .Slides--2.Slides {
 	text-align: left;
@@ -491,18 +493,28 @@ a {
 
 
 /* SLIDE 3 */
-
+.Slides--3 .Slides__body> article {
+	margin-top: 1.5rem;
+	/* margin-bottom: 1rem; */
+}
 .Slides--3 article>h2 {
 	color: whitesmoke;
 	font-weight: 500;
 	font-size: 3.5rem;
 	margin-right: .5rem;
+	/* margin-top: 1rem; */
 	text-shadow: 4px 5px rgb(204, 204, 204, .5);
 }
 
+
+
 .Slides--3 .Slides__body {
-	margin-top: 1.7rem;
+	justify-content: space-between;
 }
+
+/* .Slides--3 .Slides__body {
+	margin-top: 1.7rem;
+} */
 
 /* VER TRANSICIONES!!!!!, PODEMOS CONSSEGUIR EL MISMO EFECTO CON TRANSOTION: EASE...???????? */
 
