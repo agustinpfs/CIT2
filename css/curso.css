@@ -57,14 +57,16 @@
 	border-radius: 10px;
 	padding: .5rem 0;
 	margin-top: 2rem;
-	color: #1584d5;
+	/* color: #1584d5; */
+	color: #e6e6e6;
 	font-weight: 500;
 	box-shadow: 0 8px 6px -6px grey;
 	/* box-sizing: border-box; */
 }
 
 .Info__box ul {
-	width: max-content;
+	width: 100%;
+	/* width: max-content; */
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -72,6 +74,10 @@
 .Info__box li {
 	margin-bottom: .5rem;
 	margin-top: .5rem;
+	background-color: #1584d5;
+	padding-left: 20%;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
 }
 
 .Info__bullet {
