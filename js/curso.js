@@ -45,69 +45,47 @@ function foo() {
     var count = 0
     var inputElements = document.getElementsByClassName('pagoCheckbox');
     var botones = document.getElementsByClassName('bot');
-    // for (var i = 0; inputElements[i]; ++i) {
     for (var i = 0; i < inputElements.length; ++i) {
         botones[i].style.display = "none";
         if (inputElements[i].checked) {
             console.log(inputElements[i].checked);
-            // checkedValue.push(inputElements[i].value)
             count = count + 1
-            // console.log(count);
-            
-            // checkedValue.push(inputElements[i].value)
-            // break;
         }
     }
-    // if (count = 1 == true) {
-    //     console.log();
-        
-    //     Precio.innerHTML = "Precio: $1200"
-    // }
-    // else if (count = 2 == true)  {
-    //     Precio.innerHTML = "Precio: $800"
-    //     console.log(count + "aca");
-    // }
-    // else if (count = 3 == true) {
-    //     Precio.innerHTML = "Precio: $200"
-    //     console.log(count + "aca3");
-    // }
 
     if (count == 1) {
-    // if (checkedValue.length == 1) {
-        // D1.style.display = "none";
-        
-  for (var i = 0; i < Precio.length; i++) {
-    Precio[i].innerHTML = "$1200"
-  }
+        for (var i = 0; i < Precio.length; i++) {
+            Precio[i].innerHTML = "$3315"
+        }
         document.getElementById("test").style.display = "block";
-        
+
     }
     else if (count == 2) {
-    // else if (checkedValue.length == 2) {
+        // else if (checkedValue.length == 2) {
         // D2.style.display = "none";
-        // Precio.innerHTML = "$800"
+        // Precio.innerHTML = "$2730"
         for (var i = 0; i < Precio.length; i++) {
-            Precio[i].innerHTML = "$800"
-          }
+            Precio[i].innerHTML = "$2730"
+        }
         // document.getElementById("test1").classList.toggle("newClassName");
         document.getElementById("test1").style.display = "block";
     }
     else if (count == 3) {
-    // else if (checkedValue.length == 3) {
+        // else if (checkedValue.length == 3) {
         // D3.style.display = "none";
         for (var i = 0; i < Precio.length; i++) {
-            Precio[i].innerHTML = "$300"
-          }        
-          document.getElementById("test2").style.display = "block";
-    }else {
+            Precio[i].innerHTML = "$2145"
+        }
+        document.getElementById("test2").style.display = "block";
+    } else {
         for (var i = 0; i < Precio.length; i++) {
-            Precio[i].innerHTML = "$2700"
-          }        document.getElementById("test3").style.display = "block";
+            Precio[i].innerHTML = "$3900"
+        } document.getElementById("test3").style.display = "block";
     }
 }
-                    // function foo() {
-                    //     Modal.style.display = "none";
-                    // }
+// function foo() {
+//     Modal.style.display = "none";
+// }
 document.getElementById("testt").click();
 
 
@@ -124,20 +102,20 @@ let btn2 = document.getElementsByClassName("opencontact2")[0];
 
 let span = document.getElementsByClassName("Modal-close")[0];
 
-btn.onclick = function() {
-  console.log("onclick!!!!!!!!");
+btn.onclick = function () {
+    console.log("onclick!!!!!!!!");
     Modal.style.display = "block";
-    
+
 }
-btn2.onclick = function() {
+btn2.onclick = function () {
     Modal.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = function () {
     Modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == Modal) {
         Modal.style.display = "none";
     }

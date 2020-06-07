@@ -88,6 +88,35 @@
 	margin-bottom: 3rem;
 }
 
+.Edicion h3 {
+	font-size: 2.2rem;
+	/* border-bottom: 5px solid #ec5252; */
+	/* padding-bottom: .5rem; */
+}
+.Edicion p{
+	font-size: 1.5rem;
+}
+.Edicion__fechas {
+	font-size: 2rem;
+	/* font-weight: 500; */
+	color: #1584d5;
+	/* padding-bottom: .5rem; */
+	/* border-bottom: 2px solid #1584d5; */
+}
+
+
+.Edicion h2 {
+	font-size: 2.2rem;
+	font-weight: 600;
+	color: #ec5252;
+	margin-top: .5em;
+	text-align: center;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #ec5252;
+
+}
+
 .Programa {
 	/* width: 45%; */
 	/* width: 90%; */
@@ -169,6 +198,44 @@
 	width: 100%;
 }
 
+.Pago__medio {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 150px; */
+}
+.Pago__medio h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	background-color: #1584d5;
+	color: whitesmoke;
+}
+.Pago__medio p {
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+}
+.Pago__medio a{
+	color: black;
+	/* color: whitesmoke; */
+	font-weight: 500;
+	text-decoration: underline;
+	/* background-color: green; */
+	padding: .1rem;
+	border-radius: 3px;
+}
+
+.Pago__medio a:hover{
+	background-color: #333;
+	color: whitesmoke;
+}
+
+.Pago__medio span {
+	font-weight: 500;
+}
+
 .Pago__box {
 	/* font-size: 1.2rem; */
 	/* background-color: #e6e6e6; */
@@ -193,7 +260,15 @@
 .Pago__box h3 {
 	text-align: center;
 	font-size: 2.5rem;
+
 	/* color: #666 */
+}
+
+.Pago__box figure {
+	border-bottom: 3px solid #666;
+	padding-bottom: .5rem;
+	margin-bottom: .5rem;
+
 }
 
 .Pago__box del {
