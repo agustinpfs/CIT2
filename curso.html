@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+<head>  
     <meta charset="UTF-8">
     <title>Cursos IT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,6 +51,13 @@
     </header>
     <main class="Curso">
         <div class="Curso__colum-1">
+            <section class="Video Video--resp">
+                <article class="Video__embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ckqOukGKK8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </article>
+            </section>
             <section class="Info">
                 <h1>Curso Práctico de Desarrollo Web con Html Css y Javascript
                     <span class="icon-html5"></span>
@@ -118,10 +125,34 @@
                 </ul>
 
             </section>
+            <section class="Requisitos">
+                <h2>Requisitos</h2>
+                <ul>
+                    <li>&#8226; Computadora de escritorio o portátil.</li>
+                    <li>&#8226; Ser usuario de Windows o macOS.</li>
+                    <li>&#8226; Manejo básico de carpetas.</li>
+                    <li>&#8226; Conexión a Internet.</li>
+                </ul>
+
+            </section>
+            <section class="Contacto Contacto--desk">
+                <h2>Dudas? Contactá!</h2>
+                <form class="Contacto__formulario"
+                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                method="post" name="contact_form">
+                <input type='hidden' name='redirect_to' value='http://cursosit.com' />
+
+                <input name="nombre" type="text" placeholder="Tu nombre" required>
+                <input name="email" type="email" placeholder="Tu email" required>
+                <textarea name="msje" placeholder="Tu mensaje" required></textarea>
+                <!-- <div class="g-recaptcha" data-sitekey="6LfE2vwUAAAAAAO_xQdh3Pn17vXsV2fY8QWjT_Kj" data-theme="dark"></div> -->
+                <button class="" type="submit" id="contact-submit">Enviar</button>
+            </form>
+            </section>
         </div>
         <div class="Curso__colum-2">
-            <section class="Video">
-                <article class="Curso__video">
+            <section class="Video Video--desk">
+                <article class="Video__embed">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/2ckqOukGKK8" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -253,6 +284,22 @@
                 </div>
         
             </section>
+            <section class="Contacto Contacto--resp">
+                <h2>Dudas? Contactá!</h2>
+                <form class="Contacto__formulario"
+                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                method="post" name="contact_form">
+                <input type='hidden' name='redirect_to' value='http://cursosit.com' />
+
+                <input name="nombre" type="text" placeholder="Tu nombre" required>
+                <input name="email" type="email" placeholder="Tu email" required>
+                <textarea name="msje" placeholder="Tu mensaje" required></textarea>
+                <!-- <div class="g-recaptcha" data-sitekey="6LfE2vwUAAAAAAO_xQdh3Pn17vXsV2fY8QWjT_Kj" data-theme="dark"></div> -->
+                <button class="" type="submit" id="contact-submit">Enviar</button>
+            </form>
+            </section>
+            <a href="https://wa.me/543513044157?text=Hola%2C%20te%20puedo%20ayudar%3F">whatsapp</a>
+        
         </div>
     </main>
     <footer class="Footer">

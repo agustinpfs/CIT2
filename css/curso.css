@@ -1,5 +1,23 @@
 /* PÁGINA DEL CURSO DE HTML //////////////////////////////*/
 
+/* COLUMN 1 */
+/* INFO */
+/* PROGRAMA */
+/* REQUISITOS */
+/* FORMULARIO */
+
+/* COLUMN 2 */
+/* VIDEO */
+/* EDICION */
+/* PAGO */
+
+
+
+
+
+
+
+
 .Curso {
 	display: flex;
 	flex-wrap: wrap;
@@ -15,6 +33,7 @@
 .Curso__colum-1 {
 	width: 45%;
 }
+
 .Curso__colum-2 {
 	width: 45%;
 }
@@ -27,11 +46,12 @@
 	.Curso__colum-2 {
 		width: 95%;
 	}
-}	
+}
 
-/* .Info {
-	width: 45%;
-} */
+/* COLUMN 1 */
+
+
+/* INFO */
 
 .Info h1 {
 	margin-bottom: 1rem;
@@ -52,7 +72,6 @@
 	/* width: max-content; */
 	width: 100%;
 	font-size: 1.2rem;
-	
 	background-color: #e6e6e6;
 	border-radius: 10px;
 	padding: .5rem 0;
@@ -84,38 +103,19 @@
 	font-size: 1.2rem;
 }
 
-.Video {
-	margin-bottom: 3rem;
+@media (max-width: 800px) {
+
+	.Info__box li {
+		background-color: #992337;
+		/* background-color: #ec5252; */
+		padding-left: 10%;
+	}
+	.Info h1 {
+		font-size: 1.5rem;
+	}
 }
 
-.Edicion h3 {
-	font-size: 2.2rem;
-	/* border-bottom: 5px solid #ec5252; */
-	/* padding-bottom: .5rem; */
-}
-.Edicion p{
-	font-size: 1.5rem;
-}
-.Edicion__fechas {
-	font-size: 2rem;
-	/* font-weight: 500; */
-	color: #1584d5;
-	/* padding-bottom: .5rem; */
-	/* border-bottom: 2px solid #1584d5; */
-}
-
-
-.Edicion h2 {
-	font-size: 2.2rem;
-	font-weight: 600;
-	color: #ec5252;
-	margin-top: .5em;
-	text-align: center;
-	background-color: white;
-	border-radius: 5px;
-	border: 1px solid #ec5252;
-
-}
+/* PROGRAMA */
 
 .Programa {
 	/* width: 45%; */
@@ -175,9 +175,88 @@
 	margin-top: .5rem;
 }
 
+/* REQUISITOS */
+
+.Requisitos {
+	margin-top: 3rem;
+}
+
+.Requisitos h2 {
+	color: #1584d5;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: .3rem;
+}
+
+.Requisitos li {
+	font-size: 1.2rem;
+	margin-top: .5rem;
+}
+
+/* FORMULARIO */
+
+.Contacto h2 {
+	color: #1584d5;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: .3rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.Contacto__formulario {
+	display: flex;
+	flex-direction: column;
+	height: 290px;
+	justify-content: space-between;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Contacto__formulario input {
+	width: 70%;
+	height: 1.5rem;
+}
+
+.Contacto__formulario textarea {
+	height: 150px;
+}
+
+.Contacto__formulario button {
+	width: 30%;
+	height: 1.7rem;
+}
+
+.Contacto__formulario input, .Contacto__formulario textarea, .Contacto__formulario button {
+	border: 1px solid #1584d5;
+}
+
+.Contacto--resp {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.Contacto__formulario {
+		width: 90%;
+	}
+	.Contacto--resp {
+		display: block;
+	}
+	.Contacto--desk {
+		display: none;
+	}
+}
+
+/* COLUMN 2 */
+
+/* VIDEO */
+
+.Video {
+	margin-bottom: 3rem;
+}
+
 /* responsive */
 
-.Curso__video {
+.Video__embed {
 	position: relative;
 	padding-bottom: 56.25%;
 	padding-top: 30px;
@@ -186,7 +265,7 @@
 	/* width: 45vw; */
 }
 
-.Curso__video iframe {
+.Video__embed iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -194,7 +273,70 @@
 	height: 100%;
 }
 
+.Video--resp {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.Video--resp {
+		display: block;
+		margin-bottom: .5rem;
+	}
+	.Video--desk {
+		display: none;
+	}
+}
+
+/* EDICION */
+
+.Edicion h3 {
+	font-size: 2.2rem;
+	/* border-bottom: 5px solid #ec5252; */
+	/* padding-bottom: .5rem; */
+}
+
+.Edicion p {
+	font-size: 1.5rem;
+}
+
+.Edicion__fechas {
+	font-size: 2rem;
+	/* font-weight: 500; */
+	color: #1584d5;
+	/* padding-bottom: .5rem; */
+	/* border-bottom: 2px solid #1584d5; */
+}
+
+.Edicion h2 {
+	font-size: 2.2rem;
+	font-weight: 600;
+	color: #ec5252;
+	margin-top: .5em;
+	text-align: center;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #ec5252;
+}
+
+@media (max-width: 800px) {
+	.Edicion h3 {
+		font-size: 1.8rem;
+		background-color: #1584d5;
+		text-align: center;
+	}
+	.Edicion p {
+		font-size: 1.3rem;
+	}
+}
+
+/* PAGO */
+
 .Pago {
+	width: 100%;
+}
+
+.Pago__boton form input {
+	height: auto;
 	width: 100%;
 }
 
@@ -206,6 +348,7 @@
 	justify-content: space-around;
 	height: 150px; */
 }
+
 .Pago__medio h3 {
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
@@ -213,11 +356,13 @@
 	background-color: #1584d5;
 	color: whitesmoke;
 }
+
 .Pago__medio p {
 	margin-bottom: 1rem;
 	font-size: 1.2rem;
 }
-.Pago__medio a{
+
+.Pago__medio a {
 	color: black;
 	/* color: whitesmoke; */
 	font-weight: 500;
@@ -227,7 +372,7 @@
 	border-radius: 3px;
 }
 
-.Pago__medio a:hover{
+.Pago__medio a:hover {
 	background-color: #333;
 	color: whitesmoke;
 }
@@ -258,10 +403,11 @@
 	margin-bottom: 3rem;
 }
 
+
+
 .Pago__box h3 {
 	text-align: center;
 	font-size: 2.5rem;
-
 	/* color: #666 */
 }
 
@@ -269,7 +415,6 @@
 	border-bottom: 3px solid #666;
 	padding-bottom: .5rem;
 	margin-bottom: .5rem;
-
 }
 
 .Pago__box del {
@@ -329,7 +474,6 @@
 	margin-bottom: .5rem;
 	cursor: pointer;
 	font-size: 1rem;
-
 }
 
 .Pago_boxcheck input {
@@ -390,7 +534,6 @@
 	display: none;
 } */
 
-
 .Pago__boton-desc {
 	margin-top: .7rem;
 	font-size: 1rem;
@@ -412,4 +555,19 @@
 
 .newClassName {
 	display: block;
+}
+
+@media (max-width: 800px) {
+	.Pago__box {
+		width: 95%;
+	}
+	.Pago__boton {
+		width: 95%;
+	}
+}
+
+.color {
+	color: #1584d5;
+	color: #ec5252;
+	color: #992337;
 }
