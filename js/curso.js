@@ -29,16 +29,9 @@ console.log("hola");
 
 
 
-// PAID CHEKBOXES 
+// PAID CHEKBOXES Mercado Pago
 
-
-
-// const Precio = document.getElementById("precios");
-// const Precio = document.querySelectorAll(".precios");
 const Precio = document.getElementsByClassName("precios")
-// const D1  =document.getElementsByClassName("desc1")[0];
-// const D2 = document.getElementsByClassName("desc2")[0];
-// const D3 = document.getElementsByClassName("desc3")[0];
 
 function foo() {
     // var checkedValue = [];
@@ -87,6 +80,50 @@ function foo() {
 //     Modal.style.display = "none";
 // }
 document.getElementById("testt").click();
+
+
+
+
+// PAID CHEKBOXES Paypal
+
+const Precio_p = document.getElementsByClassName("precios_p")
+
+function foo_p() {
+    // var checkedValue = [];
+    var count_p = 0
+    var inputElements_p = document.getElementsByClassName('pagoCheckbox_p');
+    var botones_p = document.getElementsByClassName('bot_p');
+    for (var i = 0; i < inputElements_p.length; ++i) {
+        botones_p[i].style.display = "none";
+        if (inputElements_p[i].checked) {
+            count_p = count_p + 1
+        }
+    }
+
+    if (count_p == 1) {
+        for (var i = 0; i < Precio_p.length; i++) {
+            Precio_p[i].innerHTML = "U$D33"
+        }
+        document.getElementById("test_p").style.display = "block";
+
+    }
+    else if (count_p == 2) {
+        for (var i = 0; i < Precio_p.length; i++) {
+            Precio_p[i].innerHTML = "U$D27"
+        }
+        // document.getElementById("test1").classList.toggle("newClassName");
+        document.getElementById("test1_p").style.display = "block";
+    }
+    else {
+        for (var i = 0; i < Precio_p.length; i++) {
+            Precio_p[i].innerHTML = "U$D39"
+        } document.getElementById("test2_p").style.display = "block";
+    }
+}
+// function foo() {
+//     Modal.style.display = "none";
+// }
+document.getElementById("testt_p").click();
 
 
 

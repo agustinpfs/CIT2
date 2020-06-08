@@ -255,6 +255,7 @@
 	background-color: white;
 	padding: 1rem;
 	border-radius: 5px;
+	margin-bottom: 3rem;
 }
 
 .Pago__box h3 {
@@ -303,6 +304,10 @@
 .Pago__boton a:hover {
 	background-color: #992337;
 	cursor: pointer;
+}
+
+.Pago__boton small {
+	font-size: 60%;
 }
 
 /* CHECKBOX */
