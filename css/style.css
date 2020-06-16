@@ -1,11 +1,13 @@
 /* HEADER */
 /* MAIN */
 /* SLIDER */
+/* DESCRIPTION */
 /* FEATURES */
 /* ARTICLES */
+/* MODAL */
+/* CAPTCHA */
 /* ASIDE */
 /* FOOTER */
-/* DESCRIPTION */
 /* ACORDEON */
 /* BUTTONS */
 
@@ -1057,7 +1059,7 @@ div.contenido {
 	}
 }
 
-/* MODAL ////////////////////////////////////////////*/
+/* MODAL */
 
 .Modal {
 	display: none;
@@ -1068,11 +1070,11 @@ div.contenido {
 	/* Sit on top */
 	left: 0;
 	top: 0;
-	width: 100%;
+	/* width: 100%; */
 	/* Full width */
-	height: 100%;
+	/* height: 100%; */
 	/* Full height */
-	overflow: auto;
+	/* overflow: auto; */
 	/* Enable scroll if needed */
 	background-color: rgba(9, 28, 59, 0.6);
 	/* Black w/ opacity */
@@ -1097,7 +1099,7 @@ div.contenido {
 	margin: auto;
 	top: 0;
 	bottom: 0;
-	height: 80%;
+	height: 90%;
 	/* background-color: rgba(254,254,254,0.9); */
 	background-color: black;
 	/* background-color: #091c3b; */
@@ -1188,8 +1190,8 @@ div.contenido {
 }
 
 .Modal form {
-	margin-top: 3rem;
-	margin-bottom: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
 	text-align: center;
 }
 
@@ -1206,7 +1208,7 @@ div.contenido {
 
 .button--form {
 	background-color: black;
-	margin-top: 1.5rem;
+	/* margin-top: .5rem; */
 	font-size: 1.2rem;
 	cursor: pointer;
 }
@@ -1344,6 +1346,55 @@ div.contenido {
 	content: "\e9b8";
 }
 
+
+/* CAPTCHA */
+/* COMPACT CAPTCHA */
+
+.capbox {
+	/* background-color: #BBBBBB; */
+	/* background-image: linear-gradient(#BBBBBB, #9E9E9E); */
+	/* border: #2A7D05 0px solid; */
+	/* border-width:	 2px 2px 2px 20px; */
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: inline-block;
+	padding: 5px 8px 5px 8px;
+	border-radius: 4px 4px 4px 4px;
+	}
+
+.capbox-inner {
+	font: bold 12px arial, sans-serif;
+	color: white;
+	/* background-color: #E3E3E3; */
+	margin: 0px auto 0px auto;
+	padding: 3px 10px 5px 10px;
+	border-radius: 4px;
+	display: inline-block;
+	vertical-align: middle;
+	}
+
+#CaptchaDiv {
+	color: #000000;
+	font: normal 25px Impact, Charcoal, arial, sans-serif;
+	font-style: italic;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	user-select: none;
+	display: inline-block;
+	padding: 3px 14px 3px 8px;
+	margin-right: 4px;
+	border-radius: 4px;
+	}
+
+#CaptchaInput {
+	border: #78fee9 3px solid;
+	margin: 3px 0px 1px 0px;
+	width: 125px;
+	}
+
+
 /* COLORS */
 
 .green {
@@ -1380,3 +1431,9 @@ div.contenido {
 	color: #091c3b;
 	/* background SLIDES (claro)*/
 }
+
+
+::placeholder {
+	color: grey;
+	/* opacity: 1; */
+  }

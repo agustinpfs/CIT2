@@ -350,12 +350,15 @@
                 <!-- </a> -->
             </div>
         </section>
-        <section class="Aside-twitter">
+        <section class="Social-timeline">
+            <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/cursosit_ok?ref_src=twsrc%5Etfw">Tweets by cursosit_ok</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        <!-- <section class="Aside-twitter">
             <a class="twitter-timeline" data-tweet-limit=3
                 href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets
                 by TwitterDev</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </section>
+        </section> -->
         <section class="Acordeon">
             <h2>Últimos videos</h2>
             <button id="activado" class="Acordeon-button">Hola Mundo!</button>
@@ -409,15 +412,80 @@
         <div class="Modal-content">
             <form class="contact_form"
                 action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                onsubmit="return checkform(this);"
                 method="post" name="contact_form">
                 <input type='hidden' name='redirect_to' value='http://cursosit.com' />
 
                 <input name="nombre" type="text" placeholder="Tu nombre" required>
                 <input name="email" type="email" placeholder="Tu email" required>
                 <textarea name="msje" placeholder="Tu mensaje" required></textarea>
-                <!-- <div class="g-recaptcha" data-sitekey="6LfE2vwUAAAAAAO_xQdh3Pn17vXsV2fY8QWjT_Kj" data-theme="dark"></div> -->
+<!-- START CAPTCHA -->
+<br>
+<div class="capbox">
+
+<div id="CaptchaDiv"></div>
+
+<div class="capbox-inner">
+ANTI-SPAM:<br>
+
+<input type="hidden" id="txtCaptcha">
+<input placeholder="Tpeá el número" type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+<!-- <input style="background-color: whitesmoke;" placeholder="test" type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br> -->
+
+</div>
+</div>
+<br>
+<!-- END CAPTCHA -->
                 <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
+            <script type="text/javascript">
+
+                // Captcha Script
+                
+                function checkform(theform){
+                var why = "";
+                
+                if(theform.CaptchaInput.value == ""){
+                why += "POR FAVOR, INGRESE EL CÓDIGO CAPTCHA.\n";
+                }
+                if(theform.CaptchaInput.value != ""){
+                if(ValidCaptcha(theform.CaptchaInput.value) == false){
+                why += "EL CÓDIGO NO COINCIDE!\n";
+                }
+                }
+                if(why != ""){
+                alert(why);
+                return false;
+                }
+                }
+                
+                var a = Math.ceil(Math.random() * 9)+ '';
+                var b = Math.ceil(Math.random() * 9)+ '';
+                var c = Math.ceil(Math.random() * 9)+ '';
+                var d = Math.ceil(Math.random() * 9)+ '';
+                var e = Math.ceil(Math.random() * 9)+ '';
+                
+                var code = a + b + c + d + e;
+                document.getElementById("txtCaptcha").value = code;
+                document.getElementById("CaptchaDiv").innerHTML = code;
+                
+                // Validate input against the generated number
+                function ValidCaptcha(){
+                var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+                var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+                if (str1 == str2){
+                return true;
+                }else{
+                return false;
+                }
+                }
+                
+                // Remove the spaces from the entered and generated code
+                function removeSpaces(string){
+                return string.split(' ').join('');
+                }
+                </script>
+                
 
             <span class="Modal-close">&times;</span>
         </div>
@@ -426,7 +494,6 @@
     <script src="js/script.js"></script>
     <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 
-    <script src="js/captcha.js"></script>
 
 
 </body>
