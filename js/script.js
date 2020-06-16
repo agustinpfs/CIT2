@@ -35,6 +35,8 @@ window.onclick = function(event) {
 document.getElementById("defaultActive").click();
 
 function showContent(evento, contenidoDeUnTab) {
+  console.log(evento);
+  console.log(evento.target);
   
   let i, todosLosContenidos, tab_button;
   
