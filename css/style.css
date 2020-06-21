@@ -1060,17 +1060,21 @@ div.contenido {
 }
 
 /* MODAL */
-
+body {
+	/* position: relative; */
+}
 .Modal {
 	display: none;
 	/* Hidden by default */
-	position: fixed;
+	/* position: absolute; */
+	position: absolute;
 	/* Stay in place */
 	z-index: 1;
 	/* Sit on top */
-	/* left: 0; */
-	/* top: 0; */
-	/* width: 100%; */
+	left: 0;
+	top: 20px;
+	width: 100%;
+	max-height: 80vh;
 	/* Full width */
 	/* height: 100%; */
 	/* Full height */
@@ -1082,7 +1086,7 @@ div.contenido {
 	/* Fade in the background */
 	-webkit-animation-duration: .7s;
 	animation-name: fadeIn;
-	animation-duration: .7s
+	animation-duration: .7s;
 }
 
 /* Modal Content */
@@ -1090,7 +1094,7 @@ div.contenido {
 .Modal-content {
 	border: 1px solid #78fee9;
 	/* border: 1px solid #0f86f7; */
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
 	/* opacity: .9; */
@@ -1098,8 +1102,8 @@ div.contenido {
 	/* margin-right: auto; */
 	margin: auto;
 	top: 0;
-	bottom: 0;
-	height: 90%;
+	/* bottom: 0; */
+	/* height: 90%; */
 	/* background-color: rgba(254,254,254,0.9); */
 	background-color: black;
 	/* background-color: #091c3b; */
@@ -1201,8 +1205,8 @@ div.contenido {
 
 @media (max-width: 800px) {
 	.Modal-content {
-		width: 80%;
-		height: 70%;
+		width: 95%;
+		/* height: 70%; */
 	}
 }
 
