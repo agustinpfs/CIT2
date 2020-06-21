@@ -17,19 +17,8 @@
     <title>¿Qué es Slack?</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blog.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 
-    <!-- <style>
-        article{
-            width: 800px;
-        }
-        /* span{
-            margin-left: auto;
-            display: block;
-        } */
-    
-    </style> -->
 </head>
 
 <body>
@@ -76,7 +65,7 @@
     <main class="MainBlog">
         <article class="Post Post--slack">
             <div class="Post__header">
-                <h1>Qué es, para que sirve y cómo funciona Slack?</h1>
+                <h1>Qué es, para qué sirve y cómo funciona Slack?</h1>
                 <div class="Post__data">
                     <time>15/5/20</time>
                     <span>por <i>agustinpfs</i></span>
@@ -104,8 +93,10 @@
                 </figure>
                 <p>Otra característica interesante de Slack es la posibilidad de integrar diferentes aplicaciones tales
                     cómo: DropBox, Github, Gmail. También Aplicaciones de productividad o de Steaming como Trello o
-                    Zoom, y hasta gestión de tickets de soporte como Zendesk. <a href="http://https://slack.com/intl/es-es/apps" target="_blank" rel="noopener noreferrer">En este enlace puedes ver mas
-                    aplicaciones.</a></p>
+                    Zoom, y hasta gestión de tickets de soporte como Zendesk. <a
+                        href="http://https://slack.com/intl/es-es/apps" target="_blank" rel="noopener noreferrer">En
+                        este enlace puedes ver mas
+                        aplicaciones.</a></p>
                 <figure>
                     <img src="img/slack4blog.png" alt="">
                 </figure>
@@ -119,10 +110,12 @@
                     accesibles y potentes canales donde fluye información ordenada y valiosa para el objetivo del
                     equipo.</p>
                 <br>
-                <a href="https://slack.com/intl/es-ar/help" target="_blank" rel="noopener noreferrer">Más información</a>
+                <a href="https://slack.com/intl/es-ar/help" target="_blank" rel="noopener noreferrer">Más
+                    información</a>
                 <br>
                 <br>
-                <a href="https://slack.com/intl/es-ar/downloads/" target="_blank" rel="noopener noreferrer">Conseguir Slack</a>
+                <a href="https://slack.com/intl/es-ar/downloads/" target="_blank" rel="noopener noreferrer">Conseguir
+                    Slack</a>
                 <br>
             </div>
             <br>
@@ -194,16 +187,6 @@
             </div>
 
             <div id="contenidoTab3" class="Tabs__tab-content">
-                <!-- <a href="http://"> -->
-                <!-- <h2 class="">
-                        NodeJS
-                        <span class="icon-node-dot-js"></span> 
-                        Express
-                        <span class="icon-express"></span>
-                        MongoDB
-                        <span class="icon-mongodb"></span>
-                    </h2> -->
-
                 <ul>
                     <li><span class="green">&#8226;</span> NodeJS, Express, MongoDB</li>
                     <li><span class="green">&#8226;</span> Progressive web app</li>
@@ -212,7 +195,6 @@
                     <li><span class="green">&#8226;</span> VueJS</li>
                     <li><span class="green">&#8226;</span> Electron</li>
                 </ul>
-                <!-- </a> -->
             </div>
         </section>
         <section class="Aside-twitter">
@@ -225,19 +207,16 @@
             <h2>Últimos videos</h2>
             <button id="activado" class="Acordeon-button">Hola Mundo!</button>
             <div class="contenido">
-                <!-- <img src="img/perfil1.jpeg" alt="" width="150" height="200"> -->
                 <p>PROXIMAMENTE</p>
             </div>
 
             <button class="Acordeon-button">HTML</button>
             <div class="contenido">
-                <!-- <img src="img/perfil2.png" alt="" width="150" height="200"> -->
                 <p>PROXIMAMENTE</p>
             </div>
 
             <button class="Acordeon-button">CSS</button>
             <div class="contenido">
-                <!-- <img src="img/perfil3.jpeg" alt="" width="150" height="200"> -->
                 <p>PROXIMAMENTE</p>
             </div>
         </section>
@@ -274,91 +253,18 @@
         <div class="Modal-content">
             <form class="contact_form"
                 action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
-                onsubmit="return checkform(this);"
                 method="post" name="contact_form">
                 <input type='hidden' name='redirect_to' value='http://cursosit.com' />
 
                 <input name="nombre" type="text" placeholder="Tu nombre" required>
                 <input name="email" type="email" placeholder="Tu email" required>
                 <textarea name="msje" placeholder="Tu mensaje" required></textarea>
-<!-- START CAPTCHA -->
-<br>
-<div class="capbox">
 
-<div id="CaptchaDiv"></div>
-
-<div class="capbox-inner">
-ANTI-SPAM:<br>
-
-<input type="hidden" id="txtCaptcha">
-<input placeholder="Tpeá el número" type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
-<!-- <input style="background-color: whitesmoke;" placeholder="test" type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br> -->
-
-</div>
-</div>
-<br>
-<!-- END CAPTCHA -->
                 <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
-            <script type="text/javascript">
-
-                // Captcha Script
-                
-                function checkform(theform){
-                var why = "";
-                
-                if(theform.CaptchaInput.value == ""){
-                why += "POR FAVOR, INGRESE EL CÓDIGO CAPTCHA.\n";
-                }
-                if(theform.CaptchaInput.value != ""){
-                if(ValidCaptcha(theform.CaptchaInput.value) == false){
-                why += "EL CÓDIGO NO COINCIDE!\n";
-                }
-                }
-                if(why != ""){
-                alert(why);
-                return false;
-                }
-                }
-                
-                var a = Math.ceil(Math.random() * 9)+ '';
-                var b = Math.ceil(Math.random() * 9)+ '';
-                var c = Math.ceil(Math.random() * 9)+ '';
-                var d = Math.ceil(Math.random() * 9)+ '';
-                var e = Math.ceil(Math.random() * 9)+ '';
-                
-                var code = a + b + c + d + e;
-                document.getElementById("txtCaptcha").value = code;
-                document.getElementById("CaptchaDiv").innerHTML = code;
-                
-                // Validate input against the generated number
-                function ValidCaptcha(){
-                var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-                var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
-                if (str1 == str2){
-                return true;
-                }else{
-                return false;
-                }
-                }
-                
-                // Remove the spaces from the entered and generated code
-                function removeSpaces(string){
-                return string.split(' ').join('');
-                }
-                </script>
-                
-
             <span class="Modal-close">&times;</span>
         </div>
-
     </div>
     <script src="js/script.js"></script>
-    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
-
     <script src="js/captcha.js"></script>
-
-
 </body>
-
-</html>

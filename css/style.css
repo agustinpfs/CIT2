@@ -1068,8 +1068,8 @@ div.contenido {
 	/* Stay in place */
 	z-index: 1;
 	/* Sit on top */
-	left: 0;
-	top: 0;
+	/* left: 0; */
+	/* top: 0; */
 	/* width: 100%; */
 	/* Full width */
 	/* height: 100%; */
@@ -1128,7 +1128,7 @@ div.contenido {
 
 .Modal-close:hover, .Modal-close:focus {
 	color: #fff;
-	text-decoration: none;
+	/* text-decoration: none; */
 	cursor: pointer;
 }
 
@@ -1242,6 +1242,13 @@ div.contenido {
 	position: absolute;
 	bottom: .5rem;
 	right: .5rem;
+}
+
+.button--form {
+	background-color: black;
+	/* margin-top: .5rem; */
+	font-size: 1.2rem;
+	cursor: pointer;
 }
 
 /* ICONOS */

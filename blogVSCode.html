@@ -279,7 +279,7 @@
                 </div>
                 <h3>Más atajos</h3>
                 <br>
-                <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank" rel="noopener noreferrer">Emmet</a>
+                <a href="https://docs.emmet.io/cheat-sheet/" target="_blank" rel="noopener noreferrer">Emmet</a>
                 <span class="nota">Emmet es una extensión que ya viene instalada y muchos atajos corresponden a esta
                     extensión.</span class="nota">
                 <br>
@@ -359,16 +359,6 @@
             </div>
 
             <div id="contenidoTab3" class="Tabs__tab-content">
-                <!-- <a href="http://"> -->
-                <!-- <h2 class="">
-                        NodeJS
-                        <span class="icon-node-dot-js"></span> 
-                        Express
-                        <span class="icon-express"></span>
-                        MongoDB
-                        <span class="icon-mongodb"></span>
-                    </h2> -->
-
                 <ul>
                     <li><span class="green">&#8226;</span> NodeJS, Express, MongoDB</li>
                     <li><span class="green">&#8226;</span> Progressive web app</li>
@@ -390,19 +380,16 @@
             <h2>Últimos videos</h2>
             <button id="activado" class="Acordeon-button">Hola Mundo!</button>
             <div class="contenido">
-                <!-- <img src="img/perfil1.jpeg" alt="" width="150" height="200"> -->
                 <p>PROXIMAMENTE</p>
             </div>
 
             <button class="Acordeon-button">HTML</button>
             <div class="contenido">
-                <!-- <img src="img/perfil2.png" alt="" width="150" height="200"> -->
                 <p>PROXIMAMENTE</p>
             </div>
 
             <button class="Acordeon-button">CSS</button>
             <div class="contenido">
-                <!-- <img src="img/perfil3.jpeg" alt="" width="150" height="200"> -->
                 <p>PROXIMAMENTE</p>
             </div>
         </section>
@@ -438,81 +425,13 @@
         <div class="Modal-content">
             <form class="contact_form"
                 action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
-                onsubmit="return checkform(this);"
                 method="post" name="contact_form">
                 <input type='hidden' name='redirect_to' value='http://cursosit.com' />
-
                 <input name="nombre" type="text" placeholder="Tu nombre" required>
                 <input name="email" type="email" placeholder="Tu email" required>
                 <textarea name="msje" placeholder="Tu mensaje" required></textarea>
-<!-- START CAPTCHA -->
-<br>
-<div class="capbox">
-
-<div id="CaptchaDiv"></div>
-
-<div class="capbox-inner">
-ANTI-SPAM:<br>
-
-<input type="hidden" id="txtCaptcha">
-<input placeholder="Tpeá el número" type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
-<!-- <input style="background-color: whitesmoke;" placeholder="test" type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br> -->
-
-</div>
-</div>
-<br>
-<!-- END CAPTCHA -->
                 <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
             </form>
-            <script type="text/javascript">
-
-                // Captcha Script
-                
-                function checkform(theform){
-                var why = "";
-                
-                if(theform.CaptchaInput.value == ""){
-                why += "POR FAVOR, INGRESE EL CÓDIGO CAPTCHA.\n";
-                }
-                if(theform.CaptchaInput.value != ""){
-                if(ValidCaptcha(theform.CaptchaInput.value) == false){
-                why += "EL CÓDIGO NO COINCIDE!\n";
-                }
-                }
-                if(why != ""){
-                alert(why);
-                return false;
-                }
-                }
-                
-                var a = Math.ceil(Math.random() * 9)+ '';
-                var b = Math.ceil(Math.random() * 9)+ '';
-                var c = Math.ceil(Math.random() * 9)+ '';
-                var d = Math.ceil(Math.random() * 9)+ '';
-                var e = Math.ceil(Math.random() * 9)+ '';
-                
-                var code = a + b + c + d + e;
-                document.getElementById("txtCaptcha").value = code;
-                document.getElementById("CaptchaDiv").innerHTML = code;
-                
-                // Validate input against the generated number
-                function ValidCaptcha(){
-                var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-                var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
-                if (str1 == str2){
-                return true;
-                }else{
-                return false;
-                }
-                }
-                
-                // Remove the spaces from the entered and generated code
-                function removeSpaces(string){
-                return string.split(' ').join('');
-                }
-                </script>
-                
-
             <span class="Modal-close">&times;</span>
         </div>
 
