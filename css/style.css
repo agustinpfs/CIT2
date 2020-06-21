@@ -616,17 +616,11 @@ a {
 
 .Features__article h4 {
 	font-size: 1.7rem;
-	/* background-color: #8019df; */
-	/* background-color: #fc6c7c; */
-	border: 1px solid #78fee9;
-	/* border: 1px solid #0f86f7; */
-	border-radius: 3px;
+	border-bottom: 3px solid #78fee9;
 	margin-top: 2rem;
-	font-weight: 300;
-	margin-bottom: 1rem;
-	/* color: white; */
-	/* border-radius: 20px; */
-	/* color: #1b98ec */
+	font-weight: 400;
+	padding-bottom: .5rem;
+	margin-bottom: 1rem;  
 }
 
 .Features__article p {
