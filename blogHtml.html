@@ -1,11 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167239185-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167239185-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Qué es HTML?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog2test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <script async src="https://jsfiddle.net/Pandawebs/dc6h5sw3/1/embed/html,result/dark/"></script>
+    <header class="Header">
+        <figure class="Header__figure">
+            <img src="images/logo.png" alt="logo cursosIT">
+        </figure>
+        <nav class="Header__nav">
+            <label for="menu" class="Header__button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input type="checkbox" class="Header__check" id="menu">
+            <ul class="Header__menu">
+                <li class="Header__menu-li">
+                    <a href="index.html" class="Header__menu-a">HOME</a>
+                </li>
+                <li class="Header__menu-li Header__open-submenu">
+                    <a href="" class="Header__menu-a no-link">CURSOS</a>
+                    <ul class="Header__submenu">
+                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="curso.html">HTML,CSS,JS</a>
+                        </li>
+                        <li class="Header__submenu-li title">
+                            <a class="Header__submenu-a no-link" href="">WEBPACK</a>
+                            <span class="titletext">PROXIMAMENTE</span>
+                        </li>
+                        <li class="Header__submenu-li title">
+                            <a class="Header__submenu-a no-link" href="">NODEJS</a>
+                            <span class="titletext">PROXIMAMENTE</span>
+                        </li>
+                        <li class="Header__submenu-li"><a class="Header__submenu-a"
+                                href="index.html#scrollLink1">TODOS</a></li>
+                    </ul>
+                </li>
+                <li class="Header__menu-li">
+                    <a href="index.html#section1" class="Header__menu-a">BLOG</a>
+                </li>
+                <li class="Header__menu-li opencontact"><a href="#" class="Header__menu-a">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="MainBlog">
+        <article class="Post">
+            <div class="Post__header">
+                <h1>¿Qué es HTML? Concepto, estructura, principales etiquetas y ejemplos.</h1>
+                <div class="Post__data">
+                    <time>15/5/20</time>
+                    <span>por <i>agustinpfs</i></span>
+                </div>
+            </div>
+            <div class="Post__body">
+                <figure>
+                    <img src="img/blog/html/HTML5_Logo_256.png" alt="logo html5">
+                </figure>
+                <h2>HTML</h2>
+                <h3>HTML5 hace referencia a la última versión de HTML.</h3>
+                <p>“HyperText Markup Language“ (Lenguaje de Marcado de Hipertextos).
+                    “Hipertexto" se refiere a los enlaces que conectan las páginas web, aspecto fundamental de la web.
+                    Son la pieza clave de la navegación web.
+                </p>
+                <p>Estos archivos llevan la extensión .html y son archivos que pueden ser interpretados por el
+                    navegador.
+                    Con solo abrir el bloc de notas en Windows o el TextEdit en Mac, escribir “hola” y guardarlo con
+                    extensión
+                    .html,
+                    será suficiente para que ese archivo pueda ser abierto y mostrar nuestro “hola” en la ventana del
+                    navegador
+                    (Chrome,
+                    Firefox, etc).
+                    <figure>
+                        <img src="img/blog/html/hola.png" alt="">
+                    </figure>
+                    <p>En navegador:</p>
+                    <figure>
+                        <img src="img/blog/html/hola-browser.png" alt="">
+                    </figure>
+                </p>
+                <p>Sin embargo, para crear un documento html de la manera correcta deberá tener cierta estructura que
+                    veremos en
+                    este
+                    artículo. Además, en vez de usar el bloc de notas, usaremos un editor de código que nos permite
+                    escribir estos
+                    archivos de manera más cómoda, mas rápida y con menos errores.</p>
+                <p>Elegiremos Visual Studio Code por su potencia, fácil instalación y por ser uno de los editores de
+                    código más
+                    populares en este momento.
+                    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Puedes descargarlo desde su página oficial.</a>
+                </p>
+                <p>HTML es el archivo más básico de una página web y en el definiremos su estructura y alojaremos la
+                    información que
+                    contendrá (texto, enlaces, imágenes, vídeos, audios, etc).</p>
+                <p>Para ello utilizaremos las etiquetas (tags) que determinan los elementos que conforman la escritura
+                    de un archivo
+                    HTML.
+                    Por lo general los elementos HTML se determinan como pares de etiquetas (apertura y cierre). Se definen entre los signos
+                    “menor que” (<) y “mayor que” (>).
+                    La etiqueta de cierra lleva una barra antes del nombre:<br>
+                    Apertura -> <span class="Post__code">&lt;nombre-etiqueta&gt;</span><br>
+                    Cierre -> <span class="Post__code">&lt;/nombre-etiqueta&gt;</span> (algunos elementos no llevan etiqueta de cierre)
+                </p>
+                <h2>Estructura Básica</h2>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/9526db679b0acf9b2027fb6279ceb794.js"></script>
+                </div>
+                <h2>Algunas de las etiquetas más usadas</h2>
+                <h3>Encabezados <small>(bloque)</small></h3>
+                <p class="Post__code">&lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;...&lt;h6&gt;&lt;/h6&gt;</p
+                    class="Post__code">
+                <p>
+                    Títulos ordenados por tamaño e importancia.<br>
+                    h1 se utiliza para el título mas importante y es el tamaño de fuente más grande.
+                    Se recomienda un solo h1 por cada página de nuestro sitio.
+                </p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/b2074c389d61909ac4ab17f82d5241de.js"></script>
+                </div>
+                <p>En navegador:</p>
+                <figure>
+                    <img src="img/blog/html/encabezados.png" alt="vista de los encabezados en el navegador">
+                </figure>
+                <h3>Párrafo <small>(bloque)</small></h3>
+                <p><span class="Post__code">&lt;p&gt;</span>Esto es un párrafo<span class="Post__code">&lt;/p&gt;</span>
+                </p>
+                <p>Define un párrafo. Representa un salto de línea.</p>
+                <p>Ejemplo:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/f302d4d2ce797e07f6d651e0bf09853e.js"></script>
+                </div>
+                <p>En navegador:</p>
+                <figure>
+                    <img src="img/blog/html/parrafo.png" alt="vista de los párrafos en el navegador">
+                </figure>
+                <h3>Listas <small>(bloque)</small></h3>
+                <p><span class="Post__code">&lt;ul&gt;&lt;/ul&gt;</span> define una lista</p>
+                <p><span class="Post__code">&lt;li&gt;&lt;/li&gt;</span> define un ítem de la lista</p>
+                <p>Ejemplo:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/a88af3d9d0e4c70aca67b1cd86788136.js"></script>
+                </div>
+                <p>En navegador:</p>
+                <figure>
+                    <img src="img/blog/html/listas.png" alt="vista de las listas en el navegador">
+                </figure>
+                <h3>Secciones básicas</h3>
+                <p><span class="Post__code">&lt;span&gt;&lt;/span&gt;</span> define una sección del documento en línea.
+                </p>
+                <p><span class="Post__code">&lt;div&gt;&lt;/div&gt;</span> define una sección del documento en bloque.
+                </p>
+                <p>Ejemplo:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/c3bbfbd3169aa4f7dcc4d6dd370e0d01.js"></script>
+                </div>
+                <p>En navegador:</p>
+                <figure>
+                    <img src="img/blog/html/span-div.png" alt="vista de div y span en el navegador">
+                </figure>
+                <h3>Salto de línea <span class="Post__code">&lt;br&gt;</h3>
+                <p>Ejemplo:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/740c77803d6324cc392aa6a1b70f8616.js"></script>
+                </div>
+                <p>En navegador:</p>
+                <figure>
+                    <img src="img/blog/html/br.png" alt="vista de br (salto de línea) en el navegador">
+                </figure>
+                <h3>Imágenes <small>(línea)</small></h3>
+                <p><span class="Post__code">&lt;img src="ruta" alt=""a&gt;</span></p>
+                <p>Ejemplo:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/fa30eb873f5b85e2ae6d57d83a22b2e7.js"></script>
+                </div>
+                <p>En navegador:</p>
+                <figure>
+                    <img src="img/blog/html/images.png" alt="vista de br (salto de línea) en el navegador">
+                </figure>
+                <h3>Links <small>(línea)</small></h3>
+                <p>Define un enlace, el atributo “href” indica el destino de la página.</p>
+                <p><span class="Post__code">&lt;a href="destino"&gt;&lt;/a&gt;</span></p>
+                <p>Ejemplo:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/3ae01cd5362a8848a0a2c7abdd774afa.js"></script>
+                </div>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/f761ace3b76d2e90f91a703bcf7ff347.js"></script>
+                </div>
+                <h3>Atributos</h3>
+                <p>Los atributos proporcionan información adicional sobre las etiquetas HTML. Se colocan en las
+                    etiquetas de apertura y
+                    son de la forma <b>atributo=”valor”</b>.</p>
+                <p>Ejemplos:</p>
+                <p>
+                    <span class="Post__code">&lt;a href="https://www.google.com"&gt;Link a Google&lt;/a&gt;</span>
+                <p>La etiqueta &lt;a&gt; representa un enlace y el atributo href la ruta hacia donde se dirige.</p>
+                </p>
+                <p>
+                    <span class="Post__code">&lt;img src="ruta" alt="descripcion"&gt;</span>
+                <p>La etiqueta &lt;img&gt; representa una imagen, el atributo src(fuente) la ruta en donde se aloja la
+                    imagen y el
+                    atributo alt la descripción de la imagen (se muestra si la imagen no carga y de utilidad para los
+                    lectores de
+                    pantalla).</p>
+                </p>
+
+                <h2>Semántica</h2>
+                <p>En nuestro archivo HTML utilizaremos determinadas etiquetas que señalan el contenido. Por ejemplo:
+                </p>
+                <ul class="Post__semantica">
+                    <li>encabezado <span class="Post__code">&lt;header&gt;&lt;/header&gt;</span></li>
+                    <li>menú de navegación <span class="Post__code">&lt;nav&gt;&lt;/nav&gt;</span></li>
+                    <li>contenido principal <span class="Post__code">&lt;main&gt;&lt;/main&gt;</span></li>
+                    <li>articulo <span class="Post__code">&lt;article&gt;&lt;/article&gt;</span></li>
+                    <li>sección <span class="Post__code">&lt;section&gt;&lt;/section&gt;</span></li>
+                    <li>división <span class="Post__code">&lt;div&gt;&lt;/div&gt;</span></li>
+                    <li>sidebar (barra lateral) <span class="Post__code">&lt;aside&gt;&lt;/aside&gt;</span></li>
+                    <li>pie de página <span class="Post__code">&lt;footer&gt;&lt;/footer&gt;</span></li>
+                </ul>
+                <br>
+                <br>
+                <p>Estas etiquetas son de carácter semántico, el comportamiento del contenido de estas etiquetas no
+                    varía, es decir un html escrito con estas etiquetas tiene el mismo comportamiento si todas las
+                    etiquetas fueran “divs” &lt;div&gt;.</p>
+                <p>Pero utilizar esta semántica ayuda a la legibilidad del código, a la accesibilidad para los usuarios
+                    con limitaciones visuales (lectores de pantalla) y pueden incidir en los resultados de búsqueda por
+                    parte de los motores de búsqueda.</p>
+            </div>
+
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                    this.page.url = "https://agustinpfs.github.io/CIT2/blogVSCode.html";  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://cursos-it.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+
+        </article>
+    </main>
+    <aside class="Aside">
+        <section class="Tabs">
+            <ul class="Tabs__header">
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab1')" id="defaultActive">Abierto</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab2')">Próximo</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab3')">Futuros</li>
+            </ul>
+
+            <div id="contenidoTab1" class="Tabs__tab-content">
+                <h2 class="w400">
+                    HTML<span class="icon-html5"></span>
+                    CSS<span class="icon-css3"></span>
+                    JavaScript<span class="icon-javascript"></span>
+                </h2>
+
+                <ul>
+                    <li class="green">Además:</li>
+                    <li><span class="green">&#10003;</span> Git-Github</li>
+                    <li><span class="green">&#10003;</span> Despliegue</li>
+                    <li><span class="green">&#10003;</span> Analítica web</li>
+                </ul>
+                <a href="curso.html" class="Tabs__button button button--blue">VER CURSO</a>
+            </div>
+            <div id="contenidoTab2" class="Tabs__tab-content">
+                <h2 class="w400">
+                    Webpack<span class="icon-webpack"></span>
+                    Sass<span class="icon-sass"></span>
+                    Handlebars<span class="icon-hbs"></span>
+                </h2>
+
+                <ul>
+                    <li><span class="green">&#10003;</span> Sistema de bundling</li>
+                    <li><span class="green">&#10003;</span> Automatización de procesos</li>
+                    <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
+                    <li><span class="green">&#10003;</span> Motores de plantillas</li>
+                </ul>
+
+            </div>
+
+            <div id="contenidoTab3" class="Tabs__tab-content">
+                <ul>
+                    <li><span class="green">&#8226;</span> NodeJS, Express, MongoDB</li>
+                    <li><span class="green">&#8226;</span> Progressive web app</li>
+                    <li><span class="green">&#8226;</span> React</li>
+                    <li><span class="green">&#8226;</span> React Native</li>
+                    <li><span class="green">&#8226;</span> VueJS</li>
+                    <li><span class="green">&#8226;</span> Electron</li>
+                </ul>
+                <!-- </a> -->
+            </div>
+        </section>
+        <section class="Aside-twitter">
+            <a class="twitter-timeline" data-tweet-limit=3
+                href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets
+                by TwitterDev</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        <section class="Acordeon">
+            <h2>Últimos videos</h2>
+            <button id="activado" class="Acordeon-button">Hola Mundo!</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+
+            <button class="Acordeon-button">HTML</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+
+            <button class="Acordeon-button">CSS</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+        </section>
+    </aside>
+    <footer class="Footer">
+        <section class="Footer-copy">
+            <span>&copy; CursosIT 2020</span>
+        </section>
+        <nav class="Footer-nav">
+            <ul>
+                <li class="opencontact2"><a href="javascript:void(0)">contacto</a></li>
+                <li><a href="#scrollLink1">cursos</a></li>
+                <li><a href="#section1">blog</a></li>
+            </ul>
+        </nav>
+        <section class="Footer-social">
+            <a href="https://www.facebook.com/Cursos-IT-101125784951053" target="_blank" rel="noopener noreferrer">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="https://twitter.com/CursosIT1" target="_blank" rel="noopener noreferrer">
+                <span class="icon-twitter"></span>
+            </a>
+            <a href="https://github.com/Cursos-IT" target="_blank" rel="noopener noreferrer">
+                <span class="icon-github"></span>
+            </a>
+            <a href="https://www.instagram.com/cursosit_ok/" target="_blank" rel="noopener noreferrer">
+                <span class="icon-instagram"></span>
+            </a>
+        </section>
+    </footer>
+    <div class="Modal">
+        <!-- Modal content -->
+        <div class="Modal-content">
+            <form class="contact_form"
+                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                method="post" name="contact_form">
+                <input type='hidden' name='redirect_to' value='http://cursosit.com' />
+                <input name="nombre" type="text" placeholder="Tu nombre" required>
+                <input name="email" type="email" placeholder="Tu email" required>
+                <textarea name="msje" placeholder="Tu mensaje" required></textarea>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+            </form>
+            <span class="Modal-close">&times;</span>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+
+    <script src="js/captcha.js"></script>
+
 </body>
+
 </html>

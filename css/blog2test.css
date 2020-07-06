@@ -1,0 +1,130 @@
+/* MAIN */
+/* GENERAL */
+/* RESPONSIVE */
+/* HEADER POST */
+
+
+
+
+/* MAIN */
+
+.MainBlog {
+    width: 70%;
+	display: inline-block;
+    vertical-align: top;
+    background-color: whitesmoke;
+    color: #333;
+    padding: 2rem;
+    height: max-content;
+}
+
+.MainBlog img{
+    max-width: 100%; 
+    height: auto;    
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+	.MainBlog {
+		width: 100%;
+        display: block;
+        padding: .5rem;
+    }
+}
+
+
+/* HEADER POST */
+
+.Post__header h1{
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #ccc;
+    color: #1584d5;
+}
+
+.Post__data {
+    color: #999;
+    border-bottom: 1px solid black;
+    padding: .3rem;
+    /* margin-bottom: .5rem; */
+}
+
+.Post__data span{
+    float: right;
+}
+
+.Post__header {
+    margin-bottom: 1rem;
+}
+
+
+
+/* BODY POST */
+
+.Post__body {
+    margin-bottom: 5rem;
+}
+
+.Post__body h2{
+    padding-top: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.Post__body h3{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Post__body p{
+    margin-bottom: 1rem;
+}
+
+.Post__body figure {
+    margin-bottom: 1rem;
+    /* margin-top: 1.5rem; */
+}
+
+.Post__gist {
+    margin-bottom: 1rem;
+    /* margin-top: 1.5rem; */
+}
+
+.Post__semantica li{
+    list-style: circle;
+    margin-left: 2rem;
+    line-height: 1.8rem;
+}
+
+.Post__semantica .Post__code {
+    margin-left: 1.5rem;
+}
+
+
+
+/* GENERAL */
+
+.Post a {
+    text-decoration: underline;
+}
+
+.nota{
+    font-size: small;
+}
+
+.Post__code {
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    font-weight: bold;
+}
+
+small {
+	font-size: .8em
+}
+
+.gist-file, .gist-data, .gist-meta, .file-box, .file, .data, .gist {
+    margin-left: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
+
+}
