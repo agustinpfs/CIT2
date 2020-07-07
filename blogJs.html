@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167239185-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167239185-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es Javascript?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog2test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="Header">
+        <figure class="Header__figure">
+            <img src="images/logo.png" alt="logo cursosIT">
+        </figure>
+        <nav class="Header__nav">
+            <label for="menu" class="Header__button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input type="checkbox" class="Header__check" id="menu">
+            <ul class="Header__menu">
+                <li class="Header__menu-li">
+                    <a href="index.html" class="Header__menu-a">HOME</a>
+                </li>
+                <li class="Header__menu-li Header__open-submenu">
+                    <a href="" class="Header__menu-a no-link">CURSOS</a>
+                    <ul class="Header__submenu">
+                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="curso.html">HTML,CSS,JS</a>
+                        </li>
+                        <li class="Header__submenu-li title">
+                            <a class="Header__submenu-a no-link" href="">WEBPACK</a>
+                            <span class="titletext">PROXIMAMENTE</span>
+                        </li>
+                        <li class="Header__submenu-li title">
+                            <a class="Header__submenu-a no-link" href="">NODEJS</a>
+                            <span class="titletext">PROXIMAMENTE</span>
+                        </li>
+                        <li class="Header__submenu-li"><a class="Header__submenu-a"
+                                href="index.html#scrollLink1">TODOS</a></li>
+                    </ul>
+                </li>
+                <li class="Header__menu-li">
+                    <a href="index.html#section1" class="Header__menu-a">BLOG</a>
+                </li>
+                <li class="Header__menu-li opencontact"><a href="#" class="Header__menu-a">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="MainBlog">
+        <article class="Post">
+            <div class="Post__header">
+                <h1>¿Qué es Javascript?</h1>
+                <div class="Post__data">
+                    <time>15/6/20</time>
+                    <span>por <i>agustinpfs</i></span>
+                </div>
+                <h2>Definición, variables, funciones, condicionales, operadores, arrays, loops,
+                    objetos y métodos, DOM. Ejemplos.</h2>
+            </div>
+            <div class="Post__body">
+                <figure>
+                    <img src="img/blog/js/js-logo.png" alt="logo CSS3">
+                </figure>
+                <h2>JavaScript</h2>
+                <p>Javascript es un lenguaje de programación que pueden interpretar todos los navegadores web modernos.<br>
+                    Con Javascript conseguimos efectos especiales y la interactividad de un sitio web, es decir, dotar al usuario la capacidad de hacer cambios en una página web. Por ejemplo, botones para mostrar o ocultar contenido. 
+                    Los pequeños programas que usamos para realizar estas acciones los llamamos scripts.</p>
+                
+               
+                <h3>Variables</h3>
+                <p>Una variable es un espacio de memoria al que le damos un nombre. En ese espacio podemos guardar diferentes datos, tales cómo números o texto.</p>
+                <p class="Post__code">
+                    nombre_variable1 = 5;<br>
+                    nombre_variable2 = "hola";
+                </p>
+                <p>Colocar un valor a la variable se lo conoce como “asignar un valor”.<br>
+                    Estos valores, Javascript los clasifica por tipo de datos.<br>
+                    Los datos del ejemplo representan 2 de los principales tipos de datos.<br>
+                    <b>Number</b> representa números con los cuales podremos hacer operaciones.<br>
+                    <b>String</b> representa cadenas de texto, Deben escribirse entre comillas simples o dobles.<br>
+                </p>
+                <p>Ejemplos:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/5bf5cc8addd950e1595cac7be2ef0ad8.js"></script>
+                </div>
+                <p><em>En estos ejemplos estamos asignando valores a variables no declaradas. Esto no es una buena práctica ya que son susceptibles a errores y hace que el código sea difícil de leer y mantener.</em></p>
+                <p>Para <strong>declarar una variable</strong> anteponemos al nombre de la variable las palabras <strong>const</strong>, <strong>let</strong> o <strong>var</strong>. Estas 3 palabras reservadas definen 3 tipos de variables.</p>
+                <p><strong>const</strong>: Indica que el valor del dato no puede variar durante la ejecución del programa (no puede ser reasignada). Por ello cuando nos referimos a <strong>const</strong> lo hacemos como “constante” y no “variable”.</p>
+                <p><strong>let</strong> y <strong>var</strong> son tipos variables que pueden variar durante la ejecución del programa (pueden ser reasignadas). Se diferencian según el alcance(scope) que afecte al código. Para mejor entendimiento, veremos estas diferencias en otro artículo ya que antes debemos comprender funciones y condicionales.</p>
+                <p>Ejemplos:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/06b8563a55ab5408ad7b08892ba62ee4.js"></script>
+                </div>
+                <h3>Funciones</h3>
+                <p>Una función en JavaScript es un bloque de código que se ejecutará cuando invoquemos dicha función. Son útiles para rehusar código con diferentes valores que se pasan por parámetro.</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/3b5fc72e9ef5f11c60e86819dff8cc00.js"></script>
+                </div>
+                <p>Los parámetros son opcionales y sirven para pasar valores que serán utilizados por el código de la función.<br>
+                    Los argumentos son los valores que les envío a los parámetros.<br>
+                    Las sentencias son el código que se ejecutará.<br>
+                </p>
+                <p>Ejemplos:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/32f16d6c368a608d82b7fe746dea1c51.js"></script>
+                </div>
+                <h3>Arrow functions (funciones flecha)</h3>
+                <p>En vez de usar la palabra clave function se utiliza el símbolo de la flecha.</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/ab6cccba055879d7281fdfb5b46c433a.js"></script>
+                </div>
+                <h2>Condicionales</h2>
+                <p>Las sentencias condicionales se utilizan para realizar diferentes acciones basadas en diferentes condiciones.</p>
+                <h3>Declaración if</h3>
+                <p>Indica el código que se ejecutará si la condición es verdadera.</p>
+                <p>Sintaxis y ejemplos:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/68dcc26379e6e2e9365acc44a4ab87a3.js"></script>
+                </div>
+                <h3>Declaración else</h3>
+                <p>Indica el código que se ejecutará si la condición es falsa.</p>
+                <p>Sintaxis y ejemplos:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/415ce01d3d48bab6c2536e41e555fdf2.js"></script>
+                </div>
+                <h2>Operadores</h2>
+                <p>En JavaScript, los operadores se utilizan para asignar y comparar datos, realizar cálculos matemáticos y lógicos, etc.<br> 
+                    Hay varios operadores compatibles con JavaScript.</p>
+                    <ul>
+                        <li>1. Operadores aritméticos</li>
+                        <li>2. Operadores de asignación</li>
+                        <li>3. Operadores condicionales (comparativos)</li>
+                        <li>4. Operadores lógicos</li>
+                    </ul>
+                    <h3>Operadores aritméticos</h3>
+                    <figure>
+                        <img src="img/blog/js/operadores-aritmeticos.png" alt="Operadores aritméticos">
+                    </figure>
+                    <h3>Operadores de asignación</h3>
+                    <figure>
+                        <img src="img/blog/js/Operadores-asignación.png" alt="Operadores aritméticos">
+                    </figure>
+                    <h3>Operadores condicionales (comparativos)</h3>
+                    <figure>
+                        <img src="img/blog/js/operadores-condicionales.png" alt="Operadores aritméticos">
+                    </figure>
+                    <h3>Operadores lógicos</h3>
+                    <figure>
+                        <img src="img/blog/js/operadores-logicos.png" alt="Operadores aritméticos">
+                    </figure>
+                    <h2>Arrays(arreglos)</h2>
+                    <p>Es una colección de elementos que podemos asignar a una variable. Un array nos permite guardar datos de diferentes tipos, tales como números o cadenas de texto.<br> 
+                        Podemos acceder a cualquiera de los elementos a través de sus índices numéricos y editarlos, borrarlos, insertar un nuevo elemento, etc. También los podremos recorrer mediante métodos de iteración.
+                    </p>
+                    <p>Ejemplos:</p>
+                    <div class="Post__gist">
+                        <script src="https://gist.github.com/agustinpfs/402396043675b0a6c5abb47004131e07.js"></script>
+                    </div>
+                    <h2>Loops(bucles)</h2>
+                    <h3>for</h3>
+                    <p>Los Loops pueden ejecutar un bloque de código varias veces.</p>
+                    <p>Sintaxis</p>
+                    <p><span class="Post__code">for ([expresionInicial]; [condicion]; [expresionIncremento])<br>
+                        &nbsp;&nbsp;sentencia</span>
+                    </p>
+                    <p>Ejemplos:</p>
+                    <div class="Post__gist">
+                        <script src="https://gist.github.com/agustinpfs/987496ef992a74522fdeb9a8a2163f29.js"></script>
+                    </div>
+                    <h2>Objetos y Métodos Javascript</h2>
+                    <h3>Objetos JavaScript</h3>
+                    <p>Los objetos son unidades que contienen su propio código y datos para su propio auto-funcionamiento.<br>
+                        Podemos decir que son programas dentro de programas.<br>
+                        Generalmente encapsulan variables (propiedades como clave : valor) y funciones (métodos).<br> 
+                        Los objetos se comunican entre ellos y nos permiten reutilizar código y hacer más fácil mantener nuestros programas.
+                    </p>
+                    <p>Ejemplo:</p>
+                    <div class="Post__gist">
+                        <script src="https://gist.github.com/agustinpfs/b7dd2fe2ecf4520f004590319070628a.js"></script>
+                    </div>
+                    <h3>Objetos y Métodos predeterminados de JavaScript</h3>
+                    <p>Javascript ya viene con objetos predeterminados (globales) y cada objeto con varias propiedades y métodos útiles para realizar nuestros programas o scripts.<br>
+                        Algunos de estos objetos predeterminados son:</p>
+                        <ul>
+                            <li>String</li>
+                            <li>Array</li>
+                            <li>Math</li>
+                        </ul>
+                        <h3>String.</h3>
+                        <p>Incluye métodos como:</p>
+                        <p><b>length</b>: Devuelve la longitud de una cadena de texto.</p>
+                        <p> <span class="Post__code">var cadena = "hola";<br>
+                            var longitud = cadena.length;<br>
+                            console.log(longitud); <span class="greenpure">//4</span></span>
+                        </p>
+                        <p><b>toUpperCase()</b>: Devuelve la cadena en mayúscula.</p>
+                        <p> <span class="Post__code">var cadena = "hola";<br>
+                            var mayuscula = cadena.toUpperCase();<br>
+                            console.log(mayuscula); <span class="greenpure">// HOLA</span></span>
+                        </p>
+                        <h3>Array.</h3>
+                        <p>Incluye métodos como:</p>
+                        <p><b>push()</b>: agrega elementos al final del array.</p>
+                        <p> <span class="Post__code">let animales = ["gato", "perro", "caballo"]<br>
+                            console.log(animales); <span class="greenpure">// [ 'gato', 'perro', 'caballo' ]</span></span>
+                        </p>
+                        <p> <span class="Post__code">animales.push("vaca", "conejo")<br>
+                            console.log(animales); <span class="greenpure">// [ 'gato', 'perro', 'caballo', 'vaca', 'conejo' ]</span></span>
+                        </p>
+                        <p><b>length</b>: Devuelve la longitud de un arreglo.</p>
+                        <p> <span class="Post__code">var animales = ["gato", "perro", "caballo"];<br>
+                            var longitud = animales.length;<br>
+                            console.log(longitud); <span class="greenpure">// 3</span></span>
+                        </p>
+                        <h3>Math.</h3>
+                        <span>Permite realizar operaciones matemáticas.</span>
+                        <p>Incluye métodos como:</p>
+                        <p><b>pow()</b>: devuelve el resultado de un número(1º argumento) elevado a una potencia(2º argumento).</p>
+                        <p> <span class="Post__code">console.log(Math.pow(5, 2)); <span class="greenpure">// 25</span></span>
+                        <p><b>random()</b>: devuelve un número aleatorio entre 0 y 1</p>
+                        <p> <span class="Post__code">console.log(Math.random()); <span class="greenpure">// 0.42499662557833595</span></span>
+            </div>
+
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                    this.page.url = "https://agustinpfs.github.io/CIT2/blogVSCode.html";  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://cursos-it.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+
+        </article>
+    </main>
+    <aside class="Aside">
+        <section class="Tabs">
+            <ul class="Tabs__header">
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab1')" id="defaultActive">Abierto</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab2')">Próximo</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab3')">Futuros</li>
+            </ul>
+
+            <div id="contenidoTab1" class="Tabs__tab-content">
+                <h2 class="w400">
+                    HTML<span class="icon-html5"></span>
+                    CSS<span class="icon-css3"></span>
+                    JavaScript<span class="icon-javascript"></span>
+                </h2>
+
+                <ul>
+                    <li class="green">Además:</li>
+                    <li><span class="green">&#10003;</span> Git-Github</li>
+                    <li><span class="green">&#10003;</span> Despliegue</li>
+                    <li><span class="green">&#10003;</span> Analítica web</li>
+                </ul>
+                <a href="curso.html" class="Tabs__button button button--blue">VER CURSO</a>
+            </div>
+            <div id="contenidoTab2" class="Tabs__tab-content">
+                <h2 class="w400">
+                    Webpack<span class="icon-webpack"></span>
+                    Sass<span class="icon-sass"></span>
+                    Handlebars<span class="icon-hbs"></span>
+                </h2>
+
+                <ul>
+                    <li><span class="green">&#10003;</span> Sistema de bundling</li>
+                    <li><span class="green">&#10003;</span> Automatización de procesos</li>
+                    <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
+                    <li><span class="green">&#10003;</span> Motores de plantillas</li>
+                </ul>
+
+            </div>
+
+            <div id="contenidoTab3" class="Tabs__tab-content">
+                <ul>
+                    <li><span class="green">&#8226;</span> NodeJS, Express, MongoDB</li>
+                    <li><span class="green">&#8226;</span> Progressive web app</li>
+                    <li><span class="green">&#8226;</span> React</li>
+                    <li><span class="green">&#8226;</span> React Native</li>
+                    <li><span class="green">&#8226;</span> VueJS</li>
+                    <li><span class="green">&#8226;</span> Electron</li>
+                </ul>
+                <!-- </a> -->
+            </div>
+        </section>
+        <section class="Aside-twitter">
+            <a class="twitter-timeline" data-tweet-limit=3
+                href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets
+                by TwitterDev</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        <section class="Acordeon">
+            <h2>Últimos videos</h2>
+            <button id="activado" class="Acordeon-button">Hola Mundo!</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+
+            <button class="Acordeon-button">HTML</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+
+            <button class="Acordeon-button">CSS</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+        </section>
+    </aside>
+    <footer class="Footer">
+        <section class="Footer-copy">
+            <span>&copy; CursosIT 2020</span>
+        </section>
+        <nav class="Footer-nav">
+            <ul>
+                <li class="opencontact2"><a href="javascript:void(0)">contacto</a></li>
+                <li><a href="#scrollLink1">cursos</a></li>
+                <li><a href="#section1">blog</a></li>
+            </ul>
+        </nav>
+        <section class="Footer-social">
+            <a href="https://www.facebook.com/Cursos-IT-101125784951053" target="_blank" rel="noopener noreferrer">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="https://twitter.com/CursosIT1" target="_blank" rel="noopener noreferrer">
+                <span class="icon-twitter"></span>
+            </a>
+            <a href="https://github.com/Cursos-IT" target="_blank" rel="noopener noreferrer">
+                <span class="icon-github"></span>
+            </a>
+            <a href="https://www.instagram.com/cursosit_ok/" target="_blank" rel="noopener noreferrer">
+                <span class="icon-instagram"></span>
+            </a>
+        </section>
+    </footer>
+    <div class="Modal">
+        <!-- Modal content -->
+        <div class="Modal-content">
+            <form class="contact_form"
+                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                method="post" name="contact_form">
+                <input type='hidden' name='redirect_to' value='http://cursosit.com' />
+                <input name="nombre" type="text" placeholder="Tu nombre" required>
+                <input name="email" type="email" placeholder="Tu email" required>
+                <textarea name="msje" placeholder="Tu mensaje" required></textarea>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+            </form>
+            <span class="Modal-close">&times;</span>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+
+    <script src="js/captcha.js"></script>
+
+</body>
+
+</html>
