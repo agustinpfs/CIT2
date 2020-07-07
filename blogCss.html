@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167239185-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167239185-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es CSS?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog2test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="Header">
+        <figure class="Header__figure">
+            <img src="images/logo.png" alt="logo cursosIT">
+        </figure>
+        <nav class="Header__nav">
+            <label for="menu" class="Header__button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input type="checkbox" class="Header__check" id="menu">
+            <ul class="Header__menu">
+                <li class="Header__menu-li">
+                    <a href="index.html" class="Header__menu-a">HOME</a>
+                </li>
+                <li class="Header__menu-li Header__open-submenu">
+                    <a href="" class="Header__menu-a no-link">CURSOS</a>
+                    <ul class="Header__submenu">
+                        <li class="Header__submenu-li"><a class="Header__submenu-a" href="curso.html">HTML,CSS,JS</a>
+                        </li>
+                        <li class="Header__submenu-li title">
+                            <a class="Header__submenu-a no-link" href="">WEBPACK</a>
+                            <span class="titletext">PROXIMAMENTE</span>
+                        </li>
+                        <li class="Header__submenu-li title">
+                            <a class="Header__submenu-a no-link" href="">NODEJS</a>
+                            <span class="titletext">PROXIMAMENTE</span>
+                        </li>
+                        <li class="Header__submenu-li"><a class="Header__submenu-a"
+                                href="index.html#scrollLink1">TODOS</a></li>
+                    </ul>
+                </li>
+                <li class="Header__menu-li">
+                    <a href="index.html#section1" class="Header__menu-a">BLOG</a>
+                </li>
+                <li class="Header__menu-li opencontact"><a href="#" class="Header__menu-a">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="MainBlog">
+        <article class="Post">
+            <div class="Post__header">
+                <h1>¿Qué es CSS? Definición, sintaxis, selectores y propiedades.</h1>
+                <div class="Post__data">
+                    <time>15/5/20</time>
+                    <span>por <i>agustinpfs</i></span>
+                </div>
+            </div>
+            <div class="Post__body">
+                <figure>
+                    <img src="img/blog/css/css-logo.png" alt="logo CSS3">
+                </figure>
+                <h2>CSS</h2>
+                <h4>CSS son las iniciales de “Cascading Style Sheets” (Hojas de Estilo en Cascada).</h4>
+                <p>"Cascada" se refiere a cierto orden de prioridad en que se aplicarán los estilos para un mismo elemento. Este concepto se comprenderá mejor a medida que se avanze en el aprendizaje.</p>
+                <p>Con Html creamos elementos en los cuales colocamos información (texto, imágenes, enlaces, etc). Estos elementos conforman las partes o secciones de nuestra página web.</p>
+                <p>Con CSS podremos manipular estas secciones creadas en el HTML, dándoles posiciones específicas a cada una de ellas.</p>
+                <p>También nos permitirá definir colores, tipo y tamaño de fuente, espacios, etc.
+                    Css es el encargado del orden y estética para que un sitio web se vea según lo planeado.
+                    </p>
+               
+                <h3>Sintaxis</h3>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/05e9806676a9585ea42f72f6479382cb.js"></script>
+                </div>
+                <h3>Definiciones</h3>
+                <p><strong>Hay 3 lugares donde podemos definir los estilos:</strong></p>
+                <p>1. En el head del HTML dentro la etiqueta &lt;style&gt;&lt;/style&gt;:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/99716e0577971726dad5d688ae8d5b3b.js"></script>
+                </div>
+                <p>2. Dentro de la etiqueta a la cual queremos estilizar:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/780cda0144c56969b76bf45ce0562882.js"></script>
+                </div>
+                <p>3. Archivo externo(recomendado):</p>
+                <p>html:</p>
+                    <div class="Post__gist">
+                        <script src="https://gist.github.com/agustinpfs/f78bca88e5ccf8af69f64b93a4febe36.js"></script>
+                    </div>
+                <p>style.css:</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/bc6f154f9be9b4c0a6844335ff5f490e.js"></script>
+                </div>
+                
+                <h2>Selectores</h2>
+                <p>Son referencias tomadas de los elementos de la página .html para poder aplicarles estilos a dichos elementos. </p>
+                <p>Los más usados son: </p>
+                <ul>
+                    <li>selector de etiqueta</li>
+                    <li>selector de clase</li>
+                </ul>
+                <h3>Selector de etiqueta.</h3>
+                <p>Toma dierectamente el nombre de la etiqueta y le aplica los estilos.</p>
+                <p>Ejemplo</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/b4ad567e38c472299600050867d4881c.js"></script>
+                </div>
+                <h3>Selector de clase.</h3>
+                <p>Una clase(class) es un atributo(*) de tipo  class="nombreclase".
+                    En este caso "nombreclase" se utilizará como selector en la hoja de estilos css anteponiendo un punto.
+                    Al mismo atributo class se le pueden aplicar varias clases separadas por un espacio class="unaclase otraclase".
+                    Una misma clase puede aplicarse a varios elementos.
+                    Es la manera mas usual de aplicar estilos.</p>
+                <small>(*)Los atributos proporcionan información adicional sobre las etiquetas HTML.</small>
+                <p>Ejemplo</p>
+                <div class="Post__gist">
+                    <script src="https://gist.github.com/agustinpfs/165a7479c113901a576e7c30ca8f6989.js"></script>
+                </div>
+                <h3>Otros selectores:</h3>
+                <ul>
+                    <li>Selector de atributo</li>
+                    <li>Selector de identificación (ID)</li>
+                    <li>Selector de Pseudo-clase</li>
+                </ul>
+                <h2>Propiedades CSS</h2>
+                <p>Dicta qué aspecto del selector se cambiará visualmente. El valor es a lo que cambiará la propiedad CSS elegida</p>
+                <span class="Post__code">h1 {color: blue}</span>
+                <p>Una propiedad (color) dice que aspecto del selector (h1) cambiará visualmente.
+                    El valor (blue) es a lo que cambiará la propiedad.</p>
+                    
+                    <p>Propiedades mas usuales:</p>
+                    <p><b>font-family </b> tipo de letra (fuente)</p>
+                    <p><b>font-size </b> tamaño de letra</p>
+                    <p><b>color </b> color del texto</p>
+                    <p><b>width </b> anchura</p>
+                    <p><b>height </b> altura</p>
+                    <p><b>padding </b> margen interior</p>
+                    <p><b>margin </b> margen exterior</p>
+                    <p><b>border </b> color, ancho y estilo del borde</p>
+                    <p><b>background-color </b> color del fondo del elemento</p>
+                    <p><b>background </b> color, imagen, position</p>
+                    <p><b>text-align </b> alineación del texto</p>
+                    <p><b>display </b>tipo de caja(*)</p>
+                    <p>(*)Especifica el tipo de caja que se aplica a un elemento. Que comportamiento va a tener.</p>
+                    <p>Algunos de los valores de la propiedad "display" son:</p>
+                    <ul>
+                        <li><span class="Post__code">none</span>: hace que no se genere caja</li>
+                        <li><span class="Post__code">block</span>: caja rectangular que forma un bloque</li>
+                        <li><span class="Post__code">inline-block</span>: caja en-línea, pero que se formatea como una caja de tipo block </li>
+                        <li><span class="Post__code">inline</span>: caja en-línea y está incluida en una caja de tipo block</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <p>Ejemplos:</p>
+                    <div class="Post__gist">
+                        <script src="https://gist.github.com/agustinpfs/132c4030092e7259765a0b10634db23c.js"></script>
+                    </div>
+                    <a href="https://www.mclibre.org/consultar/htmlcss/css/css-propiedades.html">Lista de propiedades CSS estables</a>
+                    <h2>Box Model</h2>
+                    <p> En CSS, el término “Box Model” (modelo de caja) es esencialmente una caja que envuelve todos los elementos HTML.</p>
+                    <p>CSS interpreta a cada elemento html, es decir, a todo elemento definido entre una etiqueta de apertura y una etiqueta
+                        de cierre como una caja rectangular definida por un borde, un margen interno, un margen externo y el contenido que
+                        encierra.</p>
+                    <p>El tamaño del contenido puede darse por lo que ocupe la información que contiene el elemento o
+                        por un ancho y una altura en unidades de medida aplicado con css.</p>
+                    <p>Entonces las propiedades con las que podemos definir los tamaños del borde, margen, margen interno y contenido son:
+                        Para los márgenes y bordes: border, margin, padding.
+                        Para el contenido: width(anchura) y height(altura). Si no se especifican estas propiedades el tamaño lo determina el
+                        propio contenido.</p>
+                    <p>También cabe aclarar que los elementos definidos como elementos “en línea” no le podemos aplicar una altura y un
+                        ancho. Antes habría que convertirlos en elementos de “bloque” por medio de la propiedad “display”. </p>
+                    
+                    <h3>Box Model</h3>
+                    <figure>
+                        <img src="img/blog/css/box-model.png" alt="logo CSS3" width="362" height="229">
+                    </figure>
+                    <br>
+                    <p>Si el tamaño del contenido de la caja está determinado por las propiedades height y width podemos usar la propiedad <span class="Post__code">box-sizing</span>.<br>
+                        <span class="Post__code">box-sizing: content-box</span> (valor por defecto) determina que al alto y al ancho definido del elemento siempre indicará el tamaño del contenido sin tener en cuenta los tamaños del padding y del border. 
+                        Es decir, el tamaño de la caja será igual al ancho(width) y alto(height) mas los tamaños del border y padding.
+                    </p>
+                    <figure>
+                        <img src="img/blog/css/content-box.png" alt="logo CSS3">
+                    </figure>
+                    <br>
+                    <p>En cambio, con box-sizing: border-box determina que al alto y al ancho definido del elemento incluirá los tamaños del padding y del border.
+Es decir el tamaño de la caja será igual al ancho(width) y alto(height) definido en el css.</p>
+<figure>
+    <img src="img/blog/css/border-box.png" alt="logo CSS3">
+</figure>
+<p>Ejemplos:</p>
+<div class="Post__gist">
+    <script src="https://gist.github.com/agustinpfs/dff5fe33d3982b578daf871d8f9f3d0f.js"></script>
+</div>
+
+
+                    
+                   
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+
+
+            </div>
+
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                    this.page.url = "https://agustinpfs.github.io/CIT2/blogVSCode.html";  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://cursos-it.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+
+        </article>
+    </main>
+    <aside class="Aside">
+        <section class="Tabs">
+            <ul class="Tabs__header">
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab1')" id="defaultActive">Abierto</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab2')">Próximo</li>
+                <li class="Tabs__tab" onclick="showContent(event, 'contenidoTab3')">Futuros</li>
+            </ul>
+
+            <div id="contenidoTab1" class="Tabs__tab-content">
+                <h2 class="w400">
+                    HTML<span class="icon-html5"></span>
+                    CSS<span class="icon-css3"></span>
+                    JavaScript<span class="icon-javascript"></span>
+                </h2>
+
+                <ul>
+                    <li class="green">Además:</li>
+                    <li><span class="green">&#10003;</span> Git-Github</li>
+                    <li><span class="green">&#10003;</span> Despliegue</li>
+                    <li><span class="green">&#10003;</span> Analítica web</li>
+                </ul>
+                <a href="curso.html" class="Tabs__button button button--blue">VER CURSO</a>
+            </div>
+            <div id="contenidoTab2" class="Tabs__tab-content">
+                <h2 class="w400">
+                    Webpack<span class="icon-webpack"></span>
+                    Sass<span class="icon-sass"></span>
+                    Handlebars<span class="icon-hbs"></span>
+                </h2>
+
+                <ul>
+                    <li><span class="green">&#10003;</span> Sistema de bundling</li>
+                    <li><span class="green">&#10003;</span> Automatización de procesos</li>
+                    <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
+                    <li><span class="green">&#10003;</span> Motores de plantillas</li>
+                </ul>
+
+            </div>
+
+            <div id="contenidoTab3" class="Tabs__tab-content">
+                <ul>
+                    <li><span class="green">&#8226;</span> NodeJS, Express, MongoDB</li>
+                    <li><span class="green">&#8226;</span> Progressive web app</li>
+                    <li><span class="green">&#8226;</span> React</li>
+                    <li><span class="green">&#8226;</span> React Native</li>
+                    <li><span class="green">&#8226;</span> VueJS</li>
+                    <li><span class="green">&#8226;</span> Electron</li>
+                </ul>
+                <!-- </a> -->
+            </div>
+        </section>
+        <section class="Aside-twitter">
+            <a class="twitter-timeline" data-tweet-limit=3
+                href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets
+                by TwitterDev</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        <section class="Acordeon">
+            <h2>Últimos videos</h2>
+            <button id="activado" class="Acordeon-button">Hola Mundo!</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+
+            <button class="Acordeon-button">HTML</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+
+            <button class="Acordeon-button">CSS</button>
+            <div class="contenido">
+                <p>PROXIMAMENTE</p>
+            </div>
+        </section>
+    </aside>
+    <footer class="Footer">
+        <section class="Footer-copy">
+            <span>&copy; CursosIT 2020</span>
+        </section>
+        <nav class="Footer-nav">
+            <ul>
+                <li class="opencontact2"><a href="javascript:void(0)">contacto</a></li>
+                <li><a href="#scrollLink1">cursos</a></li>
+                <li><a href="#section1">blog</a></li>
+            </ul>
+        </nav>
+        <section class="Footer-social">
+            <a href="https://www.facebook.com/Cursos-IT-101125784951053" target="_blank" rel="noopener noreferrer">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="https://twitter.com/CursosIT1" target="_blank" rel="noopener noreferrer">
+                <span class="icon-twitter"></span>
+            </a>
+            <a href="https://github.com/Cursos-IT" target="_blank" rel="noopener noreferrer">
+                <span class="icon-github"></span>
+            </a>
+            <a href="https://www.instagram.com/cursosit_ok/" target="_blank" rel="noopener noreferrer">
+                <span class="icon-instagram"></span>
+            </a>
+        </section>
+    </footer>
+    <div class="Modal">
+        <!-- Modal content -->
+        <div class="Modal-content">
+            <form class="contact_form"
+                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                method="post" name="contact_form">
+                <input type='hidden' name='redirect_to' value='http://cursosit.com' />
+                <input name="nombre" type="text" placeholder="Tu nombre" required>
+                <input name="email" type="email" placeholder="Tu email" required>
+                <textarea name="msje" placeholder="Tu mensaje" required></textarea>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+            </form>
+            <span class="Modal-close">&times;</span>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+
+    <script src="js/captcha.js"></script>
+
+</body>
+
+</html>
