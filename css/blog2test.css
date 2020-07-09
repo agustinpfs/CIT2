@@ -68,11 +68,11 @@
 
 .Post__body h2{
     padding-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .Post__body h3{
-    padding-top: 1rem;
+    padding-top: .5rem;
     margin-bottom: 1rem;
 }
 
