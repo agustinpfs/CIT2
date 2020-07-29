@@ -4,6 +4,7 @@
 /* DESCRIPTION */
 /* FEATURES */
 /* ARTICLES */
+/* RECOMMENDED */
 /* MODAL */
 /* CAPTCHA */
 /* ASIDE */
@@ -716,7 +717,6 @@ a {
 	position: absolute;
 	z-index: 1;
 	transition: 1s ease;
-	cursor: pointer;
 }
 
 .Articulos__layerHover:hover {
@@ -840,6 +840,17 @@ a {
 		margin-bottom: 2.5rem;
 	}
 }
+
+/* RECOMMENDED */
+
+.Post__recommended {
+	margin-bottom: 2rem;
+}
+.Post__recommended a{
+	line-height: 1.5rem;
+}
+
+
 /* ASIDE */
 
 .Aside {
