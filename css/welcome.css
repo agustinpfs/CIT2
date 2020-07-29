@@ -14,3 +14,20 @@ main {
 p {
     margin-top: 2rem;
 }
+
+a {
+    text-decoration: underline;
+}
+
+div {
+    text-align: left;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid blue;
+    padding: .5rem;
+}
+
+div li {
+    line-height: 1.5rem;
+}
