@@ -1062,7 +1062,7 @@ body {
 	display: none;
 	/* Hidden by default */
 	/* position: absolute; */
-	position: absolute;
+	position: fixed;
 	/* Stay in place */
 	z-index: 1;
 	/* Sit on top */
@@ -1261,6 +1261,22 @@ body {
 	font-display: block;
 }
 
+/* icono whatsapp */
+
+
+
+  @font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/wapp/icomoon.eot?74govs');
+	src:  url('../fonts/wapp/icomoon.eot?74govs#iefix') format('embedded-opentype'),
+	  url('../fonts/wapp/icomoon.ttf?74govs') format('truetype'),
+	  url('../fonts/wapp/icomoon.woff?74govs') format('woff'),
+	  url('../fonts/wapp/icomoon.svg?74govs#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+
 [class^="icon-"], [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
@@ -1335,6 +1351,11 @@ body {
 	content: "\e903";
 	color: #1da1f2;
 }
+
+.icon-whatsapp:before {
+	content: "\e999";
+	color: #25d366;
+  }
 
 .icon-pencil:before {
 	content: "\e905";
