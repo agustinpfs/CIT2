@@ -4,12 +4,14 @@
 /* INFO */
 /* PROGRAMA */
 /* REQUISITOS */
-/* FORMULARIO */
+/* FORMULARIO - CONTACTO */
+/* CONTACTO-WHATSAPP */
 
 /* COLUMN 2 */
 /* VIDEO */
 /* EDICION */
 /* PAGO */
+
 
 
 
@@ -192,7 +194,7 @@
 	margin-top: .5rem;
 }
 
-/* FORMULARIO */
+/* FORMULARIO - CONTACTO */
 
 .Contacto h2 {
 	color: #1584d5;
@@ -232,6 +234,12 @@
 
 .Contacto--resp {
 	display: none;
+}
+
+.Contacto__whatsapp {
+	position: fixed;
+	bottom: 150px;
+	right: 15px;
 }
 
 @media (max-width: 800px) {
@@ -565,6 +573,8 @@
 		width: 95%;
 	}
 }
+
+
 
 .color {
 	color: #1584d5;

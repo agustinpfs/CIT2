@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             font-family: 'Roboto', Helvetica, sans-serif;
             /* overflow: scroll; */
         }
+
         main {
             overflow: scroll;
             display: flex;
@@ -21,14 +23,17 @@
             align-items: center;
             flex-direction: column;
         }
+
         section {
             width: 50vw;
         }
+
         .div {
             display: flex;
             /* flex-direction: row;
             width: max-content; */
         }
+
         /* figure {
             align-self: center;
         } */
@@ -36,28 +41,37 @@
         form {
             margin-bottom: 3rem;
         }
+
         input {
             width: 100%;
             height: 25px;
             border: 1px solid #f7931b;
         }
+
         textarea {
             width: 100%;
             height: 100px;
             border: 1px solid #f7931b;
 
         }
+
+        .Contacto__whatsapp {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
     </style>
 </head>
+
 <body>
     <main>
-        
+
         <figure>
             <img src="img/logo.png" alt="logo CursosIT">
         </figure>
         <h1>CursosIT. Curso de Desarrollo Web.</h1>
 
-        <section>            
+        <section>
             <div class="div">
                 <figure>
                     <img src="img/bitcoin-logo.png" alt="bitcoin logo" width="200px">
@@ -70,24 +84,29 @@
                 <figure>
                     <img src="img/qr-btc.png" alt="QR">
                 </figure>
-                
+
             </div>
         </section>
-                        <div>
-                            <form class="contact_form"
-                            action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
-                            method="post" name="contact_form">
-                            <h4>Completá el formulario para dar aviso de la transacción</h4>
-                                    <!-- <input type='hidden' name='redirect_to' value='http://cursosit.com' /> -->
-                                    <span style="color: red; font-size: 0.7rem">obligatorio</span><br><input name="nombre" type="text" placeholder="Tu nombre" required><br><br>
-                                    <span style="color: red; font-size: 0.7rem">obligatorio</span><br><input name="email" type="email" placeholder="Tu email" required><br><br>
-                                    <input name="id-transaction" type="number" placeholder="Id de transacción"><br><br>
-                                    <textarea name="msje" placeholder="Observaciones"></textarea><br><br>
-                                    <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
-                                </form>
-        
-                        </div>
+        <div>
+            <form class="contact_form"
+                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                method="post" name="contact_form">
+                <h4>Completá el formulario para dar aviso de la transacción</h4>
+                <!-- <input type='hidden' name='redirect_to' value='http://cursosit.com' /> -->
+                <span style="color: red; font-size: 0.7rem">obligatorio</span><br><input name="nombre" type="text"
+                    placeholder="Tu nombre" required><br><br>
+                <span style="color: red; font-size: 0.7rem">obligatorio</span><br><input name="email" type="email"
+                    placeholder="Tu email" required><br><br>
+                <input name="id-transaction" type="number" placeholder="Id de transacción"><br><br>
+                <textarea name="msje" placeholder="Observaciones"></textarea><br><br>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+            </form>
 
+        </div>
+        <a class="Contacto__whatsapp" href="https://wa.me/543513044157" target="_blank" rel="noopener noreferrer">
+            <img src="img/whatsapp-logo.png" alt="contacto whatsapp">
+        </a>
     </main>
 </body>
+
 </html>

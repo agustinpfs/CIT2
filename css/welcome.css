@@ -31,3 +31,9 @@ div {
 div li {
     line-height: 1.5rem;
 }
+
+.Contacto__whatsapp {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
