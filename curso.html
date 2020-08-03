@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>  
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167239185-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167239185-1');
+    </script>  
     <meta charset="UTF-8">
     <title>Cursos IT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -214,17 +223,19 @@
             </section>
             <section class="Contacto Contacto--desk">
                 <h2>Dudas? Contactá!</h2>
+                
                 <form class="Contacto__formulario"
-                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
-                method="post" name="contact_form">
-                <input type='hidden' name='redirect_to' value='http://cursosit.com' />
-
-                <input name="nombre" type="text" placeholder="Tu nombre" required>
-                <input name="email" type="email" placeholder="Tu email" required>
-                <textarea name="msje" placeholder="Tu mensaje" required></textarea>
-                <!-- <div class="g-recaptcha" data-sitekey="6LfE2vwUAAAAAAO_xQdh3Pn17vXsV2fY8QWjT_Kj" data-theme="dark"></div> -->
-                <button class="" type="submit" id="contact-submit">Enviar</button>
-            </form>
+                    action="https://formsubmit.co/42eba2f547c00008c349ec4c42eef665"
+                    method="post" name="contact_form">
+                    <input type='hidden' name='_next' value='http://cursosit.com/after-submit.html' />
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input name="nombre" type="text" placeholder="Tu nombre" required>
+                    <input name="email" type="email" placeholder="Tu email" required>
+                    <textarea name="msje" placeholder="Tu mensaje" required></textarea>
+                    <!-- <div class="g-recaptcha" data-sitekey="6LfE2vwUAAAAAAO_xQdh3Pn17vXsV2fY8QWjT_Kj" data-theme="dark"></div> -->
+                    <button class="" type="submit">Enviar</button>
+                </form>
             </section>
         </div>
         <div class="Curso__colum-2">
@@ -347,15 +358,15 @@
         <!-- Modal content -->
         <div class="Modal-content">
             <form class="contact_form"
-                action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
+                action="https://formsubmit.co/42eba2f547c00008c349ec4c42eef665"
                 method="post" name="contact_form">
-                <input type='hidden' name='redirect_to' value='http://cursosit.com' />
-
+                <input type='hidden' name='_next' value='http://cursosit.com/after-submit.html' />
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
                 <input name="nombre" type="text" placeholder="Tu nombre" required>
                 <input name="email" type="email" placeholder="Tu email" required>
                 <textarea name="msje" placeholder="Tu mensaje" required></textarea>
-
-                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+                <button class="button button--form" type="submit">Enviar</button>
             </form>
             <span class="Modal-close">&times;</span>
         </div>
