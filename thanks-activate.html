@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167239185-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167239185-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>Gracias</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/welcome.css"> -->
+    <style>
+        html {
+            font-family: 'Roboto', Helvetica, sans-serif;
+            /* overflow: scroll; */
+        }
+
+        main {
+            overflow: scroll;
+            display: flex;
+            justify-content: center;
+            /* height: 100vh; */
+            /* width: 100vw; */
+            align-items: center;
+            flex-direction: column;
+        }
+
+        section {
+            width: 50vw;
+        }
+
+        .div {
+            display: flex;
+            /* flex-direction: row;
+            width: max-content; */
+        }
+
+        /* figure {
+            align-self: center;
+        } */
+
+        form {
+            margin-bottom: 3rem;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            border: 2px solid #0f86f7;
+            font-size: 1.2rem;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: 2px solid #0f86f7;
+
+        }
+
+        form {
+            width: 50vw;
+        }
+
+        .Contacto__whatsapp {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
+        .button {
+            border: 2px solid #0f86f7;
+            width: 80pxpx;
+            height: 35px;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 1.2rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <figure>
+            <img src="img/logo.png" alt="logo CursosIT">
+        </figure>
+        <h1>Gracias por tu confianza.</h1>
+        <h2>Completá el formulario para recibir instrucciones</h2>
+
+        <div>
+            
+            <form class="contact_form"
+                action="https://formsubmit.co/42eba2f547c00008c349ec4c42eef665"
+                method="post" name="contact_form">
+            
+                <input type='hidden' name='_next' value='http://cursosit.com/welcome.html' />
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- <input type='hidden' name='redirect_to' value='http://cursosit.com' /> -->
+                <span style="color: red; font-size: 0.7rem">*obligatorio</span><br><input name="nombre" type="text"
+                    placeholder="Tu nombre" required><br><br>
+                <span style="color: red; font-size: 0.7rem">*obligatorio</span><br><input name="email" type="email"
+                    placeholder="Tu email" required><br><br>
+                <span style="color: green; font-size: 0.7rem">*opcional</span><br>
+                <textarea name="msje" placeholder="Observaciones"></textarea><br><br>
+                <button class="button button--form" type="submit" id="contact-submit">Enviar</button>
+            </form>
+
+        </div>
+        <a class="Contacto__whatsapp" href="https://wa.me/543513044157" target="_blank" rel="noopener noreferrer">
+            <img src="img/whatsapp-logo.png" alt="contacto whatsapp">
+        </a>
+    </main>
+</body>
+
+</html>
