@@ -64,9 +64,8 @@
         <div class="Curso__colum-1">
             <section class="Video Video--resp">
                 <article class="Video__embed">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ckqOukGKK8" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EGkqbduL50k" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </article>
             </section>
             <section class="Info">
@@ -241,9 +240,8 @@
         <div class="Curso__colum-2">
             <section class="Video Video--desk">
                 <article class="Video__embed">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ckqOukGKK8" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EGkqbduL50k" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </article>
             </section>
             <section class="Edicion">
@@ -252,7 +250,7 @@
                 <p>Martes y viernes de 16:30hs a 18hs</p>
                 <h2>QUEDAN 7 LUGARES</h2>
             </section>
-            <!-- <section class="Pago">
+            <section class="Pago">
                 <div class="Pago__medio">
                     <h3>Elegí medio de pago</h3>
                     <p><a href="#mpago">Mercado Pago</a> (Sólo Argentina). <span>3500ARS</span> (pesos argentinos).</p>
@@ -268,7 +266,11 @@
                          <div id="test1" class='Pago__boton2 bot'>
                             <a mp-mode="dftl"
                                 href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=66480696-cb58bc07-6888-47e6-bc90-1f72b47df63b"
-                                name="MP-payButton">PAGAR <small>$2800 (pesos arg)</small></a>
+                                name="MP-payButton" onclick="gtag('event', 'click', {
+                                                                    'event_category' : 'sell',
+                                                                    'event_label' : 'MP'
+                                                                    });"> 
+                                PAGAR <small>$2800 (pesos arg)</small></a>
                         </div>
                         
                         <script type="text/javascript">
@@ -285,7 +287,10 @@
         
                     <div class="Pago__boton">
                         <div id="test_p" class='Pago__boton1 bot_p'>
-                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="gtag('event', 'click', {
+                                                                                                                        'event_category' : 'sell',
+                                                                                                                        'event_label' : 'paypal'
+                                                                                                                        });">
                                     <input type="hidden" name="cmd" value="_s-xclick">
                                     <input type="hidden" name="hosted_button_id" value="Y77MYLHXSL3W4">
                                     <input type="image" src="https://i.postimg.cc/1zrNQncb/boton-pago28.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -301,12 +306,16 @@
         
                     <div class="Pago__boton">
                         <div id="test_p" class='Pago__boton1 bot'>
-                            <a href="bitcoin-payment.html">PAGAR <small>0.0028BTC (bitcoin)</small></a>
+                            <a href="bitcoin-payment.html" onclick="gtag('event', 'click', {
+                                                                    'event_category' : 'sell',
+                                                                    'event_label' : 'btc'
+                                                                    });">
+                                PAGAR <small>0.0028BTC (bitcoin)</small></a>
                         </div>
                     </div>
                 </div>
         
-            </section> -->
+            </section>
             <section class="Contacto Contacto--resp">
                 <h2>Dudas? Contactá!</h2>
                 <form class="Contacto__formulario"
