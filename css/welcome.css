@@ -11,6 +11,12 @@ main {
     background-color: unset;
 }
 
+@media (max-width: 800px) {
+    main {
+        width: 80%;
+    }
+}
+
 p {
     margin-top: 2rem;
 }
