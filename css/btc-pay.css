@@ -1,15 +1,12 @@
 @media (max-width: 800px){ 
+    main {
+        text-align: center;
+    }
     .div {
         display: flex;
         flex-direction: column;
-        width: 90vw;
+        /* width: 90vw; */
     }
 
-    section {
-        width: 90vw;
-    }
-    figure {
-        width: 90vw;
-        margin: 0;
-    }
+   
 }
