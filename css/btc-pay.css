@@ -1,0 +1,15 @@
+@media (max-width: 800px){ 
+    .div {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    section {
+        width: 90vw;
+    }
+    figure {
+        width: 90vw;
+        margin: 0;
+    }
+}
