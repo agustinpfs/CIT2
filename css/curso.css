@@ -316,12 +316,12 @@
 }
 
 .Edicion h2 {
-	font-size: 2.2rem;
-	font-weight: 600;
+	font-size: 2rem;
+	font-weight: 400;
 	color: #ec5252;
 	margin-top: .5em;
 	text-align: center;
-	background-color: white;
+	/* background-color: white; */
 	border-radius: 5px;
 	border: 1px solid #ec5252;
 }
@@ -361,8 +361,10 @@
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
 	text-align: center;
-	background-color: #1584d5;
-	color: whitesmoke;
+	font-weight: 400;
+	border: 1px solid black;
+	/* background-color: #1584d5; */
+	/* color: whitesmoke; */
 }
 
 .Pago__medio p {
@@ -401,6 +403,7 @@
 }
 
 .Pago__box {
+	/* font-weight: 400; */
 	width: 80%;
 	color: #666;
 	margin-right: auto;
@@ -411,11 +414,14 @@
 	margin-bottom: 3rem;
 }
 
+.precios_p {
+	font-weight: 400;
 
+}
 
 .Pago__box h3 {
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	/* color: #666 */
 }
 
@@ -431,9 +437,12 @@
 
 .Pago__box h4 {
 	text-align: center;
-	background-color: #1584d5;
-	color: whitesmoke;
+	/* background-color: #1584d5; */
+	/* color: whitesmoke; */
 	padding: 3px 5px;
+	font-weight: 400;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 .Pago__boton {
@@ -564,6 +573,8 @@
 .newClassName {
 	display: block;
 }
+
+
 
 @media (max-width: 800px) {
 	.Pago__box {
