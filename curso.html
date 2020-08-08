@@ -247,7 +247,7 @@
             <section class="Edicion">
                 <h3>Próxima edición:</h3>
                 <p class="Edicion__fechas">Del 18 de agosto al 16 de octubre de 2020</p>
-                <p>Martes y viernes de 16:30hs a 18hs</p>
+                <p>Martes y viernes de 16:30hs a 18hs (hora Argentina)</p>
                 <h2>QUEDAN 7 LUGARES</h2>
             </section>
             <section class="Pago">
@@ -319,6 +319,17 @@
             <section class="Contacto Contacto--resp">
                 <h2>Dudas? Contactá!</h2>
                 <form class="Contacto__formulario"
+                action="https://formsubmit.co/42eba2f547c00008c349ec4c42eef665"
+                method="post" name="contact_form">
+                <input type='hidden' name='_next' value='http://cursosit.com/after-submit.html' />
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input name="nombre" type="text" placeholder="Tu nombre" required>
+                <input name="email" type="email" placeholder="Tu email" required>
+                <textarea name="msje" placeholder="Tu mensaje" required></textarea>
+                <button class="button button--form" type="submit">Enviar</button>
+            </form>
+                <!-- <form class="Contacto__formulario"
                 action="https://getsimpleform.com/messages?form_api_token=e8ec1ae526c6c428f948668873550fb7"
                 method="post" name="contact_form">
                 <input type='hidden' name='redirect_to' value='http://cursosit.com' />
@@ -326,7 +337,7 @@
                 <input name="email" type="email" placeholder="Tu email" required>
                 <textarea name="msje" placeholder="Tu mensaje" required></textarea>
                 <button class="" type="submit" id="contact-submit">Enviar</button>
-            </form>
+            </form> -->
             </section>
             <a class="Contacto__whatsapp" href="https://wa.me/543513044157" target="_blank" rel="noopener noreferrer">
                 <img src="img/whatsapp-logo.png" alt="contacto whatsapp">
